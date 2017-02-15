@@ -15,7 +15,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var fileParser:JKJSONFile!
     var collectionView:UICollectionView!
     var collectionViewLayout:UICollectionViewFlowLayout!
-    var items:[String] = ["1","2","3","4","5"]
+    var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
+    var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors")]
 
     // MARK: - Lifecycle
     
@@ -45,7 +46,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         // Shadow
         collectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         collectionView.layer.shadowRadius = 10
-        collectionView.layer.shadowOpacity = 0.3
+        collectionView.layer.shadowOpacity = 0.5
         
     }
 
@@ -67,6 +68,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
         cell.titleLabel.text = items[indexPath.row]
         
+               
         // Cell Customization
         return cell
         
