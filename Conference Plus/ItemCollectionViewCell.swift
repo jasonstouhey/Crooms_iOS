@@ -50,6 +50,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
             let rotate = self.transform.rotated(by: 0.3)
             self.transform.concatenating(rotate)
             self.transform = scale
+            
         })
         squishAnimation.isReversed = true
         squishAnimation.startAnimation()
