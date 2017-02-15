@@ -42,6 +42,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         collectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
+        // Shadow
         collectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         collectionView.layer.shadowRadius = 10
         collectionView.layer.shadowOpacity = 0.3
