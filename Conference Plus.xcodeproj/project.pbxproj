@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */; };
 		D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082354E1E526D8A0043FF04 /* AppDelegate.swift */; };
 		D08235511E526D8A0043FF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235501E526D8A0043FF04 /* ViewController.swift */; };
 		D08235541E526D8A0043FF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235521E526D8A0043FF04 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235571E526D8A0043FF04 /* LaunchScreen.storyboard */; };
 		D08235641E526D8A0043FF04 /* Conference_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235631E526D8A0043FF04 /* Conference_PlusTests.swift */; };
 		D082356F1E526D8A0043FF04 /* Conference_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082356E1E526D8A0043FF04 /* Conference_PlusUITests.swift */; };
+		D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082357E1E526E150043FF04 /* JKJSONFile.swift */; };
+		D08235811E526FE80043FF04 /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = D08235801E526FE80043FF04 /* info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		D082354B1E526D8A0043FF04 /* Conference Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conference Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082354E1E526D8A0043FF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08235501E526D8A0043FF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		D082356A1E526D8A0043FF04 /* Conference PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conference PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082356E1E526D8A0043FF04 /* Conference_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference_PlusUITests.swift; sourceTree = "<group>"; };
 		D08235701E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D082357E1E526E150043FF04 /* JKJSONFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKJSONFile.swift; sourceTree = "<group>"; };
+		D08235801E526FE80043FF04 /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				D082354E1E526D8A0043FF04 /* AppDelegate.swift */,
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
+				D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */,
+				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
+				D08235801E526FE80043FF04 /* info.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
 				D08235551E526D8A0043FF04 /* Assets.xcassets */,
 				D08235571E526D8A0043FF04 /* LaunchScreen.storyboard */,
@@ -236,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */,
+				D08235811E526FE80043FF04 /* info.json in Resources */,
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
+				D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,
 				D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +526,7 @@
 				D08235751E526D8A0043FF04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D08235761E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference PlusTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				D08235781E526D8A0043FF04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D08235791E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference PlusUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				D082357B1E526D8A0043FF04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

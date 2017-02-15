@@ -1,0 +1,19 @@
+{
+  "event_title": "TechFest",
+  "Exhibit": {
+    "sponsors": [
+      "Apple",
+      "Microsoft",
+      "etc..."
+    ],
+    "visitors": [
+      "John Doe",
+      "Mary Jane"
+    ],
+    "sponsorImages": [
+      "image.png",
+      "secondImage.png"
+    ]
+
+  }
+}

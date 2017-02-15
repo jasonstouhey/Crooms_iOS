@@ -8,18 +8,67 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    // MARK: - Class Variables
+    
+    var fileParser:JKJSONFile!
+    var collectionView:UICollectionView!
+    var collectionViewLayout:UICollectionViewFlowLayout!
+    var items:[String] = ["1","2","3"]
 
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        UIApplication.shared.statusBarStyle = .lightContent
+        collectionViewLayout = UICollectionViewFlowLayout()
+        collectionViewLayout.itemSize = CGSize(width: 90, height: 90)
+        collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 0, right: 10)
+        
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: collectionViewLayout)
+        collectionView.dataSource = self
+        collectionView.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        
+        // Collection View Background
+        collectionView.backgroundColor = UIColor.clear
+        
+        self.view.addSubview(collectionView)
+        
+        // Autolayout.
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        collectionView.heightAnchor.constraint(equalTo: self.view.heightAnchor).isActive = true
+        collectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        collectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Collection View Data Source
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return items.count
+    }
+    
+   
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        
+        // Cell Customization
+        return cell
+        
+    }
+    
+    
 
+    
+    
 
 }
 
