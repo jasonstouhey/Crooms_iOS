@@ -15,7 +15,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var fileParser:JKJSONFile!
     var collectionView:UICollectionView!
     var collectionViewLayout:UICollectionViewFlowLayout!
-    var items:[String] = ["1","2","3"]
+    var items:[String] = ["1","2","3","4","5"]
 
     // MARK: - Lifecycle
     
@@ -23,7 +23,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         super.viewDidLoad()
         UIApplication.shared.statusBarStyle = .lightContent
         collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.itemSize = CGSize(width: 90, height: 90)
+        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
         collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 0, right: 10)
         
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: collectionViewLayout)
@@ -42,6 +42,10 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         collectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
+        collectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        collectionView.layer.shadowRadius = 10
+        collectionView.layer.shadowOpacity = 0.3
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +62,9 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
    
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCollectionViewCell
+        
+        cell.titleLabel.text = items[indexPath.row]
         
         // Cell Customization
         return cell

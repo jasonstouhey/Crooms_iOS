@@ -10,28 +10,56 @@ import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Class Variables.
+    
     var titleLabel:UILabel!
     var squishAnimation:UIViewPropertyAnimator!
     var colorAnimation:UIViewPropertyAnimator!
+    var headerImage:UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         // Setup cell
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 3
+        self.layer.borderColor = UIColor.gray.cgColor
+        self.layer.borderWidth = 0.5
         self.layer.cornerRadius = 5
+        self.clipsToBounds = true
         self.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        self.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         
         // Setup Label.
         self.translatesAutoresizingMaskIntoConstraints = false
         titleLabel = UILabel()
+        titleLabel.textColor = UIColor.white
+        titleLabel.textAlignment = .natural
         self.addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        titleLabel.text = "Test"
+       
         
+        // Autolayout.
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+
+        // Setup Image.
+        headerImage = UIImageView()
+        self.addSubview(headerImage)
+        
+        // Autolayout
+        headerImage.translatesAutoresizingMaskIntoConstraints = false
+        headerImage.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        headerImage.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.8).isActive = true
+        headerImage.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        headerImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        
+        // Properties
+        headerImage.image = #imageLiteral(resourceName: "Generic Image")
+        headerImage.clipsToBounds = true
+        headerImage.contentMode = UIViewContentMode.scaleAspectFill
+        headerImage.setNeedsDisplay()
     }
     
     required init?(coder aDecoder: NSCoder) {
