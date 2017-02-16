@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */; };
+		D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04788B51E5535A200158D49 /* SessionsViewController.swift */; };
+		D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */; };
 		D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */; };
 		D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082354E1E526D8A0043FF04 /* AppDelegate.swift */; };
 		D08235511E526D8A0043FF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235501E526D8A0043FF04 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-02-15 at 6.29.27 PM.png"; sourceTree = "<group>"; };
+		D04788B51E5535A200158D49 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
 		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		D082354B1E526D8A0043FF04 /* Conference Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conference Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082354E1E526D8A0043FF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,11 +111,13 @@
 			children = (
 				D082354E1E526D8A0043FF04 /* AppDelegate.swift */,
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
+				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
 				D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */,
 				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
 				D08235801E526FE80043FF04 /* info.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
 				D08235551E526D8A0043FF04 /* Assets.xcassets */,
+				D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */,
 				D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */,
 				D08235571E526D8A0043FF04 /* LaunchScreen.storyboard */,
 				D082355A1E526D8A0043FF04 /* Info.plist */,
@@ -252,6 +258,7 @@
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
+				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
 				D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,

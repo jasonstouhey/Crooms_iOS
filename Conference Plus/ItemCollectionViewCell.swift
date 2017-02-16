@@ -73,7 +73,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         
         
         squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
-            let scale = self.transform.scaledBy(x: 1.5, y: 1.5)
+            let scale = self.transform.scaledBy(x: 0.8, y: 0.8)
             
             let rotate = self.transform.rotated(by: 0.3)
             self.transform.concatenating(rotate)

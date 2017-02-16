@@ -25,10 +25,11 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         UIApplication.shared.statusBarStyle = .lightContent
         collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
-        collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 0, right: 10)
+        collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
         
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: collectionViewLayout)
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(ItemCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         
         // Collection View Background
@@ -71,6 +72,14 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
                
         // Cell Customization
         return cell
+        
+    }
+    
+    // MARK: - Collection View Delegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        
+        self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
         
     }
     
