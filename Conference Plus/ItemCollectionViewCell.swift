@@ -24,6 +24,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.layer.borderColor = UIColor.gray.cgColor
         self.layer.borderWidth = 0.5
         self.layer.cornerRadius = 5
+        self.layer.masksToBounds = true
         self.clipsToBounds = true
         self.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         self.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
