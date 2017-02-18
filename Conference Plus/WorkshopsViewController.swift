@@ -22,7 +22,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
 
         // Setup the collection view.
         collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 90)
+        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
         workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewLayout)
         workshopCollectionView.translatesAutoresizingMaskIntoConstraints = false
         workshopCollectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -39,7 +39,12 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
         workshopCollectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         workshopCollectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
+        // Shadow
+        workshopCollectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        workshopCollectionView.layer.shadowRadius = 10
+        workshopCollectionView.layer.shadowOpacity = 0.5
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
