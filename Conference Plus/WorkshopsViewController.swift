@@ -22,7 +22,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
 
         // Setup the collection view.
         collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.itemSize = CGSize(width: 90, height: 90)
+        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 90)
         workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewLayout)
         workshopCollectionView.translatesAutoresizingMaskIntoConstraints = false
         workshopCollectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -36,6 +36,8 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
         // Collection View Layout.
         workshopCollectionView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1).isActive = true
         workshopCollectionView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 1).isActive = true
+        workshopCollectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        workshopCollectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
     }
 
