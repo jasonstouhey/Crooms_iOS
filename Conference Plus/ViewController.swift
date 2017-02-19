@@ -78,9 +78,17 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // MARK: - Collection View Delegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        
-        self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
-        
+
+        switch indexPath.row {
+        case 2:
+            self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
+
+        default:
+            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+
+
+        }
+
     }
     
     

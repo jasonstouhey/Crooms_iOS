@@ -19,12 +19,14 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         btn1.setImage(#imageLiteral(resourceName: "btn1selected"), for: .normal)
         btn2.setImage(#imageLiteral(resourceName: "btn2"), for: .normal)
         imageView.image = #imageLiteral(resourceName: "map1")
+        self.scrollView.setZoomScale(1.0, animated: false)
     }
 
     @IBAction func btn2Function(_ sender: UIButton) {
         btn2.setImage(#imageLiteral(resourceName: "btn2selected"), for: .normal)
         btn1.setImage(#imageLiteral(resourceName: "btn1"), for: .normal)
         imageView.image = #imageLiteral(resourceName: "map2")
+        self.scrollView.setZoomScale(1.0, animated: false)
     }
 
     override func viewDidLoad() {

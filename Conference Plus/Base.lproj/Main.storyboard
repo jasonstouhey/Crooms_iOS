@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="881" y="184"/>
         </scene>
-        <!--Map-->
+        <!--Maps-->
         <scene sceneID="z3h-Mn-N6H">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="Rvh-8i-YSO" customClass="MapViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Maps" id="Rvh-8i-YSO" customClass="MapViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tdE-E9-VCI"/>
                         <viewControllerLayoutGuide type="bottom" id="kQ0-lZ-nay"/>
@@ -180,7 +180,7 @@
                             <constraint firstItem="HER-yB-FD4" firstAttribute="centerY" secondItem="3Cj-ni-vmH" secondAttribute="centerY" id="t87-ch-Jo3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="PIw-EL-nxY"/>
+                    <navigationItem key="navigationItem" title="Maps" id="PIw-EL-nxY"/>
                     <connections>
                         <outlet property="btn1" destination="AfR-TD-GYZ" id="zwK-5q-taV"/>
                         <outlet property="btn2" destination="jME-hu-I2l" id="gAA-Bg-zyG"/>
