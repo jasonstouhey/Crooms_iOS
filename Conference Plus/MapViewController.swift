@@ -8,12 +8,38 @@
 
 import UIKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UIScrollViewDelegate {
+
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+
+    @IBAction func btn1Function(_ sender: UIButton) {
+        btn1.setImage(#imageLiteral(resourceName: "btn1selected"), for: .normal)
+        btn2.setImage(#imageLiteral(resourceName: "btn2"), for: .normal)
+        imageView.image = #imageLiteral(resourceName: "map1")
+    }
+
+    @IBAction func btn2Function(_ sender: UIButton) {
+        btn2.setImage(#imageLiteral(resourceName: "btn2selected"), for: .normal)
+        btn1.setImage(#imageLiteral(resourceName: "btn1"), for: .normal)
+        imageView.image = #imageLiteral(resourceName: "map2")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 6.0
+
+
+    }
+
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imageView
     }
 
     override func didReceiveMemoryWarning() {

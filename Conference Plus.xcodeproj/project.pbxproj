@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A126771E58908400096B77 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A126761E58908400096B77 /* MapViewController.swift */; };
 		D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */; };
 		D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04788B51E5535A200158D49 /* SessionsViewController.swift */; };
 		D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A126761E58908400096B77 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-02-15 at 6.29.27 PM.png"; sourceTree = "<group>"; };
 		D04788B51E5535A200158D49 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
 				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
 				D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */,
+				13A126761E58908400096B77 /* MapViewController.swift */,
 				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
 				D08235801E526FE80043FF04 /* info.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
+				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
 				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
 				D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,

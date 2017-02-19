@@ -85,5 +85,117 @@
             </objects>
             <point key="canvasLocation" x="1728.8" y="-546.47676161919048"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5SI-rV-Hve">
+            <objects>
+                <navigationController id="H7h-3u-64t" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s70-tY-mfq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rvh-8i-YSO" kind="relationship" relationship="rootViewController" id="W40-ba-G5h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeG-Xk-a7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="184"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="z3h-Mn-N6H">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="Rvh-8i-YSO" customClass="MapViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tdE-E9-VCI"/>
+                        <viewControllerLayoutGuide type="bottom" id="kQ0-lZ-nay"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Cj-ni-vmH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HER-yB-FD4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="540"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="map1" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-yV-ZhS">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="540"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="leading" secondItem="HER-yB-FD4" secondAttribute="leading" id="FQ4-zN-Giy"/>
+                                    <constraint firstAttribute="bottom" secondItem="x2T-yV-ZhS" secondAttribute="bottom" id="Ubn-7Y-ee2"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerX" secondItem="HER-yB-FD4" secondAttribute="centerX" id="anY-Mq-2mS"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2T-yV-ZhS" secondAttribute="trailing" id="dvM-80-jl3"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerY" secondItem="HER-yB-FD4" secondAttribute="centerY" id="iAK-hD-0Ko"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="top" secondItem="HER-yB-FD4" secondAttribute="top" id="yPW-w9-tss"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Rvh-8i-YSO" id="A3y-XV-XQI"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMv-ZS-UVt">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfR-TD-GYZ">
+                                        <rect key="frame" x="88" y="11" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Cca-Lv-4rZ"/>
+                                        </constraints>
+                                        <state key="normal" image="btn1"/>
+                                        <connections>
+                                            <action selector="btn1Function:" destination="Rvh-8i-YSO" eventType="touchUpInside" id="OaX-UF-8CH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jME-hu-I2l">
+                                        <rect key="frame" x="246" y="11" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="baL-Az-hFv"/>
+                                        </constraints>
+                                        <state key="normal" image="btn2"/>
+                                        <connections>
+                                            <action selector="btn1Function:" destination="Rvh-8i-YSO" eventType="touchUpInside" id="7rV-VG-Pyl"/>
+                                            <action selector="btn2Function:" destination="Rvh-8i-YSO" eventType="touchUpInside" id="vW5-xz-ThC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AfR-TD-GYZ" firstAttribute="top" secondItem="jME-hu-I2l" secondAttribute="top" id="C8a-vi-xpP"/>
+                                    <constraint firstItem="AfR-TD-GYZ" firstAttribute="centerY" secondItem="tMv-ZS-UVt" secondAttribute="centerY" id="K8U-vl-MGL"/>
+                                    <constraint firstAttribute="trailing" secondItem="jME-hu-I2l" secondAttribute="trailing" constant="89" id="N0S-4a-yBT"/>
+                                    <constraint firstItem="AfR-TD-GYZ" firstAttribute="top" secondItem="tMv-ZS-UVt" secondAttribute="top" constant="11" id="dIa-WR-bIV"/>
+                                    <constraint firstItem="AfR-TD-GYZ" firstAttribute="bottom" secondItem="jME-hu-I2l" secondAttribute="bottom" id="fFI-cs-SA8"/>
+                                    <constraint firstItem="AfR-TD-GYZ" firstAttribute="leading" secondItem="tMv-ZS-UVt" secondAttribute="leading" constant="88" id="mH4-FP-bHB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tMv-ZS-UVt" firstAttribute="bottom" secondItem="kQ0-lZ-nay" secondAttribute="top" id="2Ou-CA-flp"/>
+                            <constraint firstAttribute="trailing" secondItem="HER-yB-FD4" secondAttribute="trailing" id="8YB-lJ-pBN"/>
+                            <constraint firstItem="tMv-ZS-UVt" firstAttribute="top" secondItem="HER-yB-FD4" secondAttribute="bottom" constant="1" id="FIh-Pc-hnX"/>
+                            <constraint firstItem="HER-yB-FD4" firstAttribute="top" secondItem="tdE-E9-VCI" secondAttribute="bottom" id="HyW-Om-SmJ"/>
+                            <constraint firstItem="HER-yB-FD4" firstAttribute="leading" secondItem="3Cj-ni-vmH" secondAttribute="leading" id="ONR-Lm-AF8"/>
+                            <constraint firstItem="HER-yB-FD4" firstAttribute="trailing" secondItem="tMv-ZS-UVt" secondAttribute="trailing" id="l9l-hh-vKv"/>
+                            <constraint firstItem="HER-yB-FD4" firstAttribute="leading" secondItem="tMv-ZS-UVt" secondAttribute="leading" id="mQm-ZS-Nsn"/>
+                            <constraint firstItem="HER-yB-FD4" firstAttribute="centerY" secondItem="3Cj-ni-vmH" secondAttribute="centerY" id="t87-ch-Jo3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="PIw-EL-nxY"/>
+                    <connections>
+                        <outlet property="btn1" destination="AfR-TD-GYZ" id="zwK-5q-taV"/>
+                        <outlet property="btn2" destination="jME-hu-I2l" id="gAA-Bg-zyG"/>
+                        <outlet property="imageView" destination="x2T-yV-ZhS" id="YqG-CB-i2p"/>
+                        <outlet property="scrollView" destination="HER-yB-FD4" id="OTR-hm-PDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyc-EO-4Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="183.95802098950526"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="btn1" width="400" height="400"/>
+        <image name="btn2" width="400" height="400"/>
+        <image name="map1" width="1080" height="1920"/>
+    </resources>
 </document>
