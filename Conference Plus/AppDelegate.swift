@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white,NSFontAttributeName: UIFont.systemFont(ofSize: 24, weight: UIFontWeightThin)]
 
-        // Change Status bar color.
+        // Changes the navigation bar style so that the Status bar will be white
         UINavigationBar.appearance().barStyle = .blackOpaque
         
         return true
