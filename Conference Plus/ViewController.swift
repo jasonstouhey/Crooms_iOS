@@ -79,7 +79,13 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         
-        self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+        switch indexPath.row {
+        case 1:
+            self.show(storyboard?.instantiateViewController(withIdentifier: "workshops") as! WorkshopsViewController, sender: nil)
+        default:
+            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+        }
+        
         
     }
     
