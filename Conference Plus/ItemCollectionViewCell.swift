@@ -57,7 +57,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         headerImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         
         // Properties
-        headerImage.image = #imageLiteral(resourceName: "Generic Image")
+        headerImage.image = #imageLiteral(resourceName: "Tech Image")
         headerImage.clipsToBounds = true
         headerImage.contentMode = UIViewContentMode.scaleAspectFill
         headerImage.setNeedsDisplay()
