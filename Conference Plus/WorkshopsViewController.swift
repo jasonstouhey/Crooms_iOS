@@ -48,7 +48,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated
     }
     
     // MARK: - Collection View Data Source
