@@ -91,11 +91,5 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
     }
     
-    
-    
-
-    
-    
-
 }
 

@@ -17,6 +17,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var buttonView: UIView!
 
     @IBAction func btn1Function(_ sender: UIButton) {
+
+        // Handles a press of button 1 by changing the map image and the button image
+
         btn1.setImage(#imageLiteral(resourceName: "btn1selected"), for: .normal)
         btn2.setImage(#imageLiteral(resourceName: "btn2"), for: .normal)
         imageView.image = #imageLiteral(resourceName: "map1")
@@ -24,6 +27,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     }
 
     @IBAction func btn2Function(_ sender: UIButton) {
+
+        // Handles a press of button 2 by changing the map image and the button image
+
         btn2.setImage(#imageLiteral(resourceName: "btn2selected"), for: .normal)
         btn1.setImage(#imageLiteral(resourceName: "btn1"), for: .normal)
         imageView.image = #imageLiteral(resourceName: "map2")
@@ -36,7 +42,6 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
 
         let lighterGray: UIColor = UIColor(red: 197/255, green: 200/255, blue: 209/255, alpha: 1)
-
         self.scrollView.minimumZoomScale = 1.0
         self.scrollView.maximumZoomScale = 6.0
         buttonView.layer.borderColor = lighterGray.cgColor
@@ -50,6 +55,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+
+        // Allows the scroll view to be scaled
+
         return self.imageView
     }
 
