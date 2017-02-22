@@ -72,7 +72,6 @@ class ItemCollectionViewCell: UICollectionViewCell {
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         
-        
         squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
             let scale = self.transform.scaledBy(x: 0.8, y: 0.8)
             
@@ -91,8 +90,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        
-        
+
         squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
             self.transform = CGAffineTransform.identity
         })
@@ -107,20 +105,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
 
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesCancelled(touches, with: event)
-
-
-
-        squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
-            self.transform = CGAffineTransform.identity
-        })
-
-        squishAnimation.stopAnimation(true)
-
-        squishAnimation.startAnimation()
-
-
-        self.next?.touchesEnded(touches, with: event)
+        touchesEnded(touches, with: event)
     }
     
 }

@@ -117,18 +117,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     }
 
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesCancelled(touches, with: event)
-
-        squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
-            self.transform = CGAffineTransform.identity
-        })
-
-        squishAnimation.stopAnimation(true)
-
-        squishAnimation.startAnimation()
-
-
-        self.next?.touchesEnded(touches, with: event)
+        touchesEnded(touches, with: event)
     }
     
 }

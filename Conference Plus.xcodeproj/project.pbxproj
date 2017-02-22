@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13027A6B1E5CC70E001FA63E /* WorkshopsXCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */; };
 		13A126771E58908400096B77 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A126761E58908400096B77 /* MapViewController.swift */; };
 		D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */; };
 		D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsXCViewController.swift; sourceTree = "<group>"; };
 		13A126761E58908400096B77 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsViewController.swift; sourceTree = "<group>"; };
 		D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
 				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
 				D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */,
+				13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,
 				D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */,
+				13027A6B1E5CC70E001FA63E /* WorkshopsXCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
