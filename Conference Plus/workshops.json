@@ -1,0 +1,83 @@
+{
+  "sessions": [
+    {
+      "sessionStartTime": "8:00",
+      "sessionEndTime": "8:40",
+      "sessionNumber": 1,
+      "presentations": [
+        {
+          "gradeLevels": [
+            10
+          ],
+          "workshops": [
+            {
+              "room": "230",
+              "presenter": [
+                "Michelle Jewett",
+                "Jennifer Gama"
+              ],
+              "business": "SafeHouse",
+              "presenterPhoto": ".jpg",
+              "title": "How to Have Healthy Relationships"
+            },
+            {
+              "room": "115",
+              "presenter": [
+                "Tim Parsons"
+              ],
+              "business": "",
+              "presenterPhoto": ".jpg",
+              "title": "Virtual Reality: A New World"
+            },
+            {
+              "room": "115",
+              "presenter": [
+                "Tim Parsons"
+              ],
+              "business": "",
+              "presenterPhoto": ".jpg",
+              "title": "Virtual Reality: A New World"
+            },
+            {
+              "room": "213",
+              "presenter": [
+                "David Sushil",
+                "Bad Pilcrow"
+              ],
+              "business": "",
+              "presenterPhoto": ".jpg",
+              "title": "Augmented Reality Game Development"
+            },
+            {
+              "room": "115",
+              "presenter": [
+                "Biance Gillett"
+              ],
+              "business": "Sanford Police Department",
+              "presenterPhoto": ".jpg",
+              "title": "Law Enforcement and Social Meidia"
+            },
+            {
+              "room": "204",
+              "presenter": [
+                "David Morillo"
+              ],
+              "business": "Full Sail Labs",
+              "presenterPhoto": ".jpg",
+              "title": "Video Resume"
+            },
+            {
+              "room": "226",
+              "presenter": [
+                "Lee Mangold"
+              ],
+              "business": "Florida Cyber Alliance",
+              "presenterPhoto": ".jpg",
+              "title": "Introduction to Cyber Security and Hacking"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
