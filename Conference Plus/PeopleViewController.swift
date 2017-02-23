@@ -13,6 +13,7 @@ class PeopleViewController: UIViewController, UITableViewDataSource {
     // MARK: - Class Variables
     
     var peopleTableview:UITableView!
+    var peopleDict:Dictionary<String,[String:String]>!
     
 
     override func viewDidLoad() {
