@@ -17,11 +17,16 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var headerImageView:UIImageView!
     var squishAnimation:UIViewPropertyAnimator!
     var descriptionTextView:UITextView!
+    var showMoreButton:UIButton!
+    var isExpanded:Bool = false
+    var delegate:WorkshopsViewController?
+    var indexPath:IndexPath!
     
     // MARK: - Initialization
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         
         // Setup Cell.
         self.layer.borderColor = UIColor.gray.cgColor
@@ -75,6 +80,43 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         descriptionTextView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4).isActive = true
         descriptionTextView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         descriptionTextView.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget dignissim lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut orci ligula, auctor sed lorem in, mollis sodales risus. Aenean nec urna eget felis vulputate scelerisque. Curabitur mattis pharetra ex at ullamcorper. Curabitur dignissim ultrices erat nec faucibus. Nulla facilisi. Nullam ullamcorper bibendum enim, non placerat dolor dictum id. Aliquam consectetur maximus malesuada. In luctus ante eu faucibus ultricies.rProin orci velit, vestibulum sit amet metus nec, gravida luctus purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida consequat dignissim. Duis fermentum gravida maximus. Sed condimentum cursus turpis ac finibus. Sed a magna ullamcorper, condimentum mauris eget, tempus tortor. Morbi pellentesque vel mauris quis ultrices."
+        
+        // Setup button
+        showMoreButton = UIButton()
+        showMoreButton.translatesAutoresizingMaskIntoConstraints = false
+        showMoreButton.addTarget(self, action: #selector(WorkshopCollectionViewCell.showMore), for: .touchUpInside)
+        showMoreButton.setTitleColor(UIColor.white, for: .normal)
+        showMoreButton.setTitle("Buttom", for: .normal)
+        
+        self.addSubview(showMoreButton)
+        
+        // Button Autolayout.
+        showMoreButton.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        showMoreButton.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        showMoreButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+        showMoreButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        
+        // Cell Autolayout.
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+    }
+    
+    func showMore(){
+        
+        print("Button Hit")
+        if self.isExpanded == false{
+            self.isExpanded = true
+        }else if self.isExpanded == true{
+            self.isExpanded = false
+        }
+        
+        delegate?.cellSizeChanged(indexPath:indexPath)
+        print(self.frame)
+        
+                
+        
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

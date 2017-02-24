@@ -8,12 +8,12 @@
 
 import UIKit
 
-class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
+class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Class Variables
     
     var workshopCollectionView:UICollectionView!
-    var collectionViewLayout:UICollectionViewFlowLayout!
+    var collectionViewFlowLayout:UICollectionViewFlowLayout!
 
     // MARK: - Lifecycle
     
@@ -21,14 +21,15 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         // Setup the collection view.
-        collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
-        workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewLayout)
+        collectionViewFlowLayout = UICollectionViewFlowLayout()
+        collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
+        workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewFlowLayout)
         workshopCollectionView.translatesAutoresizingMaskIntoConstraints = false
         workshopCollectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         self.view.addSubview(workshopCollectionView)
         
         workshopCollectionView.dataSource = self
+        workshopCollectionView.delegate = self
         workshopCollectionView.register(WorkshopCollectionViewCell.self, forCellWithReuseIdentifier: "workshopCell")
         
         workshopCollectionView.backgroundColor = UIColor.clear
@@ -43,6 +44,9 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
         workshopCollectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         workshopCollectionView.layer.shadowRadius = 10
         workshopCollectionView.layer.shadowOpacity = 0.5
+        
+        
+        
     }
     
 
@@ -50,6 +54,15 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated
     }
+    
+    @IBAction func refresh(_ sender: Any) {
+        
+        
+        
+        
+        
+    }
+   
     
     // MARK: - Collection View Data Source
     
@@ -62,7 +75,50 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "workshopCell", for: indexPath) as! WorkshopCollectionViewCell
         
+        cell.delegate = self
+        cell.indexPath = indexPath
+        
         return cell
+    }
+    
+    func cellSizeChanged(indexPath:IndexPath!){
+        
+        print( workshopCollectionView.cellForItem(at: indexPath))
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            self.collectionViewFlowLayout.invalidateLayout()
+            self.workshopCollectionView.layoutIfNeeded()
+            self.workshopCollectionView.updateConstraints()
+            
+        })
+        
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+        
+        
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! WorkshopCollectionViewCell?
+                
+        if cell != nil{
+            
+            if cell?.isExpanded == true{
+                
+                return CGSize(width: self.view.frame.width * 0.9, height: 250)
+            }else{
+                return CGSize(width: self.view.frame.width * 0.9, height: 100)
+            }
+            
+        }
+                
+            
+            
+            
+        
+        
+        return CGSize(width: self.view.frame.width * 0.9, height: 100)
+        
     }
     
     
