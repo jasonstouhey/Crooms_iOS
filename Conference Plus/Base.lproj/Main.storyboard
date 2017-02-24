@@ -136,17 +136,17 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="540"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-yV-ZhS">
-                                        <rect key="frame" x="25" y="-33" width="325" height="467"/>
+                                        <rect key="frame" x="11" y="-47" width="352" height="508"/>
                                     </imageView>
                                 </subviews>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
-                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="leading" secondItem="HER-yB-FD4" secondAttribute="leading" constant="25" id="FQ4-zN-Giy"/>
-                                    <constraint firstAttribute="bottom" secondItem="x2T-yV-ZhS" secondAttribute="bottom" constant="106" id="Ubn-7Y-ee2"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="leading" secondItem="HER-yB-FD4" secondAttribute="leading" constant="11" id="FQ4-zN-Giy"/>
+                                    <constraint firstAttribute="bottom" secondItem="x2T-yV-ZhS" secondAttribute="bottom" constant="79" id="Ubn-7Y-ee2"/>
                                     <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerX" secondItem="HER-yB-FD4" secondAttribute="centerX" id="anY-Mq-2mS"/>
-                                    <constraint firstAttribute="trailing" secondItem="x2T-yV-ZhS" secondAttribute="trailing" constant="25" id="dvM-80-jl3"/>
-                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerY" secondItem="HER-yB-FD4" secondAttribute="centerY" constant="-69.5" id="iAK-hD-0Ko"/>
-                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="top" secondItem="HER-yB-FD4" secondAttribute="top" constant="-33" id="yPW-w9-tss"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2T-yV-ZhS" secondAttribute="trailing" constant="12" id="dvM-80-jl3"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerY" secondItem="HER-yB-FD4" secondAttribute="centerY" constant="-63" id="iAK-hD-0Ko"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="top" secondItem="HER-yB-FD4" secondAttribute="top" constant="-47" id="yPW-w9-tss"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="Rvh-8i-YSO" id="A3y-XV-XQI"/>
@@ -219,7 +219,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Gk2-9i-rTs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VXF-sK-V7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="FdL-8Y-Xlx" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RDh-qy-lyV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -229,10 +228,11 @@
                         <segue destination="2vX-sq-YKm" kind="relationship" relationship="rootViewController" id="CPN-yi-F4M"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXF-sK-V7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2670" y="184"/>
         </scene>
-        <!--WorkshopsXC View Controller-->
+        <!--Name-->
         <scene sceneID="Qg4-B9-ye9">
             <objects>
                 <viewController storyboardIdentifier="Workshop XC" id="2vX-sq-YKm" customClass="WorkshopsXCViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
@@ -279,7 +279,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uaj-w8-pcw"/>
+                    <navigationItem key="navigationItem" title="Name" id="uaj-w8-pcw"/>
                     <connections>
                         <outlet property="descrip" destination="neL-fT-70p" id="HtI-j7-LRh"/>
                         <outlet property="imageView" destination="MWj-K4-8HF" id="ESI-kr-8IC"/>

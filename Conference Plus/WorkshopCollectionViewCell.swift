@@ -17,6 +17,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var headerImageView:UIImageView!
     var squishAnimation:UIViewPropertyAnimator!
     var descriptionTextView:UITextView!
+    var fileParser: JKJSONFile? = JKJSONFile.init(fileName: "workshops.json")
     
     // MARK: - Initialization
     
