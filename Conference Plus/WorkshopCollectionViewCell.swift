@@ -22,6 +22,8 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var delegate:WorkshopsViewController?
     var indexPath:IndexPath!
     var imageTopAnchor:NSLayoutConstraint!
+    var fileParser: JKJSONFile? = JKJSONFile.init(fileName: "workshops.json")
+
     
     // MARK: - Initialization
     
@@ -144,8 +146,7 @@ print(self.frame)
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        
-        
+
         squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
             let scale = self.transform.scaledBy(x: 0.8, y: 0.8)
             
@@ -164,8 +165,7 @@ print(self.frame)
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        
-        
+
         squishAnimation = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 30, animations: {
             self.transform = CGAffineTransform.identity
         })
@@ -179,5 +179,8 @@ print(self.frame)
         
     }
 
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        touchesEnded(touches, with: event)
+    }
     
 }

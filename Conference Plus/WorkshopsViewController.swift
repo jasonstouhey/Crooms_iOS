@@ -81,6 +81,11 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Workshops Expanded") as! WorkshopsXCViewController
+
+    }
     
     func cellSizeChanged(indexPath:IndexPath!){
         

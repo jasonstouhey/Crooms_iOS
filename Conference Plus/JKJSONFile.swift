@@ -18,7 +18,6 @@ public class JKJSONFile: NSObject {
     let fileManager = FileManager.default
     var fileAtPath = String()
     
-    
     /// Initialize using the filename of the JSON file.
     required public init(fileName:String){
         super.init()
