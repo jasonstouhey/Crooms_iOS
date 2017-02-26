@@ -24,6 +24,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         collectionViewFlowLayout = UICollectionViewFlowLayout()
         collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
         workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewFlowLayout)
+        
         workshopCollectionView.translatesAutoresizingMaskIntoConstraints = false
         workshopCollectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         self.view.addSubview(workshopCollectionView)
@@ -102,9 +103,14 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         let cell = collectionView.cellForItem(at: indexPath) as! WorkshopCollectionViewCell?
                 
         if cell != nil{
+            cell?.updateConstraints()
+            cell?.setNeedsLayout()
+            cell?.setNeedsDisplay()
             
+            
+            print(cell?.frame)
             if cell?.isExpanded == true{
-                
+                cell?.backgroundColor = UIColor.red
                 return CGSize(width: self.view.frame.width * 0.9, height: 250)
             }else{
                 return CGSize(width: self.view.frame.width * 0.9, height: 100)

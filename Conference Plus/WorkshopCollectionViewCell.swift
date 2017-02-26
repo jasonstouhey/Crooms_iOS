@@ -21,6 +21,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var isExpanded:Bool = false
     var delegate:WorkshopsViewController?
     var indexPath:IndexPath!
+    var imageTopAnchor:NSLayoutConstraint!
     
     // MARK: - Initialization
     
@@ -61,7 +62,9 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         // Image View Autolayout.
         headerImageView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4).isActive = true
         headerImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        headerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0.2 * self.frame.height).isActive = true
+        imageTopAnchor = headerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0.2 * self.frame.height)
+        imageTopAnchor.isActive = true
+        headerImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         headerImageView.image = #imageLiteral(resourceName: "project-newton-oakhill-interior.jpg")
         headerImageView.clipsToBounds = true
         headerImageView.contentMode = UIViewContentMode.scaleAspectFill
@@ -104,14 +107,30 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     func showMore(){
         
         print("Button Hit")
+        
+       
+       
+                self.setNeedsLayout()
+        self.setNeedsDisplay()
+print(self.frame)
+        
         if self.isExpanded == false{
+             self.frame.size = CGSize(width: self.frame.width, height: 250)
+            imageTopAnchor.isActive = false
+            imageTopAnchor = headerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.width * 0.15)
+            imageTopAnchor.isActive = true
             self.isExpanded = true
         }else if self.isExpanded == true{
+            self.frame.size = CGSize(width: self.frame.width, height: 100)
+            imageTopAnchor.isActive = false
+            imageTopAnchor = headerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.width * 0.05)
             self.isExpanded = false
         }
         
         delegate?.cellSizeChanged(indexPath:indexPath)
-        print(self.frame)
+        self.setNeedsLayout()
+        self.setNeedsDisplay()
+        
         
                 
         
