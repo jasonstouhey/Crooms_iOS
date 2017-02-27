@@ -15,11 +15,13 @@ class WorkshopsXCViewController: UIViewController {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var descrip: UILabel!
+    @IBOutlet weak var navTitle: UINavigationItem!
 
     func viewActuallyDidLoad(strName: String, strStartTime: String, strEndTime: String, strLocation: String, strDescription: String) {
         name.text = strName
-        time.text = strStartTime + " - " + strEndTime
+        time.text = strStartTime + " to " + strEndTime
         location.text = strLocation
+        navTitle.title = strName
     }
 
     override func viewDidLoad() {

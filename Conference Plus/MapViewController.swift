@@ -24,6 +24,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         btn2.setImage(#imageLiteral(resourceName: "btn2"), for: .normal)
         imageView.image = #imageLiteral(resourceName: "map1")
         self.scrollView.setZoomScale(1.0, animated: false)
+        setSize()
     }
 
     @IBAction func btn2Function(_ sender: UIButton) {
@@ -34,6 +35,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         btn1.setImage(#imageLiteral(resourceName: "btn1"), for: .normal)
         imageView.image = #imageLiteral(resourceName: "map2")
         self.scrollView.setZoomScale(1.0, animated: false)
+        setSize()
     }
 
     override func viewDidLoad() {
@@ -52,6 +54,14 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.setZoomScale(1.0, animated: false)
 
 
+    }
+
+    func setSize() {
+        var contentRect = CGRect.zero
+        for view in self.scrollView.subviews {
+            contentRect = contentRect.union(view.frame)
+        }
+        self.scrollView.contentSize = contentRect.size
     }
 
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {

@@ -136,17 +136,17 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="540"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-yV-ZhS">
-                                        <rect key="frame" x="11" y="-47" width="352" height="508"/>
+                                        <rect key="frame" x="0.0" y="-63" width="375" height="540"/>
                                     </imageView>
                                 </subviews>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
-                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="leading" secondItem="HER-yB-FD4" secondAttribute="leading" constant="11" id="FQ4-zN-Giy"/>
-                                    <constraint firstAttribute="bottom" secondItem="x2T-yV-ZhS" secondAttribute="bottom" constant="79" id="Ubn-7Y-ee2"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="leading" secondItem="HER-yB-FD4" secondAttribute="leading" id="FQ4-zN-Giy"/>
+                                    <constraint firstAttribute="bottom" secondItem="x2T-yV-ZhS" secondAttribute="bottom" constant="63" id="Ubn-7Y-ee2"/>
                                     <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerX" secondItem="HER-yB-FD4" secondAttribute="centerX" id="anY-Mq-2mS"/>
-                                    <constraint firstAttribute="trailing" secondItem="x2T-yV-ZhS" secondAttribute="trailing" constant="12" id="dvM-80-jl3"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2T-yV-ZhS" secondAttribute="trailing" id="dvM-80-jl3"/>
                                     <constraint firstItem="x2T-yV-ZhS" firstAttribute="centerY" secondItem="HER-yB-FD4" secondAttribute="centerY" constant="-63" id="iAK-hD-0Ko"/>
-                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="top" secondItem="HER-yB-FD4" secondAttribute="top" constant="-47" id="yPW-w9-tss"/>
+                                    <constraint firstItem="x2T-yV-ZhS" firstAttribute="top" secondItem="HER-yB-FD4" secondAttribute="top" constant="-63" id="yPW-w9-tss"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="Rvh-8i-YSO" id="A3y-XV-XQI"/>
@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="2670" y="184"/>
         </scene>
-        <!--Name-->
+        <!--Expanded Workshop-->
         <scene sceneID="Qg4-B9-ye9">
             <objects>
                 <viewController storyboardIdentifier="Workshop XC" id="2vX-sq-YKm" customClass="WorkshopsXCViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
@@ -269,22 +269,19 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neL-fT-70p">
-                                <rect key="frame" x="16" y="376" width="343" height="24"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-VM-TgT">
+                                <rect key="frame" x="16" y="383" width="153" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Name" id="uaj-w8-pcw"/>
+                    <navigationItem key="navigationItem" title="Expanded Workshop" id="uaj-w8-pcw"/>
                     <connections>
-                        <outlet property="descrip" destination="neL-fT-70p" id="HtI-j7-LRh"/>
                         <outlet property="imageView" destination="MWj-K4-8HF" id="ESI-kr-8IC"/>
                         <outlet property="location" destination="TrH-rQ-dav" id="xlc-fg-Ety"/>
                         <outlet property="name" destination="tdn-kU-PXi" id="Dgq-XX-ILA"/>
+                        <outlet property="navTitle" destination="uaj-w8-pcw" id="M5s-NT-XkJ"/>
                         <outlet property="time" destination="O3s-0O-Qs0" id="lKV-by-DLd"/>
                     </connections>
                 </viewController>
