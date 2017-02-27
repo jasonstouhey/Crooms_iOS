@@ -61,7 +61,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Workshops" id="mO2-5s-4Lw"/>
+                    <navigationItem key="navigationItem" title="Workshops" id="mO2-5s-4Lw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mUC-h9-4id">
+                            <connections>
+                                <action selector="refresh:" destination="mc9-Zd-ds6" id="iKa-Rg-T4Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlP-bA-Mn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,6 +223,7 @@
             <point key="canvasLocation" x="1728.8" y="183.95802098950526"/>
         </scene>
         <!--Navigation Controller-->
+
         <scene sceneID="Gk2-9i-rTs">
             <objects>
                 <navigationController id="FdL-8Y-Xlx" sceneMemberID="viewController">
