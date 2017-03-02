@@ -83,7 +83,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Workshops Expanded") as! WorkshopsXCViewController
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "Workshops Expanded") as! WorkshopsXCViewController
 
     }
     
