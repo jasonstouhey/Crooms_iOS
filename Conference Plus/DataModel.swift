@@ -56,8 +56,8 @@ class DataModel: NSObject {
         
         get {
             
-            let fileDict = parseJSON() as! Dictionary<String,AnyObject>
-            return fileDict[itemName] as! Any?
+            let fileDict = parseJSON() as! Array<Any>
+            return fileDict
         }
         set(newValue) {
             

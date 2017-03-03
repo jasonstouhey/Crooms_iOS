@@ -68,7 +68,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     // MARK: - Collection View Data Source
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 15
+        return appDelegate.dataModel.workshops.count
     }
     
     

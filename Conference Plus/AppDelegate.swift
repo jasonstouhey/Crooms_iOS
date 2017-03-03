@@ -44,18 +44,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         dataModel = DataModel()
         var presentation = (dataModel["sessions"] as! Array<Dictionary<String, Any>>)
-        var workshop = ((presentation[0]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
         
-        
-        for item in 0...workshop.count - 1{
-            
-            print(item)
+        for tooItem in 0...presentation.count - 1{
+            let workshop = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
             
             
-            dataModel.workshops.append(["Set \(item)" : ((presentation[0]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item]])
-           
             
+            
+            for item in 0...workshop.count - 1{
+                
+                print(item)
+                
+                
+                dataModel.workshops.append(["Set \(item)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item]])
+                
+                
+            }
+
         }
+        
         
         print(dataModel.workshops)
         
