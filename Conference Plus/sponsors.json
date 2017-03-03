@@ -1,156 +1,130 @@
-{
-  "sponsors": [
-    {
-      "level": 0,
-      "levelName": "Community Support",
-      "sponsor": [
-        {
-          "sponsorName": "DiSTI Corporation",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Kavaliro",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Maxine's on the Shine",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "The Almond Family",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "The Alper Family",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "The Atkins Famil",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "The Faison Family",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "The Merrill-Cain Family",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "The Sign Man",
-          "sponsorLogo": ""
-        }
-      ]
-    },
-    {
-      "level": 1,
-      "levelName": "Freshman Sponsor",
-      "sponsor": [
-        {
-          "sponsorName": "Astronics Test Systems",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Certiport, a Pearson VUE Business",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Convergys Corporation",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "DeVry University",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Electronic Arts",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Embry-Riddle Aeronautical University",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Full Sail University",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Greyson Technologies",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Keiser University",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Microsoft",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "RLH Consulting & Management, Inc. ",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Florida S.P.E.C.S., Inc.",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Seminole State Colllege",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Siemens Energy, Inc.",
-          "sponsorLogo": ""
-        },
-        {
-          "sponsorName": "Troy University",
-          "sponsorLogo": ""
-        }
-      ]
-    },
-    {
-      "level": 2,
-      "levelName": "Sophomore Sponsor",
-      "sponsor": [
-      	{
-      		"sponsorName": "Marines",
-      		"sponsorLogo": "Marines.png"
-      	},
-      	{
-      		"sponsorName": "Mech-Tech Institute",
-      		"sponsorLogo": "Mech-TechInstitute.png"
-      	},
-      	{
-      		"sponsorName": "AAA",
-      		"sponsorLogo": "AAA.png"
-      	},
-      	{
-      		"sponsorName": "National Center For Simulation",
-      		"sponsorLogo": "NationalCenterForSimulation.png"
-      	},
-      	{
-      		"sponsorName": "Lockheed Martin",
-      		"sponsorLogo": "Lockheed.png"
-      	}
-      ]
-    },
-    {
-      "level": 3,
-      "levelName": "Junior Sponsor",
-      "sponsor": [
-      	{
-      		"sponsorName": "Kensington",
-      		"sponsorLogo": "Kensington.png"
-      	},
-      	{
-      		"sponsorName": "Veritas",
-      		"sponsorLogo": "Veritas.png"
-      	},
-      	{
-      		"sponsorName": "Verizon",
-      		"sponsorLogo": "Verizon.png"
-      	}
-      ]
-    }
+ [
+  {
+  "sponsorName": "Kensington",
+  "sponsorLogo": "Kensington.png"
+  },
+  {
+  "sponsorName": "Veritas",
+  "sponsorLogo": "Veritas.png"
+  },
+  {
+  "sponsorName": "Verizon",
+  "sponsorLogo": "Verizon.png"
+  },
+  {
+  "sponsorName": "Marines",
+  "sponsorLogo": "Marines.png"
+  },
+  {
+  "sponsorName": "Mech-Tech Institute",
+  "sponsorLogo": "Mech-TechInstitute.png"
+  },
+  {
+  "sponsorName": "AAA",
+  "sponsorLogo": "AAA.png"
+  },
+  {
+  "sponsorName": "National Center For Simulation",
+  "sponsorLogo": "NationalCenterForSimulation.png"
+  },
+  {
+  "sponsorName": "Lockheed Martin",
+  "sponsorLogo": "Lockheed.png"
+  },
+  {
+  "sponsorName": "Astronics Test Systems",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Certiport, a Pearson VUE Business",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Convergys Corporation",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "DeVry University",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Electronic Arts",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Embry-Riddle Aeronautical University",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Full Sail University",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Greyson Technologies",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Keiser University",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Microsoft",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "RLH Consulting & Management, Inc. ",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Florida S.P.E.C.S., Inc.",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Seminole State Colllege",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Siemens Energy, Inc.",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Troy University",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "DiSTI Corporation",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Kavaliro",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "Maxine's on the Shine",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "The Almond Family",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "The Alper Family",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "The Atkins Famil",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "The Faison Family",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "The Merrill-Cain Family",
+  "sponsorLogo": ""
+  },
+  {
+  "sponsorName": "The Sign Man",
+  "sponsorLogo": ""
+  }
   ]
-}
