@@ -78,7 +78,6 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         descriptionTextView.backgroundColor = UIColor.clear
         descriptionTextView.translatesAutoresizingMaskIntoConstraints = false
         descriptionTextView.textColor = UIColor.white
-
         
         // Text View Autolayout.
         descriptionTextView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true

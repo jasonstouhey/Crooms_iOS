@@ -44,19 +44,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         dataModel = DataModel()
         var presentation = (dataModel["sessions"] as! Array<Dictionary<String, Any>>)
-        
+        var tag = 0
         for tooItem in 0...presentation.count - 1{
             let workshop = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
-            
-            
             
             
             for item in 0...workshop.count - 1{
                 
                 print(item)
                 
+                tag = tag + 1
                 
-                dataModel.workshops.append(["Set \(item)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item]])
+                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item]])
                 
                 
             }
