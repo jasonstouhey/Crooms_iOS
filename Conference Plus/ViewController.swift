@@ -48,6 +48,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         collectionView.layer.shadowRadius = 10
         collectionView.layer.shadowOpacity = 0.5
+
+        self.title = "Crooms TechFest"
         
     }
 

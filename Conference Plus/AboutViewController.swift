@@ -10,14 +10,12 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var aboutTextView: UITextView!
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView.image = #imageLiteral(resourceName: "crooms")
+        self.automaticallyAdjustsScrollViewInsets = false
 
         // Do any additional setup after loading the view.
     }

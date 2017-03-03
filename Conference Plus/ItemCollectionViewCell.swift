@@ -27,7 +27,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.layer.masksToBounds = true
         self.clipsToBounds = true
         self.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        self.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        self.backgroundColor = #colorLiteral(red: 0.5904989243, green: 0.02005090751, blue: 0.1395291388, alpha: 1)
         
         // Setup Label.
         self.translatesAutoresizingMaskIntoConstraints = false

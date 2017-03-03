@@ -42,7 +42,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="qb3-gp-CpF"/>
+                    <navigationItem key="navigationItem" title="Detail" id="qb3-gp-CpF">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ol0-h1-Fp1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21N-PO-AIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +64,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Workshops" id="mO2-5s-4Lw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fz0-ts-TTZ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mUC-h9-4id">
                             <connections>
                                 <action selector="refresh:" destination="mc9-Zd-ds6" id="iKa-Rg-T4Q"/>
@@ -98,501 +101,480 @@
                         <viewControllerLayoutGuide type="bottom" id="ER1-m0-afv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hLK-SZ-E1Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQk-zH-gFv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1L-Ph-sdJ">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="200"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1k-XO-YNr">
-                                        <rect key="frame" x="8" y="137" width="359" height="1996"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="About Crooms Academy">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="18" name="SFUIText-Heavy"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" size="18" name="SFUIText-Heavy"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1k-XO-YNr">
+                                <rect key="frame" x="4" y="64" width="371" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="About Crooms Academy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="SFUIText-Heavy"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="18" name="SFUIText-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <mutableString key="content">Crooms Academy of Information Technology began as Crooms High School. It was founded by one of the nation's outstanding pioneers of education for black students, Professor Joseph Nathaniel Crooms. A graduate of Hampton University and Florida A &amp; M University, Crooms was known for his untiring efforts and energies in the promotion of education for black youth in Florida, as well as the development of schools in Sanford, Florida. In 1910, Crooms obtained approval for a new school building. He developed the plans and selected the school site. In 1926, Crooms Academy was constructed as a high school for black students. It was named after Professor Crooms by a community grateful for his dedication and energy in pursuit of educational opportunity for its students. 
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">Crooms Academy of Information Technology began as Crooms High School. It was founded by one of the nation's outstanding pioneers of education for black students, Professor Joseph Nathaniel Crooms. A graduate of Hampton University and Florida A &amp; M University, Crooms was known for his untiring efforts and energies in the promotion of education for black youth in Florida, as well as the development of schools in Sanford, Florida. In 1910, Crooms obtained approval for a new school building. He developed the plans and selected the school site. In 1926, Crooms Academy was constructed as a high school for black students. It was named after Professor Crooms by a community grateful for his dedication and energy in pursuit of educational opportunity for its students. 
 </mutableString>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">The mission of Crooms Academy of Information Technology is to provide innovative teaching and learning in a technology-enriched environment and to engage students in an academically challenging curriculum that prepares them for post-secondary education with industry-validated technology skills.  
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The mission of Crooms Academy of Information Technology is to provide innovative teaching and learning in a technology-enriched environment and to engage students in an academically challenging curriculum that prepares them for post-secondary education with industry-validated technology skills.  
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Crooms Academy of Information Technology is Seminole County Public Schools only dedicated magnet high school. All students who reside in Seminole County and have successfully completed the 8</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="th">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                    <integer key="NSSuperScript" value="1"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content"> grade may apply for admission. Students must submit the High School Magnet Program Application through SCPS Choices Department and be chosen in the random selection process. 
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Crooms Academy of Information Technology is Seminole County Public Schools only dedicated magnet high school. All students who reside in Seminole County and have successfully completed the 8</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="th">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                            <integer key="NSSuperScript" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> grade may apply for admission. Students must submit the High School Magnet Program Application through SCPS Choices Department and be chosen in the random selection process. 
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <mutableString key="content">The school offers a well-rounded high school experience with a rigorous academic program and technology focused coursework in different areas of information technology. Computer programming, digital design, game development, 3D Modeling &amp; Animation, iOS and Android app development, and network systems technology are just some of the technological courses offered by our magnet program. Crooms students benefit from a small school environment and individualized attention, opportunities to earn college credit through the Early College program at Seminole State College of Florida and Advanced Placement Coursework. A partnership with Seminole State College offers a pathway allowing students to earn the Associate of Arts degree in Information Technology while earning their high school diploma.  
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">The school offers a well-rounded high school experience with a rigorous academic program and technology focused coursework in different areas of information technology. Computer programming, digital design, game development, 3D Modeling &amp; Animation, iOS and Android app development, and network systems technology are just some of the technological courses offered by our magnet program. Crooms students benefit from a small school environment and individualized attention, opportunities to earn college credit through the Early College program at Seminole State College of Florida and Advanced Placement Coursework. A partnership with Seminole State College offers a pathway allowing students to earn the Associate of Arts degree in Information Technology while earning their high school diploma.  
 </mutableString>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Students have the opportunity to earn technology certifications as an Adobe Certified Associate in Dreamweaver, Flash, Photoshop, Premiere Pro, InDesign, and Illustrator; Cisco Certified Network Associate (CCNA);  CompTIA A+, Linux+, Network+, Security+; Microsoft Office Specialist (MOS); Microsoft Technical Associate (MTA) in Windows Operating System Fundamentals; Autodesk 3ds Max; National Center for Simulation Modeling and Simulation; and Oracle Certified Associate.  
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Students have the opportunity to earn technology certifications as an Adobe Certified Associate in Dreamweaver, Flash, Photoshop, Premiere Pro, InDesign, and Illustrator; Cisco Certified Network Associate (CCNA);  CompTIA A+, Linux+, Network+, Security+; Microsoft Office Specialist (MOS); Microsoft Technical Associate (MTA) in Windows Operating System Fundamentals; Autodesk 3ds Max; National Center for Simulation Modeling and Simulation; and Oracle Certified Associate.  
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <mutableString key="content">Crooms Academy of IT is the highest performing high school in Seminole County and has a school grade of “A” on Florida’s High School Accountability Report.   The school is ranked as one of the top 10% of the highest performing high schools within the state of Florida.  Crooms Academy of IT has been recognized as a Distinguished Academy for the past six years by the National Academy Foundation and has recently been honored as a Magnet School of Distinction by Magnet Schools of America.  The school has been consistently recognized as one of the best high schools in the US by US News and World Report and is listed on the Washington Post’s list of Most Challenging High Schools.  Crooms Academy of IT is also ranked No. 1 in the nation on US News and World Report’s rankings of Most Connected Classrooms. Demetria Faison, the principal, was selected as a finalist for the 2016-2017 Innovative Principal of the Year award. 
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">Crooms Academy of IT is the highest performing high school in Seminole County and has a school grade of “A” on Florida’s High School Accountability Report.   The school is ranked as one of the top 10% of the highest performing high schools within the state of Florida.  Crooms Academy of IT has been recognized as a Distinguished Academy for the past six years by the National Academy Foundation and has recently been honored as a Magnet School of Distinction by Magnet Schools of America.  The school has been consistently recognized as one of the best high schools in the US by US News and World Report and is listed on the Washington Post’s list of Most Challenging High Schools.  Crooms Academy of IT is also ranked No. 1 in the nation on US News and World Report’s rankings of Most Connected Classrooms. Demetria Faison, the principal, was selected as a finalist for the 2016-2017 Innovative Principal of the Year award. 
 </mutableString>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">For more information about the Crooms Business Advisory Council visit CroomsBac.org
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">For more information about the Crooms Business Advisory Council visit croomsBac.org.
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content"> 
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="About TechFest ">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="18" name="SFUIText-Heavy"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" size="18" name="SFUIText-Heavy"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="About TechFest ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="SFUIText-Heavy"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="18" name="SFUIText-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">TechFest is the signature event of the Crooms Business Advisory Council (BAC). In the eleventh year, TechFest has raised over $209,000.  The proceeds supports scholarships, curriculum, career and college related programs, job shadowing field trips and internship opportunities.  Over $106,000 in scholarships have been awarded Crooms graduates.
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">TechFest is the signature event of the Crooms Business Advisory Council (BAC). In the eleventh year, TechFest has raised over $209,000.  The proceeds supports scholarships, curriculum, career and college related programs, job shadowing field trips and internship opportunities.  Over $106,000 in scholarships have been awarded Crooms graduates.
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Students will have the opportunity to network with two keynote speakers along with over thirty workshops presenters and the sponsors in the exhibition hall area.  TechFest allows students, teachers and the business community to explore the "wow" in IT.  This is a great opportunity for all participants to come together and share valuable information and resources in order to grow the future pipeline for high tech careers.
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Students will have the opportunity to network with two keynote speakers along with over thirty workshops presenters and the sponsors in the exhibition hall area.  TechFest allows students, teachers and the business community to explore the "wow" in IT.  This is a great opportunity for all participants to come together and share valuable information and resources in order to grow the future pipeline for high tech careers.
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">On behalf of Crooms AOIT, we want to thank our business community for recharging, connecting and investing in our students and teachers.  Community engagement and collaboration is the best way to build relationships.  
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">On behalf of Crooms AOIT, we want to thank our business community for recharging, connecting and investing in our students and teachers.  Community engagement and collaboration is the best way to build relationships.  
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cg
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">TechFest, it’s your Hi-Tech Community, Get into IT!  For more information visit
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">TechFest, it’s your Hi-Tech Community, Get into IT!  For more information visit techfest.croomsweb.org.
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Techfest.croomsweb.org
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="48" minimumLineHeight="19" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
 Cgo
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <font key="NSFont" size="12" name="SFUIText-Regular"/>
-                                                    <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                                    <real key="NSStrokeWidth" value="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="c1k-XO-YNr" firstAttribute="centerY" secondItem="uQk-zH-gFv" secondAttribute="centerY" constant="897.5" id="ABr-Gl-nLp"/>
-                                </constraints>
-                            </scrollView>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="12" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c1k-XO-YNr" firstAttribute="width" secondItem="hLK-SZ-E1Q" secondAttribute="width" constant="-4" id="K5i-wN-fzB"/>
+                            <constraint firstItem="c1k-XO-YNr" firstAttribute="centerX" secondItem="hLK-SZ-E1Q" secondAttribute="centerX" constant="2" id="b9Z-dn-buZ"/>
+                            <constraint firstItem="c1k-XO-YNr" firstAttribute="centerY" secondItem="hLK-SZ-E1Q" secondAttribute="centerY" constant="32" id="iOY-fE-rWZ"/>
+                            <constraint firstItem="c1k-XO-YNr" firstAttribute="height" secondItem="hLK-SZ-E1Q" secondAttribute="height" constant="-64" id="tDK-Pk-76X"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="About" id="EAU-nc-het"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="2270"/>
+                    <navigationItem key="navigationItem" title="About" id="EAU-nc-het">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gCw-H0-BSx"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="aboutTextView" destination="c1k-XO-YNr" id="OKa-ou-GJa"/>
-                        <outlet property="imageView" destination="G1L-Ph-sdJ" id="G7h-z8-sMs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evE-bI-86M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5365.6000000000004" y="183.05847076461771"/>
+            <point key="canvasLocation" x="5365.6000000000004" y="182.15892053973016"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Ba-mc-EYZ">
@@ -730,7 +712,9 @@ Cgo
                             <constraint firstItem="HER-yB-FD4" firstAttribute="centerY" secondItem="3Cj-ni-vmH" secondAttribute="centerY" constant="0.5" id="t87-ch-Jo3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Maps" id="PIw-EL-nxY"/>
+                    <navigationItem key="navigationItem" title="Maps" id="PIw-EL-nxY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="DMJ-wZ-kpl"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="btn1" destination="AfR-TD-GYZ" id="zwK-5q-taV"/>
                         <outlet property="btn2" destination="jME-hu-I2l" id="gAA-Bg-zyG"/>
@@ -803,7 +787,9 @@ Cgo
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Expanded Workshop" id="uaj-w8-pcw"/>
+                    <navigationItem key="navigationItem" title="Expanded Workshop" id="uaj-w8-pcw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qlU-rZ-Syo"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="MWj-K4-8HF" id="ESI-kr-8IC"/>
                         <outlet property="location" destination="TrH-rQ-dav" id="xlc-fg-Ety"/>
