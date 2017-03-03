@@ -26,6 +26,7 @@
 		D082356F1E526D8A0043FF04 /* Conference_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082356E1E526D8A0043FF04 /* Conference_PlusUITests.swift */; };
 		D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082357E1E526E150043FF04 /* JKJSONFile.swift */; };
 		D08235811E526FE80043FF04 /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = D08235801E526FE80043FF04 /* info.json */; };
+		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		D08235701E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D082357E1E526E150043FF04 /* JKJSONFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKJSONFile.swift; sourceTree = "<group>"; };
 		D08235801E526FE80043FF04 /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
+		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				D03A368E1E57E7BB00B4F275 /* View Controllers */,
 				D03A368D1E57E7AD00B4F275 /* Cells */,
 				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
+				D0B477E51E63733F00FE9D01 /* DataModel.swift */,
 				13AD34D61E5F1BC500DFF4DD /* workshops.json */,
 				D08235801E526FE80043FF04 /* info.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
@@ -325,6 +328,7 @@
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
 				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
+				D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */,
 				D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */,
 				13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */,
 				D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */,

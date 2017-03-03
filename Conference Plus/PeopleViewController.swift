@@ -18,6 +18,7 @@ class PeopleViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Table View Setup
         peopleTableview = UITableView(frame: CGRect())
         peopleTableview.translatesAutoresizingMaskIntoConstraints = false

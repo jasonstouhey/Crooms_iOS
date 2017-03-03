@@ -8,10 +8,24 @@
 
 import UIKit
 
+extension Array  {
+    var indexedDictionary: [Int: Element] {
+        var result: [Int: Element] = [:]
+        enumerated().forEach({ result[$0.offset] = $0.element })
+        return result
+    }
+}
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
 @UIApplicationMain
+
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var dataModel:DataModel!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -25,6 +39,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Changes the navigation bar style so that the Status bar will be white
         UINavigationBar.appearance().barStyle = .blackOpaque
+        
+        // Data
+        
+        dataModel = DataModel()
+        var presentation = (dataModel["sessions"] as! Array<Dictionary<String, Any>>)
+        var workshop = ((presentation[0]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
+        
+        
+        for item in 0...workshop.count - 1{
+            
+            print(item)
+            
+            
+            dataModel.workshops.append(["Set \(item)" : ((presentation[0]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item]])
+           
+            
+        }
+        
+        print(dataModel.workshops)
         
         return true
     }

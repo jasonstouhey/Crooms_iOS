@@ -21,6 +21,10 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
+        
+        
+        
+        
         super.viewDidLoad()
         UIApplication.shared.statusBarStyle = .lightContent
         collectionViewLayout = UICollectionViewFlowLayout()
