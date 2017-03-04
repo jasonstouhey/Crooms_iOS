@@ -40,15 +40,6 @@
                                   "title": "Virtual Reality: A New World"
                                   },
                                   {
-                                  "room": "115",
-                                  "presenter": [
-                                                "Tim Parsons"
-                                                ],
-                                  "business": "",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Virtual Reality: A New World"
-                                  },
-                                  {
                                   "room": "213",
                                   "presenter": [
                                                 "David Sushil"
@@ -119,8 +110,7 @@
                                   {
                                   "room": "213",
                                   "presenter": [
-                                                "David Sushil",
-                                                ""
+                                                "David Sushil"
                                                 ],
                                   "business": "",
                                   "presenterPhoto": ".jpg",

@@ -79,6 +79,43 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.delegate = self
         cell.indexPath = indexPath
         
+        let title = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["title"]!
+        let presenter:[String] = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["presenter"] as! [String]
+        var presenterString = "By "
+        var timeString = String()
+        
+        let room = ((appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["room"] as! String)
+        
+        if presenter.count > 1{
+            
+            for thing in 0...presenter.count - 1{
+                
+                if presenter.last == presenter[thing]{
+                    presenterString += presenter[thing]
+                    cell.presenterLabel.text = presenterString
+                }else{
+                    presenterString += presenter[thing] + ", "
+                    cell.presenterLabel.text = presenterString
+                }
+                
+                
+            }
+            
+        }else{
+            presenterString += presenter[0]
+            cell.presenterLabel.text = presenterString
+
+        }
+        
+        print(title)
+        print(presenter)
+        print(room)
+        
+        
+        cell.titleLabel.text = title as! String
+        cell.timeLabel.text = "Room - \(room)"
+        
+        
         return cell
     }
 
