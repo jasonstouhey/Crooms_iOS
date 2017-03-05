@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -19,7 +20,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors")]
 
     // MARK: - Lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.shared.statusBarStyle = .lightContent
@@ -48,8 +49,6 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         collectionView.layer.shadowRadius = 10
         collectionView.layer.shadowOpacity = 0.5
-
-        self.title = "Crooms TechFest"
         
     }
 
@@ -90,10 +89,12 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 //            self.show(storyboard?.instantiateViewController(withIdentifier: "People") as! PeopleViewController, sender: nil)
         case 4:
             self.show(storyboard?.instantiateViewController(withIdentifier: "About") as! AboutViewController, sender: nil)
+        case 5:
+            let svc = SFSafariViewController(url: URL(string:"http://apple.com")!)
+            self.present(svc, animated: true, completion: nil)
         default:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
         }
-        
         
     }
     

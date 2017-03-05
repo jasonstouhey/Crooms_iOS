@@ -70,6 +70,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
 
         return self.imageView
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

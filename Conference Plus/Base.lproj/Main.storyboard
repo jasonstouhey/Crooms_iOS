@@ -92,6 +92,59 @@
             </objects>
             <point key="canvasLocation" x="4447" y="184"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MLC-Sl-qMC">
+            <objects>
+                <navigationController id="HTj-Ti-IHr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RV1-Em-J8y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B2M-ub-UV7" kind="relationship" relationship="rootViewController" id="nWd-zn-74d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59k-WN-vfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5366" y="-546"/>
+        </scene>
+        <!--Terms-->
+        <scene sceneID="Ew4-r7-lNx">
+            <objects>
+                <viewController storyboardIdentifier="Terms" id="B2M-ub-UV7" customClass="TermsViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lPw-w8-B4L"/>
+                        <viewControllerLayoutGuide type="bottom" id="g2f-Js-6UZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Hn-s4-tkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jm8-9f-Tv2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9UE-Yz-zbC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms" id="W0o-LZ-MR3">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="R1q-sU-IcM"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="progressView" destination="9UE-Yz-zbC" id="8KG-bV-sQy"/>
+                        <outlet property="webView" destination="jm8-9f-Tv2" id="ao1-f2-xyZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eic-Cj-9nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6197.6000000000004" y="-546.47676161919048"/>
+        </scene>
         <!--About-->
         <scene sceneID="wif-ox-lFg">
             <objects>
@@ -152,8 +205,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">Crooms Academy of Information Technology began as Crooms High School. It was founded by one of the nation's outstanding pioneers of education for black students, Professor Joseph Nathaniel Crooms. A graduate of Hampton University and Florida A &amp; M University, Crooms was known for his untiring efforts and energies in the promotion of education for black youth in Florida, as well as the development of schools in Sanford, Florida. In 1910, Crooms obtained approval for a new school building. He developed the plans and selected the school site. In 1926, Crooms Academy was constructed as a high school for black students. It was named after Professor Crooms by a community grateful for his dedication and energy in pursuit of educational opportunity for its students. 
-</mutableString>
+                                        <string key="content">Crooms Academy of Information Technology began as Crooms High School. It was founded by one of the nation's outstanding pioneers of education for black students, Professor Joseph Nathaniel Crooms. A graduate of Hampton University and Florida A &amp; M University, Crooms was known for his untiring efforts and energies in the promotion of education for black youth in Florida, as well as the development of schools in Sanford, Florida. In 1910, Crooms obtained approval for a new school building. He developed the plans and selected the school site. In 1926, Crooms Academy was constructed as a high school for black students. It was named after Professor Crooms by a community grateful for his dedication and energy in pursuit of educational opportunity for its students. 
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="SFUIText-Regular"/>
@@ -265,8 +318,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">The school offers a well-rounded high school experience with a rigorous academic program and technology focused coursework in different areas of information technology. Computer programming, digital design, game development, 3D Modeling &amp; Animation, iOS and Android app development, and network systems technology are just some of the technological courses offered by our magnet program. Crooms students benefit from a small school environment and individualized attention, opportunities to earn college credit through the Early College program at Seminole State College of Florida and Advanced Placement Coursework. A partnership with Seminole State College offers a pathway allowing students to earn the Associate of Arts degree in Information Technology while earning their high school diploma.  
-</mutableString>
+                                        <string key="content">The school offers a well-rounded high school experience with a rigorous academic program and technology focused coursework in different areas of information technology. Computer programming, digital design, game development, 3D Modeling &amp; Animation, iOS and Android app development, and network systems technology are just some of the technological courses offered by our magnet program. Crooms students benefit from a small school environment and individualized attention, opportunities to earn college credit through the Early College program at Seminole State College of Florida and Advanced Placement Coursework. A partnership with Seminole State College offers a pathway allowing students to earn the Associate of Arts degree in Information Technology while earning their high school diploma.  
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="SFUIText-Regular"/>
@@ -323,8 +376,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">Crooms Academy of IT is the highest performing high school in Seminole County and has a school grade of “A” on Florida’s High School Accountability Report.   The school is ranked as one of the top 10% of the highest performing high schools within the state of Florida.  Crooms Academy of IT has been recognized as a Distinguished Academy for the past six years by the National Academy Foundation and has recently been honored as a Magnet School of Distinction by Magnet Schools of America.  The school has been consistently recognized as one of the best high schools in the US by US News and World Report and is listed on the Washington Post’s list of Most Challenging High Schools.  Crooms Academy of IT is also ranked No. 1 in the nation on US News and World Report’s rankings of Most Connected Classrooms. Demetria Faison, the principal, was selected as a finalist for the 2016-2017 Innovative Principal of the Year award. 
-</mutableString>
+                                        <string key="content">Crooms Academy of IT is the highest performing high school in Seminole County and has a school grade of “A” on Florida’s High School Accountability Report.   The school is ranked as one of the top 10% of the highest performing high schools within the state of Florida.  Crooms Academy of IT has been recognized as a Distinguished Academy for the past six years by the National Academy Foundation and has recently been honored as a Magnet School of Distinction by Magnet Schools of America.  The school has been consistently recognized as one of the best high schools in the US by US News and World Report and is listed on the Washington Post’s list of Most Challenging High Schools.  Crooms Academy of IT is also ranked No. 1 in the nation on US News and World Report’s rankings of Most Connected Classrooms. Demetria Faison, the principal, was selected as a finalist for the 2016-2017 Innovative Principal of the Year award. 
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="SFUIText-Regular"/>
