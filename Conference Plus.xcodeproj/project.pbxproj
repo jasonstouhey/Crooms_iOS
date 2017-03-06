@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13027A6B1E5CC70E001FA63E /* WorkshopsXCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */; };
+		138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */; };
 		13A126771E58908400096B77 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A126761E58908400096B77 /* MapViewController.swift */; };
 		13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */; };
 		13AD34D71E5F1BC500DFF4DD /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AD34D61E5F1BC500DFF4DD /* workshops.json */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsXCViewController.swift; sourceTree = "<group>"; };
+		138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		13A126761E58908400096B77 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = "Conference Plus/PeopleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		13AD34D61E5F1BC500DFF4DD /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */,
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
 				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
+				138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */,
 				D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */,
 				13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */,
 			);
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */,
+				138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */,
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
 				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
