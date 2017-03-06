@@ -11,13 +11,13 @@
 		138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */; };
 		13A126771E58908400096B77 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A126761E58908400096B77 /* MapViewController.swift */; };
 		13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */; };
-		13AD34D71E5F1BC500DFF4DD /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AD34D61E5F1BC500DFF4DD /* workshops.json */; };
 		D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */; };
 		D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */; };
 		D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */; };
 		D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04788B51E5535A200158D49 /* SessionsViewController.swift */; };
 		D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */; };
 		D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */; };
+		D0597E261E69A69A003B175E /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
 		D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082354E1E526D8A0043FF04 /* AppDelegate.swift */; };
 		D08235511E526D8A0043FF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235501E526D8A0043FF04 /* ViewController.swift */; };
 		D08235541E526D8A0043FF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235521E526D8A0043FF04 /* Main.storyboard */; };
@@ -27,6 +27,9 @@
 		D082356F1E526D8A0043FF04 /* Conference_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082356E1E526D8A0043FF04 /* Conference_PlusUITests.swift */; };
 		D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082357E1E526E150043FF04 /* JKJSONFile.swift */; };
 		D08235811E526FE80043FF04 /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = D08235801E526FE80043FF04 /* info.json */; };
+		D089A88C1E6D8DB200BCA0E1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */; };
+		D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */; };
+		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
 		DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */; };
 		DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9541E69A720004BB1C2 /* sponsors.json */; };
@@ -54,13 +57,13 @@
 		138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		13A126761E58908400096B77 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = "Conference Plus/PeopleViewController.swift"; sourceTree = SOURCE_ROOT; };
-		13AD34D61E5F1BC500DFF4DD /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
 		D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsViewController.swift; sourceTree = "<group>"; };
 		D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopCollectionViewCell.swift; sourceTree = "<group>"; };
 		D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-02-15 at 6.29.27 PM.png"; sourceTree = "<group>"; };
 		D04788B51E5535A200158D49 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
 		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0597E251E69A69A003B175E /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
 		D082354B1E526D8A0043FF04 /* Conference Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conference Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082354E1E526D8A0043FF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08235501E526D8A0043FF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +79,9 @@
 		D08235701E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D082357E1E526E150043FF04 /* JKJSONFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKJSONFile.swift; sourceTree = "<group>"; };
 		D08235801E526FE80043FF04 /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
+		D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableHeaderView.swift; sourceTree = "<group>"; };
+		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sponsors.xcassets; sourceTree = "<group>"; };
 		DBBDB9541E69A720004BB1C2 /* sponsors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sponsors.json; sourceTree = "<group>"; };
@@ -121,11 +127,13 @@
 			children = (
 				13A126761E58908400096B77 /* MapViewController.swift */,
 				13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */,
+				D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */,
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
 				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
 				138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */,
 				D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */,
 				13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */,
+				D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -157,7 +165,8 @@
 				D03A368E1E57E7BB00B4F275 /* View Controllers */,
 				D03A368D1E57E7AD00B4F275 /* Cells */,
 				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
-				13AD34D61E5F1BC500DFF4DD /* workshops.json */,
+				D0597E251E69A69A003B175E /* workshops.json */,
+				D0B477E51E63733F00FE9D01 /* DataModel.swift */,
 				D08235801E526FE80043FF04 /* info.json */,
 				DBBDB9541E69A720004BB1C2 /* sponsors.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
@@ -306,8 +315,10 @@
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
 				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
+
 				DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */,
 				13AD34D71E5F1BC500DFF4DD /* workshops.json in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,17 +343,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */,
 				D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */,
 				138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */,
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
 				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
+				D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */,
 				D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */,
 				13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */,
 				D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */,
 				D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,
 				D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */,
+				D089A88C1E6D8DB200BCA0E1 /* AboutViewController.swift in Sources */,
 				13027A6B1E5CC70E001FA63E /* WorkshopsXCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

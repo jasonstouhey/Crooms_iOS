@@ -23,6 +23,9 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var indexPath:IndexPath!
     var imageTopAnchor:NSLayoutConstraint!
     var fileParser: JKJSONFile? = JKJSONFile.init(fileName: "workshops.json")
+    var presenterLabel: UILabel!
+    var timeLabel: UILabel!
+    var gradeLabel: UILabel!
 
     
     // MARK: - Initialization
@@ -43,7 +46,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = "WORKSHOP"
-        titleLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        titleLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightHeavy)
         titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 3
@@ -53,53 +56,67 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         // Label Autolayout.
         titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
         titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
         
-        // Setup Image View.
-        headerImageView = UIImageView()
-        self.addSubview(headerImageView)
-        headerImageView.translatesAutoresizingMaskIntoConstraints = false
         
-        // Image View Autolayout.
-        headerImageView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4).isActive = true
-        headerImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        imageTopAnchor = headerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0.2 * self.frame.height)
-        imageTopAnchor.isActive = true
-        headerImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        headerImageView.image = #imageLiteral(resourceName: "project-newton-oakhill-interior.jpg")
-        headerImageView.clipsToBounds = true
-        headerImageView.contentMode = UIViewContentMode.scaleAspectFill
         
-        // Setup Text View.
-        descriptionTextView = UITextView()
-        self.addSubview(descriptionTextView)
-        descriptionTextView.isEditable = false
-        descriptionTextView.backgroundColor = UIColor.clear
-        descriptionTextView.translatesAutoresizingMaskIntoConstraints = false
-        descriptionTextView.textColor = UIColor.white
+        // Setup Label.
+        presenterLabel = UILabel()
+        self.addSubview( presenterLabel)
+        presenterLabel.translatesAutoresizingMaskIntoConstraints = false
+         presenterLabel.text = "WORKSHOP"
+         presenterLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+         presenterLabel.adjustsFontSizeToFitWidth = true
+         presenterLabel.textAlignment = .center
+         presenterLabel.numberOfLines = 3
+         presenterLabel.textColor = UIColor.white
+         presenterLabel.textAlignment = .natural
+        
+        
+        presenterLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        presenterLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        presenterLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        presenterLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.4).isActive = true
+ 
+        
+        // Setup Label.
+        timeLabel = UILabel()
+        self.addSubview(timeLabel)
+        timeLabel.translatesAutoresizingMaskIntoConstraints = false
+        timeLabel.text = "WORKSHOP"
+        timeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        timeLabel.adjustsFontSizeToFitWidth = true
+        timeLabel.textAlignment = .center
+        timeLabel.numberOfLines = 3
+        timeLabel.textColor = UIColor.white
+        timeLabel.textAlignment = .natural
+        
+        
+        timeLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        timeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        timeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.6).isActive = true
+        
+        
+        // Setup Label.
+        gradeLabel = UILabel()
+        self.addSubview(gradeLabel)
+        gradeLabel.translatesAutoresizingMaskIntoConstraints = false
+        gradeLabel.text = "WORKSHOP"
+        gradeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        gradeLabel.adjustsFontSizeToFitWidth = true
+        gradeLabel.textAlignment = .center
+        gradeLabel.numberOfLines = 3
+        gradeLabel.textColor = UIColor.white
+        gradeLabel.textAlignment = .natural
+        
+        
+        gradeLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        gradeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        gradeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        gradeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.8).isActive = true
 
-        
-        // Text View Autolayout.
-        descriptionTextView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        descriptionTextView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4).isActive = true
-        descriptionTextView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
-        descriptionTextView.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget dignissim lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut orci ligula, auctor sed lorem in, mollis sodales risus. Aenean nec urna eget felis vulputate scelerisque. Curabitur mattis pharetra ex at ullamcorper. Curabitur dignissim ultrices erat nec faucibus. Nulla facilisi. Nullam ullamcorper bibendum enim, non placerat dolor dictum id. Aliquam consectetur maximus malesuada. In luctus ante eu faucibus ultricies.rProin orci velit, vestibulum sit amet metus nec, gravida luctus purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida consequat dignissim. Duis fermentum gravida maximus. Sed condimentum cursus turpis ac finibus. Sed a magna ullamcorper, condimentum mauris eget, tempus tortor. Morbi pellentesque vel mauris quis ultrices."
-        
-        // Setup button
-        showMoreButton = UIButton()
-        showMoreButton.translatesAutoresizingMaskIntoConstraints = false
-        showMoreButton.addTarget(self, action: #selector(WorkshopCollectionViewCell.showMore), for: .touchUpInside)
-        showMoreButton.setTitleColor(UIColor.white, for: .normal)
-        showMoreButton.setTitle("Buttom", for: .normal)
-        
-        self.addSubview(showMoreButton)
-        
-        // Button Autolayout.
-        showMoreButton.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
-        showMoreButton.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        showMoreButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
-        showMoreButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         
         // Cell Autolayout.
         self.translatesAutoresizingMaskIntoConstraints = false

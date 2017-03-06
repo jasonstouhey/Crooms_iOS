@@ -8,10 +8,24 @@
 
 import UIKit
 
+extension Array  {
+    var indexedDictionary: [Int: Element] {
+        var result: [Int: Element] = [:]
+        enumerated().forEach({ result[$0.offset] = $0.element })
+        return result
+    }
+}
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
 @UIApplicationMain
+
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var dataModel:DataModel!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -25,6 +39,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Changes the navigation bar style so that the Status bar will be white
         UINavigationBar.appearance().barStyle = .blackOpaque
+        
+        // Data
+        
+        dataModel = DataModel()
+        var presentation = (dataModel["sessions"] as! Array<Dictionary<String, Any>>)
+        
+        print(presentation.count)
+        
+        var tag = 0
+        
+        
+        
+        let workshopTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
+        
+        let gradeTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
+               
+        
+        for tooItem in 0...presentation.count - 1{
+            print(tooItem)
+            
+            let workshop = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
+            
+            
+            let grade = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["gradeLevels"] as! [Int])
+            print(workshopTwo)
+            
+            
+            print(workshop)
+            
+            for item in 0...workshop.count - 1{
+                
+                print(item)
+                
+                tag = tag + 1
+                
+                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item],"grade": grade])
+                
+                
+            }
+
+        }
+        
+        
+        
         
         return true
     }
