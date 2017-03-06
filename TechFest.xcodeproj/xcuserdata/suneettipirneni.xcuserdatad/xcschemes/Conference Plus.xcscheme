@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D082354A1E526D8A0043FF04"
-               BuildableName = "Conference Plus.app"
-               BlueprintName = "Conference Plus"
-               ReferencedContainer = "container:Conference Plus.xcodeproj">
+               BuildableName = "TechFest.app"
+               BlueprintName = "TechFest"
+               ReferencedContainer = "container:TechFest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D082355E1E526D8A0043FF04"
-               BuildableName = "Conference PlusTests.xctest"
-               BlueprintName = "Conference PlusTests"
-               ReferencedContainer = "container:Conference Plus.xcodeproj">
+               BuildableName = "TechFestTests.xctest"
+               BlueprintName = "TechFestTests"
+               ReferencedContainer = "container:TechFest.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D08235691E526D8A0043FF04"
-               BuildableName = "Conference PlusUITests.xctest"
-               BlueprintName = "Conference PlusUITests"
-               ReferencedContainer = "container:Conference Plus.xcodeproj">
+               BuildableName = "TechFestUITests.xctest"
+               BlueprintName = "TechFestUITests"
+               ReferencedContainer = "container:TechFest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D082354A1E526D8A0043FF04"
-            BuildableName = "Conference Plus.app"
-            BlueprintName = "Conference Plus"
-            ReferencedContainer = "container:Conference Plus.xcodeproj">
+            BuildableName = "TechFest.app"
+            BlueprintName = "TechFest"
+            ReferencedContainer = "container:TechFest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D082354A1E526D8A0043FF04"
-            BuildableName = "Conference Plus.app"
-            BlueprintName = "Conference Plus"
-            ReferencedContainer = "container:Conference Plus.xcodeproj">
+            BuildableName = "TechFest.app"
+            BlueprintName = "TechFest"
+            ReferencedContainer = "container:TechFest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D082354A1E526D8A0043FF04"
-            BuildableName = "Conference Plus.app"
-            BlueprintName = "Conference Plus"
-            ReferencedContainer = "container:Conference Plus.xcodeproj">
+            BuildableName = "TechFest.app"
+            BlueprintName = "TechFest"
+            ReferencedContainer = "container:TechFest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

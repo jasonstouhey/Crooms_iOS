@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Conference Plus.xcodeproj">
+      location = "self:/Users/suneettipirneni/Documents/Developement/Conference Plus/TechFest.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,10 +14,15 @@ class SponsorsViewController: UIViewController {
 
     func setSize() {
         var contentRect = CGRect.zero
+        var totalHeight = CGFloat()
         for view in self.scrollView.subviews {
-            contentRect = contentRect.union(view.frame)
+            totalHeight += view.bounds.height
+            
+            
         }
-        self.scrollView.contentSize = contentRect.size
+        print(totalHeight)
+        
+        self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: totalHeight)
     }
 
     override func viewDidLoad() {

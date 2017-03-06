@@ -31,6 +31,8 @@
 		D09CF3DE1E6DB70200A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
 		D09CF3DF1E6DB70300A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
 		D09CF3E01E6DB70300A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
+		D0A8285E1E6DE84800707ED3 /* Crooms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A8285D1E6DE84800707ED3 /* Crooms.jpg */; };
+		D0A828601E6DF67200707ED3 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */; };
 		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
 		DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */; };
@@ -66,23 +68,25 @@
 		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
 		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		D0597E251E69A69A003B175E /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
-		D082354B1E526D8A0043FF04 /* Conference Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conference Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D082354B1E526D8A0043FF04 /* TechFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082354E1E526D8A0043FF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08235501E526D8A0043FF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D08235531E526D8A0043FF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D08235551E526D8A0043FF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08235581E526D8A0043FF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D082355A1E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D082355F1E526D8A0043FF04 /* Conference PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conference PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D082355F1E526D8A0043FF04 /* TechFestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechFestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08235631E526D8A0043FF04 /* Conference_PlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference_PlusTests.swift; sourceTree = "<group>"; };
 		D08235651E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D082356A1E526D8A0043FF04 /* Conference PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conference PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D082356A1E526D8A0043FF04 /* TechFestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechFestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082356E1E526D8A0043FF04 /* Conference_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference_PlusUITests.swift; sourceTree = "<group>"; };
 		D08235701E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D082357E1E526E150043FF04 /* JKJSONFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKJSONFile.swift; sourceTree = "<group>"; };
 		D08235801E526FE80043FF04 /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
 		D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableHeaderView.swift; sourceTree = "<group>"; };
+		D0A8285D1E6DE84800707ED3 /* Crooms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Crooms.jpg; sourceTree = "<group>"; };
+		D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sponsors.xcassets; sourceTree = "<group>"; };
@@ -153,9 +157,9 @@
 		D082354C1E526D8A0043FF04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D082354B1E526D8A0043FF04 /* Conference Plus.app */,
-				D082355F1E526D8A0043FF04 /* Conference PlusTests.xctest */,
-				D082356A1E526D8A0043FF04 /* Conference PlusUITests.xctest */,
+				D082354B1E526D8A0043FF04 /* TechFest.app */,
+				D082355F1E526D8A0043FF04 /* TechFestTests.xctest */,
+				D082356A1E526D8A0043FF04 /* TechFestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,8 +177,10 @@
 				DBBDB9541E69A720004BB1C2 /* sponsors.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
 				DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */,
+				D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */,
 				D08235551E526D8A0043FF04 /* Assets.xcassets */,
 				D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */,
+				D0A8285D1E6DE84800707ED3 /* Crooms.jpg */,
 				D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */,
 				D08235571E526D8A0043FF04 /* LaunchScreen.storyboard */,
 				D082355A1E526D8A0043FF04 /* Info.plist */,
@@ -203,9 +209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D082354A1E526D8A0043FF04 /* Conference Plus */ = {
+		D082354A1E526D8A0043FF04 /* TechFest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D08235731E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference Plus" */;
+			buildConfigurationList = D08235731E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "TechFest" */;
 			buildPhases = (
 				D08235471E526D8A0043FF04 /* Sources */,
 				D08235481E526D8A0043FF04 /* Frameworks */,
@@ -215,14 +221,14 @@
 			);
 			dependencies = (
 			);
-			name = "Conference Plus";
+			name = TechFest;
 			productName = "Conference Plus";
-			productReference = D082354B1E526D8A0043FF04 /* Conference Plus.app */;
+			productReference = D082354B1E526D8A0043FF04 /* TechFest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D082355E1E526D8A0043FF04 /* Conference PlusTests */ = {
+		D082355E1E526D8A0043FF04 /* TechFestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D08235761E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference PlusTests" */;
+			buildConfigurationList = D08235761E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "TechFestTests" */;
 			buildPhases = (
 				D082355B1E526D8A0043FF04 /* Sources */,
 				D082355C1E526D8A0043FF04 /* Frameworks */,
@@ -233,14 +239,14 @@
 			dependencies = (
 				D08235611E526D8A0043FF04 /* PBXTargetDependency */,
 			);
-			name = "Conference PlusTests";
+			name = TechFestTests;
 			productName = "Conference PlusTests";
-			productReference = D082355F1E526D8A0043FF04 /* Conference PlusTests.xctest */;
+			productReference = D082355F1E526D8A0043FF04 /* TechFestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D08235691E526D8A0043FF04 /* Conference PlusUITests */ = {
+		D08235691E526D8A0043FF04 /* TechFestUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D08235791E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference PlusUITests" */;
+			buildConfigurationList = D08235791E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "TechFestUITests" */;
 			buildPhases = (
 				D08235661E526D8A0043FF04 /* Sources */,
 				D08235671E526D8A0043FF04 /* Frameworks */,
@@ -251,9 +257,9 @@
 			dependencies = (
 				D082356C1E526D8A0043FF04 /* PBXTargetDependency */,
 			);
-			name = "Conference PlusUITests";
+			name = TechFestUITests;
 			productName = "Conference PlusUITests";
-			productReference = D082356A1E526D8A0043FF04 /* Conference PlusUITests.xctest */;
+			productReference = D082356A1E526D8A0043FF04 /* TechFestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +274,7 @@
 				TargetAttributes = {
 					D082354A1E526D8A0043FF04 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FL4XKYXB7F;
+						DevelopmentTeam = 7DL8RQG4VE;
 						ProvisioningStyle = Automatic;
 					};
 					D082355E1E526D8A0043FF04 = {
@@ -285,7 +291,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D08235461E526D8A0043FF04 /* Build configuration list for PBXProject "Conference Plus" */;
+			buildConfigurationList = D08235461E526D8A0043FF04 /* Build configuration list for PBXProject "TechFest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -298,9 +304,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D082354A1E526D8A0043FF04 /* Conference Plus */,
-				D082355E1E526D8A0043FF04 /* Conference PlusTests */,
-				D08235691E526D8A0043FF04 /* Conference PlusUITests */,
+				D082354A1E526D8A0043FF04 /* TechFest */,
+				D082355E1E526D8A0043FF04 /* TechFestTests */,
+				D08235691E526D8A0043FF04 /* TechFestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,10 +319,12 @@
 				DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */,
 				D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */,
 				D08235811E526FE80043FF04 /* info.json in Resources */,
+				D0A828601E6DF67200707ED3 /* AppIcon.appiconset in Resources */,
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
 				D09CF3DE1E6DB70200A72D94 /* workshops.json in Resources */,
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
+				D0A8285E1E6DE84800707ED3 /* Crooms.jpg in Resources */,
 				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
 				DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */,
 			);
@@ -384,12 +392,12 @@
 /* Begin PBXTargetDependency section */
 		D08235611E526D8A0043FF04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D082354A1E526D8A0043FF04 /* Conference Plus */;
+			target = D082354A1E526D8A0043FF04 /* TechFest */;
 			targetProxy = D08235601E526D8A0043FF04 /* PBXContainerItemProxy */;
 		};
 		D082356C1E526D8A0043FF04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D082354A1E526D8A0043FF04 /* Conference Plus */;
+			target = D082354A1E526D8A0043FF04 /* TechFest */;
 			targetProxy = D082356B1E526D8A0043FF04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -510,11 +518,11 @@
 		D08235741E526D8A0043FF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FL4XKYXB7F;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = 7DL8RQG4VE;
 				INFOPLIST_FILE = "Conference Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.suneettipirneni.Conference-Plus";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suneettipirneni.TechFest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -523,11 +531,11 @@
 		D08235751E526D8A0043FF04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FL4XKYXB7F;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = 7DL8RQG4VE;
 				INFOPLIST_FILE = "Conference Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.suneettipirneni.Conference-Plus";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suneettipirneni.TechFest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -544,7 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.suneettipirneni.Conference-PlusTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conference Plus.app/Conference Plus";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechFest.app/TechFest";
 			};
 			name = Debug;
 		};
@@ -559,7 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.suneettipirneni.Conference-PlusTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Conference Plus.app/Conference Plus";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechFest.app/TechFest";
 			};
 			name = Release;
 		};
@@ -594,7 +602,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D08235461E526D8A0043FF04 /* Build configuration list for PBXProject "Conference Plus" */ = {
+		D08235461E526D8A0043FF04 /* Build configuration list for PBXProject "TechFest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D08235711E526D8A0043FF04 /* Debug */,
@@ -603,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D08235731E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference Plus" */ = {
+		D08235731E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "TechFest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D08235741E526D8A0043FF04 /* Debug */,
@@ -612,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D08235761E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference PlusTests" */ = {
+		D08235761E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "TechFestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D08235771E526D8A0043FF04 /* Debug */,
@@ -621,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D08235791E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "Conference PlusUITests" */ = {
+		D08235791E526D8A0043FF04 /* Build configuration list for PBXNativeTarget "TechFestUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D082357A1E526D8A0043FF04 /* Debug */,
