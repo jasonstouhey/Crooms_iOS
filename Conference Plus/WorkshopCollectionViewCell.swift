@@ -25,6 +25,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var fileParser: JKJSONFile? = JKJSONFile.init(fileName: "workshops.json")
     var presenterLabel: UILabel!
     var timeLabel: UILabel!
+    var gradeLabel: UILabel!
 
     
     // MARK: - Initialization
@@ -55,8 +56,8 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         // Label Autolayout.
         titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
         titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
         
         
         
@@ -75,8 +76,8 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         
         presenterLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
         presenterLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        presenterLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
-        presenterLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.2).isActive = true
+        presenterLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        presenterLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.4).isActive = true
  
         
         // Setup Label.
@@ -94,8 +95,27 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         
         timeLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
         timeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        timeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
-        timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.4).isActive = true
+        timeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.6).isActive = true
+        
+        
+        // Setup Label.
+        gradeLabel = UILabel()
+        self.addSubview(gradeLabel)
+        gradeLabel.translatesAutoresizingMaskIntoConstraints = false
+        gradeLabel.text = "WORKSHOP"
+        gradeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        gradeLabel.adjustsFontSizeToFitWidth = true
+        gradeLabel.textAlignment = .center
+        gradeLabel.numberOfLines = 3
+        gradeLabel.textColor = UIColor.white
+        gradeLabel.textAlignment = .natural
+        
+        
+        gradeLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        gradeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        gradeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
+        gradeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.8).isActive = true
 
         
         // Cell Autolayout.

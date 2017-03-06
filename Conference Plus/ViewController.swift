@@ -15,7 +15,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var fileParser:JKJSONFile!
     var collectionView:UICollectionView!
     var collectionViewLayout:UICollectionViewFlowLayout!
-    var items:[String] = ["Sponsors","Workshops","Maps","People","Terms/Privacy Policy"]
+    var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
     var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors")]
 
     // MARK: - Lifecycle
@@ -26,6 +26,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
         
         super.viewDidLoad()
+        self.title = "TechFest"
         UIApplication.shared.statusBarStyle = .lightContent
         collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
@@ -89,7 +90,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         case 2:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
         case 3:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "People") as! PeopleViewController, sender: nil)
+            self.show(storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController, sender: nil)
         default:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
         }

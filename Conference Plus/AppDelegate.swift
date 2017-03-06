@@ -44,10 +44,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         dataModel = DataModel()
         var presentation = (dataModel["sessions"] as! Array<Dictionary<String, Any>>)
+        
+        print(presentation.count)
+        
         var tag = 0
+        
+        
+        
+        let workshopTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
+        
+        let gradeTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
+               
+        
         for tooItem in 0...presentation.count - 1{
+            print(tooItem)
+            
             let workshop = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
             
+            
+            let grade = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["gradeLevels"] as! [Int])
+            print(workshopTwo)
+            
+            
+            print(workshop)
             
             for item in 0...workshop.count - 1{
                 
@@ -55,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 tag = tag + 1
                 
-                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item]])
+                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item],"grade": grade])
                 
                 
             }
@@ -63,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-        print(dataModel.workshops)
+        
         
         return true
     }

@@ -85,31 +85,22 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         var timeString = String()
         
         let room = ((appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["room"] as! String)
-        
-        if presenter.count > 1{
-            
-            for thing in 0...presenter.count - 1{
-                
-                if presenter.last == presenter[thing]{
-                    presenterString += presenter[thing]
-                    cell.presenterLabel.text = presenterString
-                }else{
-                    presenterString += presenter[thing] + ", "
-                    cell.presenterLabel.text = presenterString
-                }
-                
-                
-            }
-            
-        }else{
-            presenterString += presenter[0]
-            cell.presenterLabel.text = presenterString
-
+        let grade = (appDelegate.dataModel.workshops[indexPath.row]["grade"] as! [Int])
+        let grades = grade.map{
+            String($0)
         }
+        print(grade)
+        
+        
+        displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
+        displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
+        
+        
         
         print(title)
         print(presenter)
         print(room)
+        
         
         
         cell.titleLabel.text = title as! String
@@ -118,6 +109,44 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         return cell
     }
+    
+    func displayMultiplesOnCell(array:[String]!,label:UILabel,prefix:String?){
+        
+        var compoundString = String()
+        
+        if prefix == nil{
+            
+            compoundString = String()
+            
+        }else{
+            
+            compoundString = prefix!
+            
+        }
+        
+        if array.count > 1{
+            
+            for thing in 0...array.count - 1{
+                
+                if array.last as! String! == array[thing] as! String{
+                    compoundString += array[thing] as! String
+                    label.text = compoundString
+                }else{
+                    compoundString += (array[thing] as! String) + ", "
+                    label.text = compoundString
+                }
+                
+                
+            }
+            
+        }else{
+            compoundString += array[0] as! String
+            label.text = compoundString
+            
+        }
+
+        
+    }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "Workshops Expanded") as! WorkshopsXCViewController
@@ -125,8 +154,6 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func cellSizeChanged(indexPath:IndexPath!){
-        
-        print( workshopCollectionView.cellForItem(at: indexPath))
         
         UIView.animate(withDuration: 0.2, animations: {
             self.collectionViewFlowLayout.invalidateLayout()
@@ -150,7 +177,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
             cell?.setNeedsDisplay()
             
             
-            print(cell?.frame)
+            
             if cell?.isExpanded == true{
                 cell?.backgroundColor = UIColor.red
                 return CGSize(width: self.view.frame.width * 0.9, height: 250)

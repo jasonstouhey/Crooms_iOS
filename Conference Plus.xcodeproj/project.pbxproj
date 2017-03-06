@@ -26,6 +26,8 @@
 		D082356F1E526D8A0043FF04 /* Conference_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082356E1E526D8A0043FF04 /* Conference_PlusUITests.swift */; };
 		D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082357E1E526E150043FF04 /* JKJSONFile.swift */; };
 		D08235811E526FE80043FF04 /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = D08235801E526FE80043FF04 /* info.json */; };
+		D089A88C1E6D8DB200BCA0E1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */; };
+		D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */; };
 		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		D08235701E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D082357E1E526E150043FF04 /* JKJSONFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKJSONFile.swift; sourceTree = "<group>"; };
 		D08235801E526FE80043FF04 /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
+		D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableHeaderView.swift; sourceTree = "<group>"; };
 		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,10 +121,12 @@
 			children = (
 				13A126761E58908400096B77 /* MapViewController.swift */,
 				13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */,
+				D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */,
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
 				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
 				D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */,
 				13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */,
+				D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */,
 				D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */,
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
@@ -335,6 +342,7 @@
 				D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,
 				D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */,
+				D089A88C1E6D8DB200BCA0E1 /* AboutViewController.swift in Sources */,
 				13027A6B1E5CC70E001FA63E /* WorkshopsXCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
