@@ -1,31 +1,28 @@
 //
-//  WorkshopsXCViewController.swift
+//  SponsorsViewController.swift
 //  Conference Plus
 //
-//  Created by Zachary Shenkman on 2/21/17.
+//  Created by Zachary Shenkman on 3/5/17.
 //  Copyright © 2017 Suneet Tipirneni. All rights reserved.
 //
 
 import UIKit
 
-class WorkshopsXCViewController: UIViewController {
+class SponsorsViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var time: UILabel!
-    @IBOutlet weak var location: UILabel!
-    @IBOutlet weak var descrip: UILabel!
-    @IBOutlet weak var navTitle: UINavigationItem!
+    @IBOutlet weak var scrollView: UIScrollView!
 
-    func viewActuallyDidLoad(strName: String, strStartTime: String, strEndTime: String, strLocation: String, strDescription: String) {
-        name.text = strName
-        time.text = strStartTime + " to " + strEndTime
-        location.text = strLocation
-        navTitle.title = strName
+    func setSize() {
+        var contentRect = CGRect.zero
+        for view in self.scrollView.subviews {
+            contentRect = contentRect.union(view.frame)
+        }
+        self.scrollView.contentSize = contentRect.size
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSize()
 
         // Do any additional setup after loading the view.
     }

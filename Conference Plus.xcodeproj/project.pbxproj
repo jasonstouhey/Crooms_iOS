@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13027A6B1E5CC70E001FA63E /* WorkshopsXCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */; };
+		138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */; };
 		13A126771E58908400096B77 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A126761E58908400096B77 /* MapViewController.swift */; };
 		13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */; };
 		D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */; };
@@ -30,6 +31,8 @@
 		D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */; };
 		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
+		DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */; };
+		DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9541E69A720004BB1C2 /* sponsors.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsXCViewController.swift; sourceTree = "<group>"; };
+		138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		13A126761E58908400096B77 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = "Conference Plus/PeopleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableHeaderView.swift; sourceTree = "<group>"; };
 		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sponsors.xcassets; sourceTree = "<group>"; };
+		DBBDB9541E69A720004BB1C2 /* sponsors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sponsors.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 				D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */,
 				D08235501E526D8A0043FF04 /* ViewController.swift */,
 				D04788B51E5535A200158D49 /* SessionsViewController.swift */,
+				138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */,
 				D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */,
 				13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */,
 				D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */,
@@ -161,7 +168,9 @@
 				D0597E251E69A69A003B175E /* workshops.json */,
 				D0B477E51E63733F00FE9D01 /* DataModel.swift */,
 				D08235801E526FE80043FF04 /* info.json */,
+				DBBDB9541E69A720004BB1C2 /* sponsors.json */,
 				D08235521E526D8A0043FF04 /* Main.storyboard */,
+				DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */,
 				D08235551E526D8A0043FF04 /* Assets.xcassets */,
 				D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */,
 				D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */,
@@ -299,13 +308,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */,
 				D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */,
 				D08235811E526FE80043FF04 /* info.json in Resources */,
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
 				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
-				D0597E261E69A69A003B175E /* workshops.json in Resources */,
+
+				DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */,
+				13AD34D71E5F1BC500DFF4DD /* workshops.json in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +345,7 @@
 			files = (
 				D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */,
 				D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */,
+				138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */,
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
 				D082357F1E526E150043FF04 /* JKJSONFile.swift in Sources */,
