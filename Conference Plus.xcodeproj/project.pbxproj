@@ -17,7 +17,6 @@
 		D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04788B51E5535A200158D49 /* SessionsViewController.swift */; };
 		D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */; };
 		D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */; };
-		D0597E261E69A69A003B175E /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
 		D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082354E1E526D8A0043FF04 /* AppDelegate.swift */; };
 		D08235511E526D8A0043FF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235501E526D8A0043FF04 /* ViewController.swift */; };
 		D08235541E526D8A0043FF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235521E526D8A0043FF04 /* Main.storyboard */; };
@@ -29,6 +28,9 @@
 		D08235811E526FE80043FF04 /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = D08235801E526FE80043FF04 /* info.json */; };
 		D089A88C1E6D8DB200BCA0E1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */; };
 		D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */; };
+		D09CF3DE1E6DB70200A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
+		D09CF3DF1E6DB70300A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
+		D09CF3E01E6DB70300A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
 		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
 		DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */; };
@@ -312,13 +314,11 @@
 				D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */,
 				D08235811E526FE80043FF04 /* info.json in Resources */,
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
+				D09CF3DE1E6DB70200A72D94 /* workshops.json in Resources */,
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
 				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
-
 				DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */,
-				13AD34D71E5F1BC500DFF4DD /* workshops.json in Resources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CF3DF1E6DB70300A72D94 /* workshops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09CF3E01E6DB70300A72D94 /* workshops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
