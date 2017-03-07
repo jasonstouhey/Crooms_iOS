@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension UIColor {
+    func maroonColor() -> UIColor {
+        return UIColor(red: 151 / 255, green: 5 / 255 , blue: 36 / 255, alpha: 1.0)
+    }
+}
+
 extension Array  {
     var indexedDictionary: [Int: Element] {
         var result: [Int: Element] = [:]
@@ -33,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Customize Navigation
 
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        UINavigationBar.appearance().barTintColor = UIColor().maroonColor()
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white,NSFontAttributeName: UIFont.systemFont(ofSize: 24, weight: UIFontWeightThin)]
 

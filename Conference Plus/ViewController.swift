@@ -23,13 +23,9 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
-        
-        
-        
-        
+
         super.viewDidLoad()
         self.title = "TechFest"
-        UIApplication.shared.statusBarStyle = .lightContent
         collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
         collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)

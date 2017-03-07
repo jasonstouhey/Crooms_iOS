@@ -41,7 +41,7 @@ class ScrollableHeaderView: UIView,UIScrollViewDelegate {
         
         imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "Crooms.jpg")
-        imageView.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        imageView.backgroundColor = #colorLiteral(red: 0.5904989243, green: 0.02005090751, blue: 0.1411764706, alpha: 1)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
