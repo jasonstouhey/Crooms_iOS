@@ -16,8 +16,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var fileParser:JKJSONFile!
     var collectionView:UICollectionView!
     var collectionViewLayout:UICollectionViewFlowLayout!
-    var items:[String] = ["Sponsors","Workshops","Maps","People", "About", "Terms/Privacy Policy"]
-    var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors")]
+    var items:[String] = ["Sponsors","Workshops","Maps", "About", "Terms/Privacy Policy"]
+    var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors View"), #imageLiteral(resourceName: "Workshops View"), #imageLiteral(resourceName: "Maps View"), #imageLiteral(resourceName: "About View"), #imageLiteral(resourceName: "Tech Image")]
 
     // MARK: - Lifecycle
 
@@ -69,6 +69,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCollectionViewCell
         
         cell.titleLabel.text = items[indexPath.row]
+        cell.headerImage.image = images[indexPath.row]
         
                
         // Cell Customization
@@ -81,16 +82,17 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
 
         switch indexPath.row {
+        case 0:
+            break
+//            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsViewController, sender: nil)
         case 1:
             self.show(storyboard?.instantiateViewController(withIdentifier: "workshops") as! WorkshopsViewController, sender: nil)
         case 2:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
-//        case 3:
-//            self.show(storyboard?.instantiateViewController(withIdentifier: "People") as! PeopleViewController, sender: nil)
         case 4:
             self.show(storyboard?.instantiateViewController(withIdentifier: "About") as! AboutViewController, sender: nil)
         case 5:
-            let svc = SFSafariViewController(url: URL(string:"http://apple.com")!)
+            let svc = SFSafariViewController(url: URL(string:"http://techfest.croomsweb.org/app_privacy_policy/")!)
             self.present(svc, animated: true, completion: nil)
         default:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)

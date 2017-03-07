@@ -15,7 +15,7 @@ class TermsViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        webView.loadRequest(URLRequest(url: URL(string: "https://apple.com")!))
+        webView.loadRequest(URLRequest(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!))
 
 
         // Do any additional setup after loading the view.

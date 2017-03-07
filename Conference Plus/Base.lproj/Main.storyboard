@@ -100,50 +100,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="B2M-ub-UV7" kind="relationship" relationship="rootViewController" id="nWd-zn-74d"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59k-WN-vfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5366" y="-546"/>
-        </scene>
-        <!--Terms-->
-        <scene sceneID="Ew4-r7-lNx">
-            <objects>
-                <viewController storyboardIdentifier="Terms" id="B2M-ub-UV7" customClass="TermsViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lPw-w8-B4L"/>
-                        <viewControllerLayoutGuide type="bottom" id="g2f-Js-6UZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Hn-s4-tkZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jm8-9f-Tv2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <dataDetectorType key="dataDetectorTypes"/>
-                            </webView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9UE-Yz-zbC">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Terms" id="W0o-LZ-MR3">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="R1q-sU-IcM"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="progressView" destination="9UE-Yz-zbC" id="8KG-bV-sQy"/>
-                        <outlet property="webView" destination="jm8-9f-Tv2" id="ao1-f2-xyZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eic-Cj-9nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6197.6000000000004" y="-546.47676161919048"/>
         </scene>
         <!--About-->
         <scene sceneID="wif-ox-lFg">
