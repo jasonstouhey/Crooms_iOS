@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -17,10 +18,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var collectionViewLayout:UICollectionViewFlowLayout!
 
     var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
-
-    
-
-    var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors")]
+    var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors View"), #imageLiteral(resourceName: "Workshops View"), #imageLiteral(resourceName: "Map View"), #imageLiteral(resourceName: "About View"), #imageLiteral(resourceName: "Tech Image")]
 
     // MARK: - Lifecycle
     
@@ -77,6 +75,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCollectionViewCell
         
         cell.titleLabel.text = items[indexPath.row]
+        cell.headerImage.image = images[indexPath.row]
         
                
         // Cell Customization
@@ -95,10 +94,11 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
             self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
         case 2:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
-
         case 3:
             self.show(storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController, sender: nil)
-
+        case 4:
+            let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
+            self.present(svc, animated: true, completion: nil)
         default:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
         }
