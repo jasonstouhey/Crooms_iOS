@@ -11,6 +11,7 @@ import UIKit
 class AboutViewController: UIViewController {
 
     var stackView:ScrollableHeaderView!
+    var paragraphStyle:NSParagraphStyle!
     
     override func viewDidLoad() {
         
@@ -23,6 +24,10 @@ class AboutViewController: UIViewController {
         stackView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1).isActive = true
         stackView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 1).isActive = true
         stackView.headerLabel.text = "About Crooms"
+        
+        // Set Paragraph Style.
+        paragraphStyle = NSParagraphStyle()
+        
     }
     
     override func viewDidLayoutSubviews() {
