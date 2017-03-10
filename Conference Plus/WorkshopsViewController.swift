@@ -104,7 +104,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         }
         print(grade)
         
-        
+        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as! String
         displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
         displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
         
