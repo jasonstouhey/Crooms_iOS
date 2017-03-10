@@ -12,13 +12,26 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     // MARK: - Class Variables
     
+    @IBOutlet weak var gradeSelector: UISegmentedControl!
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
 
+    
     // MARK: - Lifecycle
+    
+    @IBAction func gradeWasSelected(_ sender: UISegmentedControl) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup grade selector
+        
+        gradeSelector.setTitle("9th", forSegmentAt: 0)
+        gradeSelector.setTitle("10th", forSegmentAt: 1)
+        gradeSelector.setTitle("11th", forSegmentAt: 2)
+        gradeSelector.setTitle("12th", forSegmentAt: 3)
 
         // Setup the collection view.
         collectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -95,7 +108,13 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
         displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
         
-        
+        if gradeSelector.selectedSegmentIndex == 0{
+            
+            if cell.gradeLabel.text! == "10" || cell.gradeLabel.text! == "11" || cell.gradeLabel.text! == "12"{
+                appDelegate.dataModel.workshops.remove(at: cell.indexPath.row)
+                workshopCollectionView.reloadData()
+            }
+        }
         
         print(title)
         print(presenter)

@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="2669.5999999999999" y="-546.47676161919048"/>
         </scene>
-        <!--Workshops-->
+        <!--Workshops View Controller-->
         <scene sceneID="xRk-iu-dKO">
             <objects>
                 <viewController storyboardIdentifier="Workshops" id="mc9-Zd-ds6" customClass="WorkshopsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,13 +63,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Workshops" id="mO2-5s-4Lw">
+                    <navigationItem key="navigationItem" id="mO2-5s-4Lw">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XWq-qx-ZxR">
+                            <rect key="frame" x="66" y="7" width="243" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="9th"/>
+                                <segment title="Second"/>
+                                <segment title=""/>
+                                <segment title=""/>
+                            </segments>
+                            <connections>
+                                <action selector="gradeWasSelected:" destination="mc9-Zd-ds6" eventType="valueChanged" id="oQ3-am-aa9"/>
+                            </connections>
+                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mUC-h9-4id">
                             <connections>
                                 <action selector="refresh:" destination="mc9-Zd-ds6" id="iKa-Rg-T4Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gradeSelector" destination="XWq-qx-ZxR" id="5jd-gh-gRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlP-bA-Mn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
