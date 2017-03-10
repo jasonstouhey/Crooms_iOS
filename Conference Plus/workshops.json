@@ -28,10 +28,10 @@
                                                 ],
                                   "business": "SafeHouse",
                                   "presenterPhoto": ".jpg",
-                                  "title": "How to Have Healthy Relationships"
+                                  "title": "Real Relationships- Life is Not a Game but This Workshop Is"
                                   },
                                   {
-                                  "room": "115",
+                                  "room": "128",
                                   "presenter": [
                                                 "Tim Parsons"
                                                 ],
@@ -49,13 +49,13 @@
                                   "title": "Augmented Reality Game Development"
                                   },
                                   {
-                                  "room": "115",
+                                  "room": "114",
                                   "presenter": [
                                                 "Biance Gillett"
                                                 ],
                                   "business": "Sanford Police Department",
                                   "presenterPhoto": ".jpg",
-                                  "title": "Law Enforcement and Social Meidia"
+                                  "title": "Law Enforcement and Social Media"
                                   },
                                   {
                                   "room": "204",
@@ -105,28 +105,28 @@
                                                 ],
                                   "business": "EA",
                                   "presenterPhoto": ".jpg",
-                                  "title": "Video Games"
+                                  "title": "Why So Serious? Making Video Games Should be Fun"
                                   },
                                   {
-                                  "room": "213",
+                                  "room": "115",
                                   "presenter": [
-                                                "David Sushil"
+                                                "Tim Parsons"
                                                 ],
                                   "business": "",
                                   "presenterPhoto": ".jpg",
                                   "title": "Virtual Reality: A New World"
                                   },
                                   {
-                                  "room": "115",
+                                  "room": "114",
                                   "presenter": [
                                                 "Biance Gillett"
                                                 ],
                                   "business": "Sanford Police Department",
                                   "presenterPhoto": ".jpg",
-                                  "title": "Law Enforcement and Social Meidia"
+                                  "title": "Law Enforcement and Social Media"
                                   },
                                   {
-                                  "room": "204",
+                                  "room": "123",
                                   "presenter": [
                                                 "Jarrod Uddin"
                                                 ],
@@ -195,7 +195,7 @@
                                                 ],
                                   "business": "SafeHouse",
                                   "presenterPhoto": ".jpg",
-                                  "title": "How to Have Healthy Relationships"
+                                  "title": "Real Relationships- Life is Not a Game but This Workshop Is"
                                   },
                                   {
                                   "room": "212",
@@ -257,7 +257,7 @@
                                                 ],
                                   "business": "SafeHouse",
                                   "presenterPhoto": ".jpg",
-                                  "title": "How to Have Healthy Relationships"
+                                  "title": "Real Relationships- Life is Not a Game but This Workshop Is"
                                   },
                                   {
                                   "room": "226",
@@ -293,7 +293,7 @@
                                                 ],
                                   "business": "iBrick Academy",
                                   "presenterPhoto": ".jpg",
-                                  "title": "LEGO Robotics - Cool tools for learning"
+                                  "title": "LEGO Robotics - Cool Tools for Learning"
                                   },
                                   {
                                   "room": "123",
@@ -320,7 +320,7 @@
                                                 ],
                                   "business": "AAA",
                                   "presenterPhoto": ".jpg",
-                                  "title": "Autonomous Vehicles Technology Tools at Roadside"
+                                  "title": "Autonomous Vehicles & Technology Tools at Roadside"
                                   }
                                   ]
                     }
@@ -337,7 +337,7 @@
                                     ],
                     "workshops": [
                                   {
-                                  "room": "128",
+                                  "room": "115",
                                   "presenter": [
                                                 "Tim Parsons"
                                                 ],
@@ -379,7 +379,7 @@
                                                 ],
                                   "business": "iBrick Academy",
                                   "presenterPhoto": ".jpg",
-                                  "title": "LEGO Robotics - Cool tools for learning"
+                                  "title": "LEGO Robotics - Cool Tools for Learning"
                                   },
                                   {
                                   "room": "123",
@@ -397,7 +397,7 @@
                                                 ],
                                   "business": "ERAU",
                                   "presenterPhoto": ".jpg",
-                                  "title": "Computer Science: What is it and how do you start?"
+                                  "title": "Computer Science: What Is It and How Do You Start?"
                                   },
                                   {
                                   "room": "130",
@@ -406,7 +406,7 @@
                                                 ],
                                   "business": "AAA",
                                   "presenterPhoto": ".jpg",
-                                  "title": "Autonomous Vehicles Technology Tools at Roadside"
+                                  "title": "Autonomous Vehicles & Technology Tools at Roadside"
                                   }
                                   ]
                     },
