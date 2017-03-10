@@ -14,7 +14,7 @@
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,7 +34,7 @@
         <!--Detail-->
         <scene sceneID="gUd-Yb-ban">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="P9F-DQ-rxt" customClass="SessionsViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="P9F-DQ-rxt" customClass="SessionsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f0A-mm-peb"/>
                         <viewControllerLayoutGuide type="bottom" id="9mv-3m-5d6"/>
@@ -53,7 +53,7 @@
         <!--Workshops-->
         <scene sceneID="xRk-iu-dKO">
             <objects>
-                <viewController storyboardIdentifier="Workshops" id="mc9-Zd-ds6" customClass="WorkshopsViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Workshops" id="mc9-Zd-ds6" customClass="WorkshopsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8ZC-Vo-h2w"/>
                         <viewControllerLayoutGuide type="bottom" id="Lfe-Mg-gDA"/>
@@ -78,7 +78,7 @@
         <!--About-->
         <scene sceneID="eaU-uu-okS">
             <objects>
-                <viewController storyboardIdentifier="about" id="sak-Sf-LJ5" customClass="AboutViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="about" id="sak-Sf-LJ5" customClass="AboutViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7An-6a-b4A"/>
                         <viewControllerLayoutGuide type="bottom" id="mSn-wc-hhz"/>
@@ -113,7 +113,7 @@
         <!--Sponsors-->
         <scene sceneID="h7s-ea-6Gb">
             <objects>
-                <viewController storyboardIdentifier="Sponsors" id="Srb-YY-2bC" customClass="SponsorsViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sponsors" id="Srb-YY-2bC" customClass="SponsorsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ryk-u8-2xN"/>
                         <viewControllerLayoutGuide type="bottom" id="4rI-LD-tBm"/>
@@ -588,7 +588,7 @@
         <!--Maps-->
         <scene sceneID="z3h-Mn-N6H">
             <objects>
-                <viewController storyboardIdentifier="Maps" id="Rvh-8i-YSO" customClass="MapViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Maps" id="Rvh-8i-YSO" customClass="MapViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tdE-E9-VCI"/>
                         <viewControllerLayoutGuide type="bottom" id="kQ0-lZ-nay"/>
@@ -700,7 +700,7 @@
         <!--Expanded Workshop-->
         <scene sceneID="Qg4-B9-ye9">
             <objects>
-                <viewController storyboardIdentifier="Workshop XC" id="2vX-sq-YKm" customClass="WorkshopsXCViewController" customModule="Conference_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Workshop XC" id="2vX-sq-YKm" customClass="WorkshopsXCViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EHG-su-6ci"/>
                         <viewControllerLayoutGuide type="bottom" id="ab4-yi-doB"/>
