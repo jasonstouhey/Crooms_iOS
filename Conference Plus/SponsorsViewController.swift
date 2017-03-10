@@ -12,26 +12,34 @@ class SponsorsViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
 
-    func setSize() {
+   
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
+                    // Do any additional setup after loading the view.
+        
+    }
+
+    override func viewDidLayoutSubviews() {
+        
         var contentRect = CGRect.zero
         var totalHeight = CGFloat()
         for view in self.scrollView.subviews {
             totalHeight += view.bounds.height
             
             
+            
+            print(totalHeight)
         }
-        print(totalHeight)
+        self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: 2000)
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
         
-        self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: totalHeight)
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setSize()
-
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+       
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
