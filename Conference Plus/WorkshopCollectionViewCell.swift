@@ -26,6 +26,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
     var presenterLabel: UILabel!
     var timeLabel: UILabel!
     var gradeLabel: UILabel!
+    var durationLabel: UILabel!
 
     
     // MARK: - Initialization
@@ -117,11 +118,31 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         gradeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
         gradeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
         gradeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.8).isActive = true
+        
+        // Setup Label.
+        durationLabel = UILabel()
+        self.addSubview(durationLabel)
+        durationLabel.translatesAutoresizingMaskIntoConstraints = false
+        durationLabel.text = "WORKSHOP"
+        durationLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        durationLabel.adjustsFontSizeToFitWidth = true
+        durationLabel.textAlignment = .right
+        durationLabel.numberOfLines = 3
+        durationLabel.textColor = UIColor.white
+        durationLabel.textAlignment = .right
+        
+        
+        durationLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        durationLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
+        durationLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -5).isActive = true
+        durationLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.65).isActive = true
+
 
         
         // Cell Autolayout.
         self.translatesAutoresizingMaskIntoConstraints = false
         self.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+        
     }
     
     func showMore(){
