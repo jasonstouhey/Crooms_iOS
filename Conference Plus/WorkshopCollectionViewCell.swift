@@ -46,18 +46,19 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = "WORKSHOP"
-        titleLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightHeavy)
-        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.font = UIFont.systemFont(ofSize: 12, weight: UIFontWeightHeavy)
+        titleLabel.adjustsFontSizeToFitWidth = false
+        titleLabel.numberOfLines = 3
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 3
         titleLabel.textColor = UIColor.white
         titleLabel.textAlignment = .natural
         
         // Label Autolayout.
-        titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45).isActive = true
         titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         
         
         
