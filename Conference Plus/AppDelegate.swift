@@ -77,6 +77,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let grade = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["gradeLevels"] as! [Int])
             print(workshopTwo)
             
+            let sessionStart = ((presentation[tooItem]["sessionStartTime"] as! String))
+            let sessionEnd = ((presentation[tooItem]["sessionEndTime"] as! String))
+            
+            let combinedTimes = "\(sessionStart) - \(sessionEnd)"
             
             print(workshop)
             
@@ -86,8 +90,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 tag = tag + 1
                 
-                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item],"grade": grade])
-                
+                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item],"grade": grade,"time":combinedTimes])
+                let finalTime = "10:15 - 10:55"
                 let finalGrade = ((presentation[3]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
                 print(finalGrade)
                 
@@ -95,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     
                     for final in 0...finalworkShop.count - 1{
                         tag = tag + 1
-                        dataModel.workshops.append(["Set \(tag)" : finalworkShop[final],"grade":finalGrade])
+                        dataModel.workshops.append(["Set \(tag)" : finalworkShop[final],"grade":finalGrade,"time":finalTime])
                     }
                 }
                 
