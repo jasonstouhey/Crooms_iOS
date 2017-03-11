@@ -90,6 +90,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
         self.gradeSelectView.alpha = 0.0
 
+        userDefaults.synchronize()
+
         if (userDefaults.bool(forKey: "gradeLevelSet") == false) {
             self.gradeSelectView.isHidden = false
             self.view.addSubview(self.gradeSelectView)
