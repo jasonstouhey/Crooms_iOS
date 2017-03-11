@@ -372,7 +372,7 @@
         <scene sceneID="Gcp-2M-UYX">
             <objects>
                 <tableViewController storyboardIdentifier="Sponsors" id="Och-H1-rKj" customClass="SponsorsTableViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gu0-Da-YyR">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gu0-Da-YyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -873,7 +873,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community Sponsors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6I-F6-Ysy">
-                                                    <rect key="frame" x="8" y="11" width="359" height="21"/>
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -883,7 +883,7 @@
                                                 <constraint firstItem="L6I-F6-Ysy" firstAttribute="leading" secondItem="aad-py-WMB" secondAttribute="leadingMargin" id="0jn-FK-Et1"/>
                                                 <constraint firstItem="L6I-F6-Ysy" firstAttribute="trailing" secondItem="aad-py-WMB" secondAttribute="trailingMargin" id="0yj-nD-hSD"/>
                                                 <constraint firstItem="L6I-F6-Ysy" firstAttribute="centerY" secondItem="aad-py-WMB" secondAttribute="centerY" id="PcX-JQ-cez"/>
-                                                <constraint firstItem="L6I-F6-Ysy" firstAttribute="top" secondItem="aad-py-WMB" secondAttribute="topMargin" constant="3" id="gwQ-Af-XnB"/>
+                                                <constraint firstItem="L6I-F6-Ysy" firstAttribute="top" secondItem="aad-py-WMB" secondAttribute="topMargin" constant="-8" id="gwQ-Af-XnB"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
