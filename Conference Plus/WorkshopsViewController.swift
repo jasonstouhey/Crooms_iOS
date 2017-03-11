@@ -15,6 +15,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     @IBOutlet weak var gradeSelector: UISegmentedControl!
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
+    
 
     
     // MARK: - Lifecycle
@@ -108,13 +109,6 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
         displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
         
-        if gradeSelector.selectedSegmentIndex == 0{
-            
-            if cell.gradeLabel.text! == "10" || cell.gradeLabel.text! == "11" || cell.gradeLabel.text! == "12"{
-                appDelegate.dataModel.workshops.remove(at: cell.indexPath.row)
-                workshopCollectionView.reloadData()
-            }
-        }
         
         print(title)
         print(presenter)
@@ -168,7 +162,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Workshops Expanded") as! WorkshopsXCViewController
+        
 
     }
     
