@@ -20,14 +20,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZF-uQ-RI3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nN-Lb-rX7">
+                                        <rect key="frame" x="75" y="257" width="224" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="9th Grade" backgroundImage="buttonBackground">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nineButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUM-IY-Hfd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9s-Ye-p0G">
+                                        <rect key="frame" x="75" y="307" width="224" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="10th Grade" backgroundImage="buttonBackground">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tenButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pp4-DP-CiV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frJ-xW-DdW">
+                                        <rect key="frame" x="75" y="357" width="224" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="11th Grade" backgroundImage="buttonBackground">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="elevenButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPG-Ef-yCF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-HB-xBR">
+                                        <rect key="frame" x="75" y="407" width="224" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="12th Grade" backgroundImage="buttonBackground">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="twelveButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wc0-aN-WRx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-2u-Csb">
+                                        <rect key="frame" x="75" y="217" width="224" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.13359917534722221" alpha="0.51987906678082196" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="8dE-A9-M4Y"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="gradeSelectView" destination="pZF-uQ-RI3" id="YAR-zF-pb8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="-546"/>
+            <point key="canvasLocation" x="880.79999999999995" y="-546.47676161919048"/>
         </scene>
         <!--Detail-->
         <scene sceneID="gUd-Yb-ban">
@@ -63,28 +122,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="mO2-5s-4Lw">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XWq-qx-ZxR">
-                            <rect key="frame" x="66" y="7" width="243" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="9th"/>
-                                <segment title="Second"/>
-                                <segment title=""/>
-                                <segment title=""/>
-                            </segments>
-                            <connections>
-                                <action selector="gradeWasSelected:" destination="mc9-Zd-ds6" eventType="valueChanged" id="oQ3-am-aa9"/>
-                            </connections>
-                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="mUC-h9-4id">
                             <connections>
                                 <action selector="refresh:" destination="mc9-Zd-ds6" id="iKa-Rg-T4Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="gradeSelector" destination="XWq-qx-ZxR" id="5jd-gh-gRh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlP-bA-Mn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -675,5 +718,6 @@
         <image name="Verizon" width="1696" height="601"/>
         <image name="btn1" width="400" height="400"/>
         <image name="btn2" width="400" height="400"/>
+        <image name="buttonBackground" width="1000" height="228"/>
     </resources>
 </document>

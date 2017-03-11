@@ -9,6 +9,8 @@
 import UIKit
 import SafariServices
 
+let userDefaults = UserDefaults.standard
+
 class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
     
     // MARK: - Class Variables
@@ -20,8 +22,42 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
     var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors View"), #imageLiteral(resourceName: "Workshops View"), #imageLiteral(resourceName: "Map View"), #imageLiteral(resourceName: "About View"), #imageLiteral(resourceName: "Tech Image")]
 
+    @IBOutlet weak var gradeSelectView: UIView!
+
+    @IBAction func nineButtonFunction(_ sender: UIButton) {
+        setGrade(grade: 9)
+    }
+
+    @IBAction func tenButtonFunction(_ sender: UIButton) {
+        setGrade(grade: 10)
+    }
+
+    @IBAction func elevenButtonFunction(_ sender: UIButton) {
+        setGrade(grade: 11)
+    }
+
+    @IBAction func twelveButtonFunction(_ sender: UIButton) {
+        setGrade(grade: 12)
+    }
+
+    func setGrade(grade: Int) {
+        userDefaults.set(grade, forKey: "gradeLevel")
+        userDefaults.set(true, forKey: "gradeLevelSet")
+        userDefaults.synchronize()
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.gradeSelectView.alpha = 0.0
+        })
+    }
+
     // MARK: - Lifecycle
-    
+
+    func delay(_ delay: Double, closure: @escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC),
+            execute: closure
+        )
+    }
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -51,7 +87,19 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         collectionView.layer.shadowRadius = 10
         collectionView.layer.shadowOpacity = 0.5
-        
+
+        self.gradeSelectView.alpha = 0.0
+
+        if (userDefaults.bool(forKey: "gradeLevelSet") == false) {
+            self.gradeSelectView.isHidden = false
+            self.view.addSubview(self.gradeSelectView)
+            UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                self.gradeSelectView.alpha = 1.0
+            })
+        } else if (userDefaults.bool(forKey: "gradeLevelSet") == true) {
+            self.gradeSelectView.isHidden = true
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
