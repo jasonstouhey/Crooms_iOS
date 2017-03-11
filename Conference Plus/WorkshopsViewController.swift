@@ -12,7 +12,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     // MARK: - Class Variables
     
-    @IBOutlet weak var gradeSelector: UISegmentedControl!
+    
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
     
@@ -20,20 +20,13 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     // MARK: - Lifecycle
     
-    @IBAction func gradeWasSelected(_ sender: UISegmentedControl) {
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Setup grade selector
         
-        gradeSelector.setTitle("9th", forSegmentAt: 0)
-        gradeSelector.setTitle("10th", forSegmentAt: 1)
-        gradeSelector.setTitle("11th", forSegmentAt: 2)
-        gradeSelector.setTitle("12th", forSegmentAt: 3)
-
+        
         // Setup the collection view.
         collectionViewFlowLayout = UICollectionViewFlowLayout()
         collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)

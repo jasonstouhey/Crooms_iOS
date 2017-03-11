@@ -175,7 +175,7 @@ print(self.frame)
         
                 
         
-        
+        self.isUserInteractionEnabled = false
         
     }
     
