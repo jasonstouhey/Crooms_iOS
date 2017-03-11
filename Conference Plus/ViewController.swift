@@ -85,7 +85,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
         switch indexPath.row {
         case 0:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsViewController, sender: nil)
+            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController, sender: nil)
         case 1:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
         case 2:
