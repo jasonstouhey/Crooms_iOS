@@ -387,7 +387,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior Sponsors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urC-4a-vGs">
-                                                    <rect key="frame" x="8" y="11" width="359" height="21"/>
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -397,7 +397,7 @@
                                                 <constraint firstItem="urC-4a-vGs" firstAttribute="centerY" secondItem="pX8-uH-rL4" secondAttribute="centerY" id="3AN-CP-qrH"/>
                                                 <constraint firstItem="urC-4a-vGs" firstAttribute="leading" secondItem="pX8-uH-rL4" secondAttribute="leadingMargin" id="fZd-g7-usT"/>
                                                 <constraint firstItem="urC-4a-vGs" firstAttribute="trailing" secondItem="pX8-uH-rL4" secondAttribute="trailingMargin" id="iZ6-Xg-be4"/>
-                                                <constraint firstItem="urC-4a-vGs" firstAttribute="top" secondItem="pX8-uH-rL4" secondAttribute="topMargin" constant="3" id="w17-C3-9Vg"/>
+                                                <constraint firstItem="urC-4a-vGs" firstAttribute="top" secondItem="pX8-uH-rL4" secondAttribute="topMargin" constant="-8" id="w17-C3-9Vg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -463,8 +463,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sophmore Sponsors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="609-vz-awq">
-                                                    <rect key="frame" x="8" y="11" width="359" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sophomore Sponsors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="609-vz-awq">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
