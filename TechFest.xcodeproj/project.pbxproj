@@ -277,7 +277,7 @@
 				TargetAttributes = {
 					D082354A1E526D8A0043FF04 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FL4XKYXB7F;
+						DevelopmentTeam = 7DL8RQG4VE;
 						ProvisioningStyle = Automatic;
 					};
 					D082355E1E526D8A0043FF04 = {
@@ -523,7 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				DEVELOPMENT_TEAM = FL4XKYXB7F;
+				DEVELOPMENT_TEAM = 7DL8RQG4VE;
 				INFOPLIST_FILE = "Conference Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suneettipirneni.TechFest;
@@ -536,7 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				DEVELOPMENT_TEAM = FL4XKYXB7F;
+				DEVELOPMENT_TEAM = 7DL8RQG4VE;
 				INFOPLIST_FILE = "Conference Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suneettipirneni.TechFest;
