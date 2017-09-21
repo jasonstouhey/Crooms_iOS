@@ -29,7 +29,7 @@ class SponsorsViewController: UIViewController {
         super.viewDidLoad()
         setSize()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.title = "Sponsors"
     }
 
     override func didReceiveMemoryWarning() {

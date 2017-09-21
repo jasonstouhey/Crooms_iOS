@@ -21,9 +21,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         // Setup cell
-        self.layer.borderColor = UIColor.gray.cgColor
-        self.layer.borderWidth = 0.5
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = 10
         self.layer.masksToBounds = true
         self.clipsToBounds = true
         self.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
@@ -34,13 +32,14 @@ class ItemCollectionViewCell: UICollectionViewCell {
         titleLabel = UILabel()
         titleLabel.textColor = UIColor.white
         titleLabel.textAlignment = .natural
+        titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         self.addSubview(titleLabel)
        
         
         // Autolayout.
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        titleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.3).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
@@ -52,7 +51,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
         // Autolayout
         headerImage.translatesAutoresizingMaskIntoConstraints = false
         headerImage.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        headerImage.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.8).isActive = true
+        headerImage.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.7).isActive = true
         headerImage.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         headerImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         

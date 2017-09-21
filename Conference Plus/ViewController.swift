@@ -24,6 +24,11 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     
     override func viewDidLoad() {
 
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
         super.viewDidLoad()
         self.title = "TechFest"
         collectionViewLayout = UICollectionViewFlowLayout()
