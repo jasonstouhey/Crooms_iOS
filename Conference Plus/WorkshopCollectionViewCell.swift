@@ -47,7 +47,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = "WORKSHOP"
-        titleLabel.font = UIFont.systemFont(ofSize: 12, weight: UIFontWeightHeavy)
+        titleLabel.font = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.heavy)
         titleLabel.adjustsFontSizeToFitWidth = false
         titleLabel.numberOfLines = 3
         titleLabel.textAlignment = .center
@@ -68,7 +68,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview( presenterLabel)
         presenterLabel.translatesAutoresizingMaskIntoConstraints = false
          presenterLabel.text = "WORKSHOP"
-         presenterLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+         presenterLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFont.Weight.thin)
          presenterLabel.adjustsFontSizeToFitWidth = true
          presenterLabel.textAlignment = .center
          presenterLabel.numberOfLines = 3
@@ -87,7 +87,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview(timeLabel)
         timeLabel.translatesAutoresizingMaskIntoConstraints = false
         timeLabel.text = "WORKSHOP"
-        timeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        timeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFont.Weight.thin)
         timeLabel.adjustsFontSizeToFitWidth = true
         timeLabel.textAlignment = .center
         timeLabel.numberOfLines = 3
@@ -106,7 +106,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview(gradeLabel)
         gradeLabel.translatesAutoresizingMaskIntoConstraints = false
         gradeLabel.text = "WORKSHOP"
-        gradeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        gradeLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFont.Weight.thin)
         gradeLabel.adjustsFontSizeToFitWidth = true
         gradeLabel.textAlignment = .center
         gradeLabel.numberOfLines = 3
@@ -124,7 +124,7 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         self.addSubview(durationLabel)
         durationLabel.translatesAutoresizingMaskIntoConstraints = false
         durationLabel.text = "WORKSHOP"
-        durationLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFontWeightThin)
+        durationLabel.font = UIFont.systemFont(ofSize: 32, weight: UIFont.Weight.thin)
         durationLabel.adjustsFontSizeToFitWidth = true
         durationLabel.textAlignment = .right
         durationLabel.numberOfLines = 3

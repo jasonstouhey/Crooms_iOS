@@ -134,11 +134,11 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
             
             for thing in 0...array.count - 1{
                 
-                if array.last as! String! == array[thing] as! String{
-                    compoundString += array[thing] as! String
+                if array.last as String! == array[thing] {
+                    compoundString += array[thing] 
                     label.text = compoundString
                 }else{
-                    compoundString += (array[thing] as! String) + ", "
+                    compoundString += (array[thing] ) + ", "
                     label.text = compoundString
                 }
                 
@@ -146,7 +146,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
             }
             
         }else{
-            compoundString += array[0] as! String
+            compoundString += array[0] 
             label.text = compoundString
             
         }

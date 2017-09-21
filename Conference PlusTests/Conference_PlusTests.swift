@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Conference_Plus
+//@testable import Conference_Plus
 
 class Conference_PlusTests: XCTestCase {
     
