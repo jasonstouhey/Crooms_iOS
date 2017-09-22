@@ -23,13 +23,15 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
-
+        super.viewDidLoad()
+        
+        
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
         } else {
             // Fallback on earlier versions
         }
-        super.viewDidLoad()
+        
         self.title = "TechFest"
         collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
