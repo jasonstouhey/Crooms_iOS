@@ -12,27 +12,19 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     // MARK: - Class Variables
     
-    @IBOutlet weak var gradeSelector: UISegmentedControl!
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
 
     
     // MARK: - Lifecycle
     
-    @IBAction func gradeWasSelected(_ sender: UISegmentedControl) {
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Setup grade selector
         
-        gradeSelector.setTitle("9th", forSegmentAt: 0)
-        gradeSelector.setTitle("10th", forSegmentAt: 1)
-        gradeSelector.setTitle("11th", forSegmentAt: 2)
-        gradeSelector.setTitle("12th", forSegmentAt: 3)
-
+        
         // Setup the collection view.
         collectionViewFlowLayout = UICollectionViewFlowLayout()
         collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
@@ -94,8 +86,8 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let title = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["title"]!
         let presenter:[String] = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["presenter"] as! [String]
-        var presenterString = "By "
-        var timeString = String()
+        _ = "By "
+        _ = String()
         
         let room = ((appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["room"] as! String)
         let grade = (appDelegate.dataModel.workshops[indexPath.row]["grade"] as! [Int])
@@ -104,17 +96,10 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         }
         print(grade)
         
-        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as! String
+        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as? String
         displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
         displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
         
-        if gradeSelector.selectedSegmentIndex == 0{
-            
-            if cell.gradeLabel.text! == "10" || cell.gradeLabel.text! == "11" || cell.gradeLabel.text! == "12"{
-                appDelegate.dataModel.workshops.remove(at: cell.indexPath.row)
-                workshopCollectionView.reloadData()
-            }
-        }
         
         print(title)
         print(presenter)
@@ -122,7 +107,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         
         
-        cell.titleLabel.text = title as! String
+        cell.titleLabel.text = title as? String
         cell.timeLabel.text = "Room - \(room)"
         
         
@@ -168,7 +153,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Workshops Expanded") as! WorkshopsXCViewController
+        
 
     }
     

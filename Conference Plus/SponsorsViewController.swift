@@ -13,7 +13,7 @@ class SponsorsViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
 
     func setSize() {
-        var contentRect = CGRect.zero
+        
         var totalHeight = CGFloat()
         for view in self.scrollView.subviews {
             totalHeight += view.bounds.height
@@ -29,7 +29,7 @@ class SponsorsViewController: UIViewController {
         super.viewDidLoad()
         setSize()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.title = "Sponsors"
     }
 
     override func didReceiveMemoryWarning() {

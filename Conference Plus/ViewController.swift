@@ -63,8 +63,15 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     }
 
     override func viewDidLoad() {
-
         super.viewDidLoad()
+        
+        
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
+        
         self.title = "TechFest"
         collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
@@ -139,7 +146,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
         switch indexPath.row {
         case 0:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsViewController, sender: nil)
+            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController, sender: nil)
         case 1:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
         case 2:

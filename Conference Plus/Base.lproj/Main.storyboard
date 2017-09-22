@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -111,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="2669.5999999999999" y="-546.47676161919048"/>
         </scene>
-        <!--Workshops View Controller-->
+        <!--Workshops-->
         <scene sceneID="xRk-iu-dKO">
             <objects>
                 <viewController storyboardIdentifier="Workshops" id="mc9-Zd-ds6" customClass="WorkshopsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUd-L7-aYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6312.8000000000002" y="-457.42128935532236"/>
+            <point key="canvasLocation" x="6652" y="-457.42128935532236"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o6s-0d-03H">
@@ -165,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Srb-YY-2bC" kind="relationship" relationship="rootViewController" id="O4u-zI-qT0"/>
+                        <segue destination="Och-H1-rKj" kind="relationship" relationship="rootViewController" id="QIZ-K1-QP7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaZ-HW-IW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,7 +177,7 @@
         <!--Sponsors-->
         <scene sceneID="h7s-ea-6Gb">
             <objects>
-                <viewController storyboardIdentifier="Sponsors" id="Srb-YY-2bC" customClass="SponsorsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Srb-YY-2bC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ryk-u8-2xN"/>
                         <viewControllerLayoutGuide type="bottom" id="4rI-LD-tBm"/>
@@ -708,7 +710,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04B-3T-AO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5373.6000000000004" y="-457.42128935532236"/>
+            <point key="canvasLocation" x="5712.8000000000002" y="-457.42128935532236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DFm-PZ-Fdt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Pg-HT-cck" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uWk-zX-S6O">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Srb-YY-2bC" kind="relationship" relationship="rootViewController" id="YRV-HA-yiY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PI4-RH-aTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4343" y="197"/>
         </scene>
     </scenes>
     <resources>
