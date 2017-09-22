@@ -13,7 +13,8 @@ class FeedbackViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Set the title of controller.
+        self.title = "Send Feedback"
     }
 
     override func didReceiveMemoryWarning() {

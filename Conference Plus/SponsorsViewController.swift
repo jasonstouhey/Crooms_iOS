@@ -17,8 +17,6 @@ class SponsorsViewController: UIViewController {
         var totalHeight = CGFloat()
         for view in self.scrollView.subviews {
             totalHeight += view.bounds.height
-            
-            
         }
         print(totalHeight)
         

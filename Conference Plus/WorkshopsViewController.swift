@@ -190,11 +190,6 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
             }
             
         }
-                
-            
-            
-            
-        
         
         return CGSize(width: self.view.frame.width * 0.9, height: 100)
         
