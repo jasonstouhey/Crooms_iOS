@@ -12,10 +12,8 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     // MARK: - Class Variables
     
-    
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
-    
 
     
     // MARK: - Lifecycle
@@ -88,8 +86,8 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let title = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["title"]!
         let presenter:[String] = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["presenter"] as! [String]
-        var presenterString = "By "
-        var timeString = String()
+        _ = "By "
+        _ = String()
         
         let room = ((appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["room"] as! String)
         let grade = (appDelegate.dataModel.workshops[indexPath.row]["grade"] as! [Int])
@@ -98,7 +96,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         }
         print(grade)
         
-        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as! String
+        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as? String
         displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
         displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
         
@@ -109,7 +107,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         
         
-        cell.titleLabel.text = title as! String
+        cell.titleLabel.text = title as? String
         cell.timeLabel.text = "Room - \(room)"
         
         

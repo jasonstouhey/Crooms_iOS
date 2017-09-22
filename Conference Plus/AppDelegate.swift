@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let workshopTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
         
-        let gradeTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
+        _ = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
         
          let finalworkShop = ((presentation[3]["presentations"] as! Array<Dictionary<String,Any>>)[1]["workshops"] as! Array<Dictionary<String, Any>>)
         

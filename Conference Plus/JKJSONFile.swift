@@ -31,9 +31,8 @@ public class JKJSONFile: NSObject {
             print("File exists on path:\(fileAtPath)")
             
             do{
-                let data = NSData(contentsOf: NSURL(fileURLWithPath: fileAtPath) as URL)
-                let file = try JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String,AnyObject>
-                
+                //_ = NSData(contentsOf: NSURL(fileURLWithPath: fileAtPath) as URL)
+                        
             }catch{
                 print(error)
             }
