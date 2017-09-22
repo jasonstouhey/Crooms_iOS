@@ -18,6 +18,7 @@
 		D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04788B51E5535A200158D49 /* SessionsViewController.swift */; };
 		D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */; };
 		D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */; };
+		D05464001F756E8100F4105F /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05463FF1F756E8100F4105F /* FeedbackViewController.swift */; };
 		D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082354E1E526D8A0043FF04 /* AppDelegate.swift */; };
 		D08235511E526D8A0043FF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235501E526D8A0043FF04 /* ViewController.swift */; };
 		D08235541E526D8A0043FF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235521E526D8A0043FF04 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		D04788B51E5535A200158D49 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
 		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D05463FF1F756E8100F4105F /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		D0597E251E69A69A003B175E /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
 		D082354B1E526D8A0043FF04 /* TechFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082354E1E526D8A0043FF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */,
 				13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */,
 				D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */,
+				D05463FF1F756E8100F4105F /* FeedbackViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			files = (
 				D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */,
 				D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */,
+				D05464001F756E8100F4105F /* FeedbackViewController.swift in Sources */,
 				138C8C691E6CAEF00006ADCB /* SponsorsViewController.swift in Sources */,
 				D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */,
 				13A126771E58908400096B77 /* MapViewController.swift in Sources */,
