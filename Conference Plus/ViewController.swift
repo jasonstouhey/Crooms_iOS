@@ -22,7 +22,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
     var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors View"), #imageLiteral(resourceName: "Workshops View"), #imageLiteral(resourceName: "Map View"), #imageLiteral(resourceName: "About View"), #imageLiteral(resourceName: "Tech Image")]
 
-    @IBOutlet weak var gradeSelectView: UIView!
+    @IBOutlet weak var gradeSelectView: UIVisualEffectView!
 
     @IBAction func nineButtonFunction(_ sender: UIButton) {
         setGrade(grade: 9)
@@ -94,7 +94,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
         if (userDefaults.bool(forKey: "gradeLevelSet") == false) {
             self.gradeSelectView.isHidden = false
-            self.view.addSubview(self.gradeSelectView)
+            self.navigationController?.navigationBar.addSubview(gradeSelectView)
             UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 self.gradeSelectView.alpha = 1.0
             })

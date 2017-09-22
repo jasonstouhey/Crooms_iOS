@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T3z-Re-rnu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T3z-Re-rnu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,99 +21,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZF-uQ-RI3">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yn-ez-HxN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nN-Lb-rX7">
-                                        <rect key="frame" x="75" y="257" width="224" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="xLt-8V-oBE"/>
-                                        </constraints>
-                                        <state key="normal" title="9th Grade" backgroundImage="buttonBackground">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nineButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUM-IY-Hfd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9s-Ye-p0G">
-                                        <rect key="frame" x="75" y="307" width="224" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="s64-UE-enb"/>
-                                        </constraints>
-                                        <state key="normal" title="10th Grade" backgroundImage="buttonBackground">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tenButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pp4-DP-CiV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frJ-xW-DdW">
-                                        <rect key="frame" x="75" y="357" width="224" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="Bac-uM-6xq"/>
-                                        </constraints>
-                                        <state key="normal" title="11th Grade" backgroundImage="buttonBackground">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="elevenButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPG-Ef-yCF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-HB-xBR">
-                                        <rect key="frame" x="75" y="407" width="224" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="zwu-Y1-Xky"/>
-                                        </constraints>
-                                        <state key="normal" title="12th Grade" backgroundImage="buttonBackground">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="twelveButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wc0-aN-WRx"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-2u-Csb">
-                                        <rect key="frame" x="75" y="217" width="224" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="lr5-Q4-Qv4"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.13359917534722221" alpha="0.51987906678082196" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="4nN-Lb-rX7" firstAttribute="trailing" secondItem="z9s-Ye-p0G" secondAttribute="trailing" id="2C9-zo-6Nx"/>
-                                    <constraint firstItem="z9s-Ye-p0G" firstAttribute="top" secondItem="4nN-Lb-rX7" secondAttribute="bottom" constant="8" symbolic="YES" id="2iO-SR-oG0"/>
-                                    <constraint firstItem="z9s-Ye-p0G" firstAttribute="leading" secondItem="frJ-xW-DdW" secondAttribute="leading" id="BIq-2A-yKc"/>
-                                    <constraint firstItem="frJ-xW-DdW" firstAttribute="top" secondItem="z9s-Ye-p0G" secondAttribute="bottom" constant="8" symbolic="YES" id="EUA-WO-aR4"/>
-                                    <constraint firstItem="Ecw-HB-xBR" firstAttribute="top" secondItem="frJ-xW-DdW" secondAttribute="bottom" constant="8" symbolic="YES" id="F9e-7T-CV5"/>
-                                    <constraint firstItem="FAR-2u-Csb" firstAttribute="leading" secondItem="pZF-uQ-RI3" secondAttribute="leading" constant="75" id="NBY-hl-GxG"/>
-                                    <constraint firstItem="FAR-2u-Csb" firstAttribute="leading" secondItem="4nN-Lb-rX7" secondAttribute="leading" id="Ov7-iG-Dt6"/>
-                                    <constraint firstItem="FAR-2u-Csb" firstAttribute="top" secondItem="pZF-uQ-RI3" secondAttribute="top" constant="217" id="SX7-nF-1AG"/>
-                                    <constraint firstItem="frJ-xW-DdW" firstAttribute="leading" secondItem="Ecw-HB-xBR" secondAttribute="leading" id="a3i-j4-a5B"/>
-                                    <constraint firstItem="4nN-Lb-rX7" firstAttribute="leading" secondItem="z9s-Ye-p0G" secondAttribute="leading" id="idE-Rl-tqf"/>
-                                    <constraint firstItem="4nN-Lb-rX7" firstAttribute="top" secondItem="FAR-2u-Csb" secondAttribute="bottom" constant="8" symbolic="YES" id="ms6-FQ-VaM"/>
-                                    <constraint firstItem="z9s-Ye-p0G" firstAttribute="trailing" secondItem="frJ-xW-DdW" secondAttribute="trailing" id="syi-iC-cas"/>
-                                    <constraint firstItem="FAR-2u-Csb" firstAttribute="centerX" secondItem="pZF-uQ-RI3" secondAttribute="centerX" id="vxE-LP-vtw"/>
-                                    <constraint firstItem="FAR-2u-Csb" firstAttribute="trailing" secondItem="4nN-Lb-rX7" secondAttribute="trailing" id="zOf-jJ-cwT"/>
-                                    <constraint firstItem="frJ-xW-DdW" firstAttribute="trailing" secondItem="Ecw-HB-xBR" secondAttribute="trailing" id="zan-3u-GV4"/>
-                                </constraints>
-                            </view>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Mpg-x8-kfe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nN-Lb-rX7">
+                                            <rect key="frame" x="75" y="259" width="224" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="9th Grade" backgroundImage="buttonBackground">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="nineButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUM-IY-Hfd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9s-Ye-p0G">
+                                            <rect key="frame" x="75" y="309" width="224" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="10th Grade" backgroundImage="buttonBackground">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="tenButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pp4-DP-CiV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frJ-xW-DdW">
+                                            <rect key="frame" x="75" y="359" width="224" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="11th Grade" backgroundImage="buttonBackground">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="elevenButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPG-Ef-yCF"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-HB-xBR">
+                                            <rect key="frame" x="75" y="409" width="224" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="12th Grade" backgroundImage="buttonBackground">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="twelveButtonFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wc0-aN-WRx"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-2u-Csb">
+                                            <rect key="frame" x="75" y="216" width="224" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="pZF-uQ-RI3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D8z-rG-Sqz"/>
-                            <constraint firstAttribute="trailing" secondItem="pZF-uQ-RI3" secondAttribute="trailing" id="OL7-uX-qx3"/>
-                            <constraint firstItem="pZF-uQ-RI3" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="dT8-DU-ahQ"/>
-                            <constraint firstItem="pZF-uQ-RI3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wOD-hg-DdL"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="8dE-A9-M4Y"/>
+                    <navigationItem key="navigationItem" title="Title" id="eQM-Yi-2Xs"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="gradeSelectView" destination="pZF-uQ-RI3" id="YAR-zF-pb8"/>
+                        <outlet property="gradeSelectView" destination="4yn-ez-HxN" id="def-lk-eIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,7 +161,7 @@
             <objects>
                 <navigationController id="suJ-P7-WpH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4XA-UK-8Lk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -486,7 +458,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VWA-Sq-svd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -504,7 +476,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u7B-b4-SpP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ubl-Hf-v7J">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -521,7 +493,7 @@
             <objects>
                 <navigationController id="H7h-3u-64t" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s70-tY-mfq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -633,7 +605,7 @@
             <objects>
                 <navigationController id="FdL-8Y-Xlx" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RDh-qy-lyV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -708,7 +680,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FQt-MP-1Nz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -726,7 +698,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GuI-B3-wGQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wac-VT-GEF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
