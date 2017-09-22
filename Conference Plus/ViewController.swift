@@ -44,9 +44,13 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         userDefaults.set(grade, forKey: "gradeLevel")
         userDefaults.set(true, forKey: "gradeLevelSet")
         userDefaults.synchronize()
-        UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
-            self.gradeSelectView.alpha = 0.0
-        })
+        
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                self.gradeSelectView.alpha = 0.0
+            }, completion: {Void in self.gradeSelectView.removeFromSuperview()})
+        }
+        
     }
 
     // MARK: - Lifecycle
@@ -93,8 +97,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         userDefaults.synchronize()
 
         if (userDefaults.bool(forKey: "gradeLevelSet") == false) {
-            self.gradeSelectView.isHidden = false
-            self.navigationController?.navigationBar.addSubview(gradeSelectView)
+            self.gradeSelectView.updateFocusIfNeeded()
+            self.navigationController?.view.addSubview(gradeSelectView)
             UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 self.gradeSelectView.alpha = 1.0
             })
