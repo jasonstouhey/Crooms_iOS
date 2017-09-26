@@ -48,65 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Data
         
-        dataModel = DataModel()
-        var presentation = (dataModel["sessions"] as! Array<Dictionary<String, Any>>)
-        
-        print(presentation.count)
-        
-        var tag = 0
-        
-        
-        
-        let workshopTwo = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
-        
-        _ = ((presentation[1]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
-        
-         let finalworkShop = ((presentation[3]["presentations"] as! Array<Dictionary<String,Any>>)[1]["workshops"] as! Array<Dictionary<String, Any>>)
-        
-        print(presentation.count - 1)
-        
-        for tooItem in 0...presentation.count - 1{
-            print(tooItem)
-            
-            let workshop = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)
-            
-           
-            
-            print(finalworkShop)
-            
-            let grade = ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["gradeLevels"] as! [Int])
-            print(workshopTwo)
-            
-            let sessionStart = ((presentation[tooItem]["sessionStartTime"] as! String))
-            let sessionEnd = ((presentation[tooItem]["sessionEndTime"] as! String))
-            
-            let combinedTimes = "\(sessionStart) - \(sessionEnd)"
-            
-            print(workshop)
-            
-            for item in 0...workshop.count - 1{
-                
-                print(item)
-                
-                tag = tag + 1
-                
-                dataModel.workshops.append(["Set \(tag)" : ((presentation[tooItem]["presentations"] as! Array<Dictionary<String,Any>>)[0]["workshops"] as! Array<Dictionary<String, Any>>)[item],"grade": grade,"time":combinedTimes])
-                let finalTime = "10:15 - 10:55"
-                let finalGrade = ((presentation[3]["presentations"] as! Array<Dictionary<String,Any>>)[1]["gradeLevels"] as! [Int])
-                print(finalGrade)
-                
-                if item == workshop.count - 1{
-                    
-                    for final in 0...finalworkShop.count - 1{
-                        tag = tag + 1
-                        dataModel.workshops.append(["Set \(tag)" : finalworkShop[final],"grade":finalGrade,"time":finalTime])
-                    }
-                }
-                
-            }
-
-        }
-        print(finalworkShop)
         
         
         
