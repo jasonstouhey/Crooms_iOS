@@ -76,7 +76,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
         self.title = "TechFest"
         collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
+        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.95, height: 150)
         collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
         
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: collectionViewLayout)
@@ -101,19 +101,20 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.layer.shadowRadius = 10
         collectionView.layer.shadowOpacity = 0.5
 
-        self.gradeSelectView.alpha = 0.0
+        //self.gradeSelectView.alpha = 0.0
 
         userDefaults.synchronize()
-
+/*
         if (userDefaults.bool(forKey: "gradeLevelSet") == false) {
             self.gradeSelectView.updateFocusIfNeeded()
-            self.navigationController?.view.addSubview(gradeSelectView)
+            self.view.addSubview(gradeSelectView)
             UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 self.gradeSelectView.alpha = 1.0
             })
         } else if (userDefaults.bool(forKey: "gradeLevelSet") == true) {
-            self.gradeSelectView.isHidden = true
+            
         }
+ */
 
     }
 
@@ -164,6 +165,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
         
     }
+    
+    
     
 }
 

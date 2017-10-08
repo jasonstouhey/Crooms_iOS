@@ -8,6 +8,8 @@
 
 import UIKit
 
+var data = DataManager()
+
 class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Class Variables
@@ -24,10 +26,16 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         // Setup grade selector
         
+        //
+        
+        
+        //
+        self.title = "Workshops"
+            
         
         // Setup the collection view.
         collectionViewFlowLayout = UICollectionViewFlowLayout()
-        collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
+        collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.95, height: 150)
         workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewFlowLayout)
         
         workshopCollectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +57,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         // Shadow
         workshopCollectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         workshopCollectionView.layer.shadowRadius = 10
-        workshopCollectionView.layer.shadowOpacity = 0.5
+        workshopCollectionView.layer.shadowOpacity = 0.2
         
         
         
@@ -73,7 +81,16 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     // MARK: - Collection View Data Source
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return appDelegate.dataModel.workshops.count
+        
+        var totalWorkshops = Int()
+        
+        for i in 0...data.workshops.count - 1{
+            totalWorkshops += data.workshops[i].presentations[0].workshops.count
+        }
+        
+        print(totalWorkshops)
+        
+        return totalWorkshops
     }
     
     
@@ -84,6 +101,33 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.delegate = self
         cell.indexPath = indexPath
         
+        var allWorkshops:[DataManager.workshopData]! = []
+        for i in 0...data.workshops.count - 1{
+            for y in 0...data.workshops[i].presentations[0].workshops.count - 1{
+                allWorkshops.append(data.workshops[i].presentations[0].workshops[y])
+            }
+            
+            
+            
+        }
+        
+        var presenters = allWorkshops[indexPath.row].presenter
+        cell.presenterLabel.text = "By "
+        for person in presenters{
+            if presenters.index(of: person) == 0{
+                cell.presenterLabel.text = "By \(person)"
+            }else{
+                cell.presenterLabel.text?.append(" and \(person)")
+            }
+            
+        }
+        
+        
+        
+        print(allWorkshops)
+        
+        cell.titleLabel.text = allWorkshops[indexPath.row].title
+        /*
         let title = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["title"]!
         let presenter:[String] = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["presenter"] as! [String]
         _ = "By "
@@ -109,7 +153,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         cell.titleLabel.text = title as? String
         cell.timeLabel.text = "Room - \(room)"
-        
+        */
         
         return cell
     }
@@ -154,8 +198,11 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-
+        let selectedCell = collectionView.cellForItem(at: indexPath)
+        
     }
+    
+    
     
     func cellSizeChanged(indexPath:IndexPath!){
         
@@ -166,37 +213,6 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
             
         })
         
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        
-        
-        
-        let cell = collectionView.cellForItem(at: indexPath) as! WorkshopCollectionViewCell?
-                
-        if cell != nil{
-            cell?.updateConstraints()
-            cell?.setNeedsLayout()
-            cell?.setNeedsDisplay()
-            
-            
-            
-            if cell?.isExpanded == true{
-                cell?.backgroundColor = UIColor.red
-                return CGSize(width: self.view.frame.width * 0.9, height: 250)
-            }else{
-                return CGSize(width: self.view.frame.width * 0.9, height: 100)
-            }
-            
-        }
-                
-            
-            
-            
-        
-        
-        return CGSize(width: self.view.frame.width * 0.9, height: 100)
         
     }
     

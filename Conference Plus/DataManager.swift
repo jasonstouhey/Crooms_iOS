@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+
 class DataManager:NSObject{
     
     var filePath:String!
