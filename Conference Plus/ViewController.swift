@@ -11,13 +11,15 @@ import SafariServices
 
 let userDefaults = UserDefaults.standard
 
-class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+
+class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate{
     
     // MARK: - Class Variables
     
     var fileParser:JKJSONFile!
     var collectionView:UICollectionView!
     var collectionViewLayout:UICollectionViewFlowLayout!
+    var transitionController:Transitioner! = Transitioner()
 
     var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
     var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors View"), #imageLiteral(resourceName: "Workshops View"), #imageLiteral(resourceName: "Map View"), #imageLiteral(resourceName: "About View"), #imageLiteral(resourceName: "Tech Image")]
@@ -64,6 +66,13 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionFade
+        self.navigationController?.view.layer.add(transition, forKey: nil)
+        _ = self.navigationController?.popToRootViewController(animated: false)
         
         let data = DataManager()
         print(data.workshops)
@@ -115,6 +124,8 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
             
         }
  */
+        
+        navigationController?.delegate = self
 
     }
 
@@ -152,6 +163,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
             self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController, sender: nil)
         case 1:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
+            
         case 2:
             self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
         case 3:
@@ -167,6 +179,11 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     }
     
     
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?{
+        transitionController.reverse = operation == .pop
+        return transitionController
+    }
     
 }
 

@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barStyle = .blackOpaque
         
         // Data
-        
+        window?.backgroundColor = UIColor.white
         
         
         

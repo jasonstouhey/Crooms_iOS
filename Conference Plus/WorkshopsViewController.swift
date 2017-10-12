@@ -24,6 +24,8 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Setup grade selector
         
         //
