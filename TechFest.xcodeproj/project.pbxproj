@@ -13,6 +13,7 @@
 		13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */; };
 		13D693301E73A413004393B9 /* SponsorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D6932F1E73A413004393B9 /* SponsorsTableViewController.swift */; };
 		D0038E731F79DE8D00B8F29E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0038E721F79DE8D00B8F29E /* DataManager.swift */; };
+		D0057AC81FBA4CA9009D0C0E /* STKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0057AC71FBA4CA9009D0C0E /* STKit.framework */; };
 		D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */; };
 		D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */; };
 		D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */; };
@@ -60,6 +61,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D07C52591FB7C1C100DE79B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13027A6A1E5CC70E001FA63E /* WorkshopsXCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsXCViewController.swift; sourceTree = "<group>"; };
 		138C8C681E6CAEF00006ADCB /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +81,7 @@
 		13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = "Conference Plus/PeopleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		13D6932F1E73A413004393B9 /* SponsorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsTableViewController.swift; sourceTree = "<group>"; };
 		D0038E721F79DE8D00B8F29E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D0057AC71FBA4CA9009D0C0E /* STKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STKit.framework; sourceTree = "<group>"; };
 		D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsViewController.swift; sourceTree = "<group>"; };
 		D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopCollectionViewCell.swift; sourceTree = "<group>"; };
 		D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-02-15 at 6.29.27 PM.png"; sourceTree = "<group>"; };
@@ -106,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0057AC81FBA4CA9009D0C0E /* STKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +175,7 @@
 		D08235421E526D8A0043FF04 = {
 			isa = PBXGroup;
 			children = (
+				D0057AC71FBA4CA9009D0C0E /* STKit.framework */,
 				D082354D1E526D8A0043FF04 /* Conference Plus */,
 				D08235621E526D8A0043FF04 /* Conference PlusTests */,
 				D082356D1E526D8A0043FF04 /* Conference PlusUITests */,
@@ -228,6 +245,7 @@
 				D08235471E526D8A0043FF04 /* Sources */,
 				D08235481E526D8A0043FF04 /* Frameworks */,
 				D08235491E526D8A0043FF04 /* Resources */,
+				D07C52591FB7C1C100DE79B6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -549,9 +567,15 @@
 		D08235741E526D8A0043FF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 7DL8RQG4VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Conference Plus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suneettipirneni.TechFest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,9 +588,15 @@
 		D08235751E526D8A0043FF04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 7DL8RQG4VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Conference Plus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suneettipirneni.TechFest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

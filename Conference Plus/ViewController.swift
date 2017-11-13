@@ -12,7 +12,38 @@ import SafariServices
 let userDefaults = UserDefaults.standard
 
 
-class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate{
+class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, UIViewControllerPreviewingDelegate{
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        let indexPath = collectionView.indexPathForItem(at: location)
+        guard let cell = collectionView?.cellForItem(at: indexPath!) else { return nil }
+        previewingContext.sourceRect = self.view.convert(cell.frame, from: collectionView)
+        
+        
+        
+        switch indexPath?.row {
+        case 0?:
+            return storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController
+        case 1?:
+            return storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController
+        case 2?:
+            return storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController
+        case 3?:
+            return storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController
+        case 4?:
+            let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
+            return svc
+        default:
+            return storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsViewController
+        }
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        
+        self.show(viewControllerToCommit, sender: nil)
+    }
+    
     
     // MARK: - Class Variables
     
@@ -53,6 +84,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
             }, completion: {Void in self.gradeSelectView.removeFromSuperview()})
         }
         
+        
     }
 
     // MARK: - Lifecycle
@@ -66,6 +98,12 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if( traitCollection.forceTouchCapability == .available){
+            
+            registerForPreviewing(with: self, sourceView: view)
+            
+        }
         
         let transition = CATransition()
         transition.duration = 0.5
@@ -157,30 +195,43 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // MARK: - Collection View Delegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-
-        switch indexPath.row {
-        case 0:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController, sender: nil)
-        case 1:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
+        
+        if self.navigationController == nil{
             
-        case 2:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
-        case 3:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController, sender: nil)
-        case 4:
-            let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
-            self.present(svc, animated: true, completion: nil)
-        default:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+        }else{
+            switch indexPath.row {
+            case 0:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController, sender: nil)
+            case 1:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
+                
+            case 2:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
+            case 3:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController, sender: nil)
+            case 4:
+                let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
+                self.present(svc, animated: true, completion: nil)
+            default:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+            }
         }
+        
         
         
     }
     
     
+   
+
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?{
+       
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        self.navigationController?.navigationBar.barTintColor = UIColor().maroonColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         transitionController.reverse = operation == .pop
         return transitionController
     }

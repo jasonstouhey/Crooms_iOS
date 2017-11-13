@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -109,7 +109,7 @@
         <!--Sponsors-->
         <scene sceneID="h7s-ea-6Gb">
             <objects>
-                <viewController id="Srb-YY-2bC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sponsors" id="Srb-YY-2bC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ryk-u8-2xN"/>
                         <viewControllerLayoutGuide type="bottom" id="4rI-LD-tBm"/>

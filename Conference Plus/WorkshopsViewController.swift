@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import STKit
 
 var data = DataManager()
 
-class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class WorkshopsViewController: STStrechViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Class Variables
     
@@ -23,8 +24,10 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
         
         // Setup grade selector
         
@@ -32,7 +35,7 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         
         
         //
-        self.title = "Workshops"
+        
             
         
         // Setup the collection view.
@@ -60,8 +63,15 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         workshopCollectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         workshopCollectionView.layer.shadowRadius = 10
         workshopCollectionView.layer.shadowOpacity = 0.2
+        self.headerTitleLabel.text = "Workshops"
+        self.maxHeaderHeightMultiplier = 0.4
+        var darkView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        headerImageView.addSubview(darkView)
+        darkView.constrainEqual(toView: self.headerImageView)
         
-        
+        self.headerImage = #imageLiteral(resourceName: "project-newton-oakhill-interior.jpg")
+        self.scrollView = workshopCollectionView
+        self.compactHeaderHeight = 75
         
     }
     
