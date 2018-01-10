@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import STKit
 
-class AboutViewController: UIViewController {
+class AboutViewController: STStrechViewController {
 
     var stackView:ScrollableHeaderView!
     var paragraphStyle:NSParagraphStyle!
@@ -17,13 +18,10 @@ class AboutViewController: UIViewController {
         
         self.title = "About"
         
-        stackView = ScrollableHeaderView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(stackView)
         
-        stackView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1).isActive = true
-        stackView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 1).isActive = true
-        stackView.headerLabel.text = "About Crooms"
+        
+        
+        
         
         // Set Paragraph Style.
         paragraphStyle = NSParagraphStyle()

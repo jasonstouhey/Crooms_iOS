@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T3z-Re-rnu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T3z-Re-rnu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -109,7 +108,7 @@
         <!--Sponsors-->
         <scene sceneID="h7s-ea-6Gb">
             <objects>
-                <viewController storyboardIdentifier="Sponsors" id="Srb-YY-2bC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sponsors" id="Srb-YY-2bC" customClass="SponsorsViewController" customModule="TechFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ryk-u8-2xN"/>
                         <viewControllerLayoutGuide type="bottom" id="4rI-LD-tBm"/>
@@ -383,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvC-Oj-scZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4445.6000000000004" y="193.85307346326837"/>
+            <point key="canvasLocation" x="5044" y="198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Ba-mc-EYZ">
