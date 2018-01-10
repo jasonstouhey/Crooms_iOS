@@ -113,10 +113,24 @@ class WorkshopsViewController: STStrechViewController, UICollectionViewDataSourc
         cell.delegate = self
         cell.indexPath = indexPath
         
+        
+        var ninth = [DataManager.presentationData]()
+        var tenth = [DataManager.presentationData]()
+        var eleventh = [DataManager.presentationData]()
+        var twelfth = [DataManager.presentationData]()
+        
+        
+        
+        
         var allWorkshops:[DataManager.workshopData]! = []
         for i in 0...data.workshops.count - 1{
             for y in 0...data.workshops[i].presentations[0].workshops.count - 1{
                 allWorkshops.append(data.workshops[i].presentations[0].workshops[y])
+                ninth += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(9)}
+                tenth += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(10)}
+                eleventh += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(11)}
+                twelfth += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(12)}
+                
             }
             
             
