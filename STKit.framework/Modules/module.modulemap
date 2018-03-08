@@ -1,0 +1,11 @@
+framework module STKit {
+  umbrella header "STKit.h"
+
+  export *
+  module * { export * }
+}
+
+module STKit.Swift {
+    header "STKit-Swift.h"
+    requires objc
+}

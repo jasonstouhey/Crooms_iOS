@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import STKit
 
-class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+var data = DataManager()
+
+class WorkshopsViewController: STStrechViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // MARK: - Class Variables
     
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
+    var workshops = DataManager().workshops
+    var ninthWorkshops:[DataManager.workshopData]!
+    var tenthWorkshops:[DataManager.workshopData]!
+    var upperclassWorkshops:[DataManager.workshopData]!
 
     
     // MARK: - Lifecycle
@@ -22,12 +29,23 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Setup grade selector
+        workshops = DataManager().workshops
+        
+        ninthWorkshops = workshops!.filter{$0.grade[0] == 9}
+        tenthWorkshops = workshops!.filter{$0.grade[0] == 10}
+        upperclassWorkshops = workshops!.filter{$0.grade[0] == 11}
+        
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         
         
         // Setup the collection view.
         collectionViewFlowLayout = UICollectionViewFlowLayout()
-        collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 250)
+        collectionViewFlowLayout.itemSize = CGSize(width: self.view.frame.width * 0.95, height: 150)
         workshopCollectionView = UICollectionView(frame: CGRect(), collectionViewLayout: collectionViewFlowLayout)
         
         workshopCollectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -49,9 +67,16 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         // Shadow
         workshopCollectionView.layer.shadowOffset = CGSize(width: 0, height: 0)
         workshopCollectionView.layer.shadowRadius = 10
-        workshopCollectionView.layer.shadowOpacity = 0.5
+        workshopCollectionView.layer.shadowOpacity = 0.2
+        self.headerTitleLabel.text = "Workshops"
+        self.maxHeaderHeightMultiplier = 0.4
+        var darkView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        headerImageView.addSubview(darkView)
+        darkView.constrainEqual(toView: self.headerImageView)
         
-        
+        self.headerImage = #imageLiteral(resourceName: "project-newton-oakhill-interior.jpg")
+        self.scrollView = workshopCollectionView
+        self.compactHeaderHeight = 75
         
     }
     
@@ -73,7 +98,20 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
     // MARK: - Collection View Data Source
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return appDelegate.dataModel.workshops.count
+        
+        switch userDefaults.integer(forKey: "gradeLevel") {
+        case 9:
+            return ninthWorkshops.count
+        case 10:
+            return tenthWorkshops.count
+        case 11:
+            return upperclassWorkshops.count
+        case 12:
+            return upperclassWorkshops.count
+        default:
+            return workshops!.count
+        }
+        
     }
     
     
@@ -84,31 +122,25 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.delegate = self
         cell.indexPath = indexPath
         
-        let title = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["title"]!
-        let presenter:[String] = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["presenter"] as! [String]
-        _ = "By "
-        _ = String()
+        var currentWorkshop:DataManager.workshopData!
         
-        let room = ((appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["room"] as! String)
-        let grade = (appDelegate.dataModel.workshops[indexPath.row]["grade"] as! [Int])
-        let grades = grade.map{
-            String($0)
+        switch userDefaults.integer(forKey: "gradeLevel") {
+        case 9:
+            currentWorkshop = ninthWorkshops[indexPath.row]
+        case 10:
+            currentWorkshop = tenthWorkshops[indexPath.row]
+        case 11:
+            currentWorkshop = upperclassWorkshops[indexPath.row]
+        case 12:
+            currentWorkshop = upperclassWorkshops[indexPath.row]
+        default:
+            currentWorkshop = workshops![indexPath.row]
         }
-        print(grade)
-        
-        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as? String
-        displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
-        displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
         
         
-        print(title)
-        print(presenter)
-        print(room)
-        
-        
-        
-        cell.titleLabel.text = title as? String
-        cell.timeLabel.text = "Room - \(room)"
+        cell.titleLabel.text = currentWorkshop.name
+        cell.timeLabel.text = currentWorkshop.time
+        cell.presenterLabel.text = currentWorkshop.presenter
         
         
         return cell
@@ -154,8 +186,11 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-
+        let selectedCell = collectionView.cellForItem(at: indexPath)
+        
     }
+    
+    
     
     func cellSizeChanged(indexPath:IndexPath!){
         
@@ -166,37 +201,6 @@ class WorkshopsViewController: UIViewController, UICollectionViewDataSource, UIC
             
         })
         
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        
-        
-        
-        let cell = collectionView.cellForItem(at: indexPath) as! WorkshopCollectionViewCell?
-                
-        if cell != nil{
-            cell?.updateConstraints()
-            cell?.setNeedsLayout()
-            cell?.setNeedsDisplay()
-            
-            
-            
-            if cell?.isExpanded == true{
-                cell?.backgroundColor = UIColor.red
-                return CGSize(width: self.view.frame.width * 0.9, height: 250)
-            }else{
-                return CGSize(width: self.view.frame.width * 0.9, height: 100)
-            }
-            
-        }
-                
-            
-            
-            
-        
-        
-        return CGSize(width: self.view.frame.width * 0.9, height: 100)
         
     }
     

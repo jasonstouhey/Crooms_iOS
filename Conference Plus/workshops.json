@@ -1,516 +1,353 @@
  [
-  {
-  "sessionStartTime": "8:00",
-  "sessionEndTime": "8:40",
-  "sessionNumber": 1,
-  "keynote": {
-  "gradeLevels": [
-                  12,
-                  9
-                  ],
-  "room": "Cafetorium",
-  "presenter": ["Jarrod Uddin"],
-  "business": "Jarrod Speaks, Inc / Rally Cap, Inc.",
-  "presenterPhoto": ".jpg",
-  "title": "Unfollow The Crowd"
-  },
-  "presentations": [
-                    {
-                    "gradeLevels": [
-                                    10
-                                    ],
-                    "workshops": [
-                                  {
-                                  "room": "230",
-                                  "presenter": [
-                                                "Michelle Jewett",
-                                                "Jennifer Gama"
-                                                ],
-                                  "business": "SafeHouse",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Real Relationships- Life is Not a Game but This Workshop Is"
-                                  },
-                                  {
-                                  "room": "128",
-                                  "presenter": [
-                                                "Tim Parsons"
-                                                ],
-                                  "business": "",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Virtual Reality: A New World"
-                                  },
-                                  {
-                                  "room": "213",
-                                  "presenter": [
-                                                "David Sushil"
-                                                ],
-                                  "business": "Bad Pilcrow",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Augmented Reality Game Development"
-                                  },
-                                  {
-                                  "room": "114",
-                                  "presenter": [
-                                                "Biance Gillett"
-                                                ],
-                                  "business": "Sanford Police Department",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Law Enforcement and Social Media"
-                                  },
-                                  {
-                                  "room": "204",
-                                  "presenter": [
-                                                "David Morillo"
-                                                ],
-                                  "business": "Full Sail Labs",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Video Resume"
-                                  },
-                                  {
-                                  "room": "226",
-                                  "presenter": [
-                                                "Lee Mangold"
-                                                ],
-                                  "business": "Florida Cyber Alliance",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Introduction to Cyber Security and Hacking"
-                                  }
-                                  ]
-                    }
-                    ]
-  },
-  {
-  "sessionStartTime": "8:45",
-  "sessionEndTime": "9:25",
-  "sessionNumber": 2,
-  "presentations": [
-                    {
-                    "gradeLevels": [
-                                    10
-                                    ],
-                    "workshops": [
-                                  {
-                                  "room": "232",
-                                  "presenter": [
-                                                "Kevin Gouvia"
-                                                ],
-                                  "business": "SCPS/Simiosys",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "How to Prepare for a Career in Digital Media/Simulation/VR"
-                                  },
-                                  {
-                                  "room": "228",
-                                  "presenter": [
-                                                "John Taylor"
-                                                ],
-                                  "business": "EA",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Why So Serious? Making Video Games Should be Fun"
-                                  },
-                                  {
-                                  "room": "115",
-                                  "presenter": [
-                                                "Tim Parsons"
-                                                ],
-                                  "business": "",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Virtual Reality: A New World"
-                                  },
-                                  {
-                                  "room": "114",
-                                  "presenter": [
-                                                "Biance Gillett"
-                                                ],
-                                  "business": "Sanford Police Department",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Law Enforcement and Social Media"
-                                  },
-                                  {
-                                  "room": "123",
-                                  "presenter": [
-                                                "Jarrod Uddin"
-                                                ],
-                                  "business": "Jarrod Speaks, Inc. / Rally Cap Inc",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Unfollow The Crowd"
-                                  }
-                                  ]
-                    },
-                    {
-                    "gradeLevels": [
-                                    11,
-                                    12
-                                    ],
-                    "workshops": [
-                                  {
-                                  "room": "128",
-                                  "presenter": [
-                                                "Tim Parsons"
-                                                ],
-                                  "business": "",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Virtual Reality: A New World"
-                                  },
-                                  {
-                                  "room": "209",
-                                  "presenter": [
-                                                "Dawn Raquel Jensen"
-                                                ],
-                                  "business": "Virtual Options Coaching & Training",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Personal Branding & Social Media"
-                                  },
-                                  {
-                                  "room": "129",
-                                  "presenter": [
-                                                "Bill Gaught"
-                                                ],
-                                  "business": "Seminole State College",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Post Secondary Education"
-                                  },
-                                  {
-                                  "room": "204",
-                                  "presenter": [
-                                                "David Morillo"
-                                                ],
-                                  "business": "Full Sail Labs",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Video Resume"
-                                  },
-                                  {
-                                  "room": "226",
-                                  "presenter": [
-                                                "Lee Mangold"
-                                                ],
-                                  "business": "Florida Cyber Alliance",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Introduction to Cyber Security and Hacking"
-                                  },
-                                  {
-                                  "room": "230",
-                                  "presenter": [
-                                                "Michelle Jewett",
-                                                "Jennifer Gama"
-                                                ],
-                                  "business": "SafeHouse",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Real Relationships- Life is Not a Game but This Workshop Is"
-                                  },
-                                  {
-                                  "room": "212",
-                                  "presenter": [
-                                                "DDr. Keith Garfield"
-                                                ],
-                                  "business": "ERAU",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Introduction to Artificial Intelligence"
-                                  },
-                                  {
-                                  "room": "227",
-                                  "presenter": [
-                                                "Richard Allen"
-                                                ],
-                                  "business": "AXA Advisors, LLC.",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Money Makes Dollars and Dollars Make Sense"
-                                  },
-                                  {
-                                  "room": "",
-                                  "presenter": [
-                                                "Matthew Marino"
-                                                ],
-                                  "business": "",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Educational Video Games"
-                                  }
-                                  ]
-                    }
-                    ]
-  },
-  {
-  "sessionStartTime": "9:30",
-  "sessionEndTime": "10:10",
-  "sessionNumber": 3,
-  "keynote": {
-  "gradeLevels": [
-                  10,
-                  11
-                  ],
-  "room": "Cafetorium",
-  "presenter": ["Josh Calcanis"],
-  "business": "Regional Account Manager and Author",
-  "presenterPhoto": ".jpg",
-  "title": "Only You Control Your ARM"
-  },
-  "presentations": [
-                    {
-                    "gradeLevels": [
-                                    9
-                                    ],
-                    "workshops": [
-                                  {
-                                  "room": "230",
-                                  "presenter": [
-                                                "Michelle Jewett",
-                                                "Jennifer Gama"
-                                                ],
-                                  "business": "SafeHouse",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Real Relationships- Life is Not a Game but This Workshop Is"
-                                  },
-                                  {
-                                  "room": "226",
-                                  "presenter": [
-                                                "Lee Mangold"
-                                                ],
-                                  "business": "Florida Cyber Alliance",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Introduction to Cyber Security and Hacking"
-                                  },
-                                  {
-                                  "room": "213",
-                                  "presenter": [
-                                                "David Sushil"
-                                                ],
-                                  "business": "Bad Pilcrow",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Augmented Reality Game Development"
-                                  },
-                                  {
-                                  "room": "114",
-                                  "presenter": [
-                                                "Bianca Gillet"
-                                                ],
-                                  "business": "Sanford Police Department",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Law Enforcement and Social Media"
-                                  },
-                                  {
-                                  "room": "228",
-                                  "presenter": [
-                                                "James Jones"
-                                                ],
-                                  "business": "iBrick Academy",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "LEGO Robotics - Cool Tools for Learning"
-                                  },
-                                  {
-                                  "room": "123",
-                                  "presenter": [
-                                                "Sara Klein"
-                                                ],
-                                  "business": "Seminole County Sheriff's Office",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Technology in Criminal Justice"
-                                  },
-                                  {
-                                  "room": "224",
-                                  "presenter": [
-                                                "Tyler Petresky"
-                                                ],
-                                  "business": "Limbitless Solutions",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Printing 3D Hope"
-                                  },
-                                  {
-                                  "room": "130",
-                                  "presenter": [
-                                                "William Wills"
-                                                ],
-                                  "business": "AAA",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Autonomous Vehicles & Technology Tools at Roadside"
-                                  }
-                                  ]
-                    }
-                    ]
-  },
-  {
-  "sessionStartTime": "10:15",
-  "sessionEndTime": "10:55",
-  "sessionNumber": 4,
-  "presentations": [
-                    {
-                    "gradeLevels": [
-                                    9
-                                    ],
-                    "workshops": [
-                                  {
-                                  "room": "115",
-                                  "presenter": [
-                                                "Tim Parsons"
-                                                ],
-                                  "business": "",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Virtual Reality: A New World"
-                                  },
-                                  {
-                                  "room": "224",
-                                  "presenter": [
-                                                "Tyler Petresky"
-                                                ],
-                                  "business": "Limbitless Solutions",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Printing 3D Hope"
-                                  },
-                                  {
-                                  "room": "213",
-                                  "presenter": [
-                                                "David Sushil"
-                                                ],
-                                  "business": "Bad Pilcrow",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Augmented Reality Game Development"
-                                  },
-                                  {
-                                  "room": "114",
-                                  "presenter": [
-                                                "Bianca Gillet"
-                                                ],
-                                  "business": "Sanford Police Department",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Law Enforcement and Social Media"
-                                  },
-                                  {
-                                  "room": "228",
-                                  "presenter": [
-                                                "James Jones"
-                                                ],
-                                  "business": "iBrick Academy",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "LEGO Robotics - Cool Tools for Learning"
-                                  },
-                                  {
-                                  "room": "123",
-                                  "presenter": [
-                                                "Sara Klein"
-                                                ],
-                                  "business": "Seminole County Sheriff's Office",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Technology in Criminal Justice"
-                                  },
-                                  {
-                                  "room": "212",
-                                  "presenter": [
-                                                "Dr. Keith Garfield"
-                                                ],
-                                  "business": "ERAU",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Computer Science: What Is It and How Do You Start?"
-                                  },
-                                  {
-                                  "room": "130",
-                                  "presenter": [
-                                                "William Wills"
-                                                ],
-                                  "business": "AAA",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Autonomous Vehicles & Technology Tools at Roadside"
-                                  }
-                                  ]
-                    },
-                    {
-                    "gradeLevels": [
-                                    11,
-                                    12
-                                    ],
-                    "workshops": [
-                                  {
-                                  "room": "232",
-                                  "presenter": [
-                                                "Kevin Gouvia"
-                                                ],
-                                  "business": "SCPS/Simiosys",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "How to prepare for a Careers in Digital Media/Simulation/VR"
-                                  },
-                                  {
-                                  "room": "230",
-                                  "presenter": [
-                                                "Leonard Musselle",
-                                                "Corey Gray",
-                                                "Cristina Garcia",
-                                                "Dan Bell"
-                                                ],
-                                  "business": "Comprehensive Energy Services, Inc",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Virtual Design: High Paying Tech Jobs in Construction"
-                                  },
-                                  {
-                                  "room": "209",
-                                  "presenter": [
-                                                "Dawn Raquel Jensen"
-                                                ],
-                                  "business": "Virtual Options Coaching & Training",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Personal Branding & Social Media"
-                                  },
-                                  {
-                                  "room": "113",
-                                  "presenter": [
-                                                "Matthew Marino"
-                                                ],
-                                  "business": "University of Central Florida",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Educational Video Games"
-                                  },
-                                  {
-                                  "room": "223",
-                                  "presenter": [
-                                                "Simon Obeid Ph.D"
-                                                ],
-                                  "business": "DeVry University",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Enhancing hands-on projects in STEM education"
-                                  },
-                                  {
-                                  "room": "226",
-                                  "presenter": [
-                                                "Lee Mangold"
-                                                ],
-                                  "business": "Florida Cyber Alliance",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Introduction to Cyber Security and Hacking"
-                                  },
-                                  {
-                                  "room": "125",
-                                  "presenter": [
-                                                "Josh Calcanis"
-                                                ],
-                                  "business": "Regional Account Manager and Author - Co-Founder, Owner",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Only You Control Your ARM"
-                                  },
-                                  {
-                                  "room": "129",
-                                  "presenter": [
-                                                "John Arie"
-                                                ],
-                                  "business": "Fun Spot America Theme Parks",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "VR-It's not all games"
-                                  },
-                                  {
-                                  "room": "204",
-                                  "presenter": [
-                                                "David Morillo"
-                                                ],
-                                  "business": "Full Sail Labs",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Video Resume"
-                                  },
-                                  {
-                                  "room": "227",
-                                  "presenter": [
-                                                "Richard Allen"
-                                                ],
-                                  "business": "AXA Advisors, LLC",
-                                  "presenterPhoto": ".jpg",
-                                  "title": "Money Makes Dollars and Dollars Make Sense"
-                                  }
-                                  ]
-                    }
-                    ]
-  }
+    {
+      "name": "Real Relationships",
+      "presenter": "Michelle Jewitt",
+      "grade": [10],
+      "time": "8:00 to 8:40",
+      "room": "230"
+    },
+    {
+      "name": "Teaching Your Computer to Read: Artificial Intelligence and Natural Language Processing",
+      "room": "114",
+      "presenter": "Neel Patel",
+      "grade": [10],
+      "time": "8:00 to 8:40"
+    },
+    {
+      "name": "Ambiguity: The Challenge to Artificial Intelligence",
+      "presenter": "Keith Garfield",
+      "grade": [10],
+      "time": "8:00 to 8:40",
+      "room": "209"
+    },
+    {
+      "name": "Cloud and The Digital Economy",
+      "presenter": "Jay Bunner-Sorg",
+      "grade": [10],
+      "time": "8:00 to 8:40",
+      "room": "123"
+    },
+    {
+      "name": "Project Management in the Entertainment Industry",
+      "presenter": "Cassie Richardson",
+      "grade": [10],
+      "time": "8:00 to 8:40",
+      "room": "124"
+    },
+    {
+      "name": "What is Game Design?",
+      "presenter": "Caris Frazier-Baker",
+      "grade": [10],
+      "time": "8:00 to 8:40",
+      "room": "228"
+    },
+    {
+      "name": "Real Relationships",
+      "presenter": "Michelle Jewett",
+      "grade": [10],
+      "time": "8:45 to 9:25",
+      "room": "230"
+    },
+    {
+      "name": "More money for date night and video games.  How renewable energy can help save a few dollars while also saving the planet.",
+      "presenter": "Eric Violland",
+      "grade": [10],
+      "time": "8:45 to 9:25",
+      "room": "128"
+    },
+    {
+      "name": "Ambiguity: The Challenge to Artificial Intelligence",
+      "presenter": "Keith Garfield",
+      "grade": [10],
+      "time": "8:45 to 9:25",
+      "room": "209"
+    },
+    {
+      "name": "Laser Equipment in Manufacturing",
+      "presenter": "Oliver Pinnock & Brice Beoir",
+      "grade": [10],
+      "time": "8:45 to 9:25",
+      "room": "126"
+    },
+    {
+      "name": "Can maps do more than just show places?",
+      "presenter": "Lakshmi Sankaran",
+      "grade": [10],
+      "time": "8:45 to 9:25",
+      "room": "124"
+    },
+    {
+      "name": "The Future of Robotics",
+      "presenter": "William Wills",
+      "grade": [10],
+      "time": "8:45 to 9:25",
+      "room": "212"
+    },
+    {
+      "name": "IT Everywhere",
+      "presenter": "Daniel Bickford",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "228"
+    },
+    {
+      "name": "Unleashing Your Full Potential",
+      "presenter": "Seshagiri (Sesha) Dhanyamraju",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "227"
+    },
+    {
+      "name": "Real Relationships",
+      "presenter": "Michelle Jewett",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "230"
+    },
+    {
+      "name": "Leveraging Technology for Military Training",
+      "presenter": "Richard Haggerty",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "3-001"
+    },
+    {
+      "name": "Creating Moments That Matter",
+      "presenter": "Jim Rowe Jr.",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "115"
+    },
+    {
+      "name": "Ambiguity: The Challenge to Artificial Intelligence",
+      "presenter": "Keith Garfield",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "209"
+    },
+    {
+      "name": "Laser Equipment in Manufacturing",
+      "presenter": "Oliver Pinnock & Brice Beoir",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "126"
+    },
+    {
+      "name": "Teaching Your Computer to Read: Artificial Intelligence and Natural Language Processing",
+      "presenter": "Neel Patel",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "114"
+    },
+    {
+      "name": "Tactical Technology",
+      "presenter": "Sara Klein",
+      "grade": [9],
+      "time": "9:30 to 10:10",
+      "room": "232"
+    },
+    {
+      "name": "From Zero To Impact!",
+      "presenter": "Jarrod Uddin",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "201"
+    },
+    {
+      "name": "The Future of Robotics",
+      "presenter": "William Wills",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "212"
+    },
+    {
+      "name": "Real Relationships",
+      "presenter": "Michelle Jewett",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "230"
+    },
+    {
+      "name": "More Money for Date Night and Video Games.  How Renewable Energy Can Help Save a Few Dollars While Also Saving the Planet.",
+      "presenter": "Eric Violland",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "128"
+    },
+    {
+      "name": "Engineering, Life & Basketball",
+      "presenter": "Dr. Irwin Hudson",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "113"
+    },
+    {
+      "name": "Ambiguity: The Challenge to Artificial Intelligence",
+      "presenter": "Keith Garfield",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "209"
+    },
+    {
+      "name": "Project Management in the Entertainment Industry",
+      "presenter": "Cassie Richardson",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "124"
+    },
+    {
+      "name": "Cloud and the Digital Economy",
+      "presenter": "Jay Bunner-Sorg",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "123"
+    },
+    {
+      "name": "What Is Game Design?",
+      "presenter": "Caris Frazier-Baker",
+      "grade": [9],
+      "time": "10:15 to 10:55",
+      "room": "228"
+    },
+    {
+      "name": "Daniel Bickford",
+      "presenter": "IT Everywhere",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "228"
+    },
+    {
+      "name": "Education Opportunities for Computer and IT Careers",
+      "presenter": "Dr. Bill Gaught",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "226"
+    },
+    {
+      "name": "Creating Moments That Matter",
+      "presenter": "Jim Rowe Jr.",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "115"
+    },
+    {
+      "name": "Too Much Snapchat, Facebook, & Instagram?",
+      "presenter": "Richard Hartshorne",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "204"
+    },
+    {
+      "name": "Teaching Your Computer to Read: Artificial Intelligence and Natural Language Processing",
+      "presenter": "Neel Patel",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "114"
+    },
+    {
+      "name": "Unleashing Your Full Potential",
+      "presenter": "Seshagiri (Sesha) Dhanyamraju",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "227"
+    },
+    {
+      "name": "Education Opportunities for Computer and IT Careers",
+      "presenter": "Dr. Bill Gaught",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "226"
+    },
+    {
+      "name": "Creating Moments That Matter",
+      "presenter": "Jim Rowe Jr.",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "115"
+    },
+    {
+      "name": "Using Badges To Market Your Skills",
+      "presenter": "Richard Hartshorne",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "204"
+    },
+    {
+      "name": "AI Is Taking Over",
+      "presenter": "James Timberlake",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "114"
+    },
+    {
+      "name": "Managing Change in a Change Industry",
+      "presenter": "Don Campbell",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "213"
+    },
+    {
+      "name": "Tactical Technology",
+      "presenter": "Sara Klein",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "232"
+    },
+    {
+      "name": "Gender Issues in the workplace? #MeToo",
+      "presenter": "Alyson M. Laderman",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "130"
+    },
+    {
+      "name": "Engineering, Life and Basketball",
+      "presenter": "Dr. Irwin L. Hudson",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "113"
+    },
+    {
+      "name": "What To Do With the Leftover π",
+      "presenter": "Ashley Hobbs",
+      "grade": [11,12],
+      "time": "8:45 to 9:25",
+      "room": "201"
+    },
+    {
+      "name": "Managing Change in a Change Industry",
+      "presenter": "Don Campbell",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "213"
+    },
+    {
+      "name": "Laser Equipment in Manufacturing",
+      "presenter": "Oliver Pinnock & Brice Beoir",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "126"
+    },
+    {
+      "name": "Leveraging Technology for Military Training",
+      "presenter": "Colonel Richard Haggerty",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "3-001"
+    },
+    {
+      "name": "Build Your Brand with LinkedIn for Students",
+      "presenter": "John Lopez",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "232"
+    },
+    {
+      "name": "Gender issues in the Workplace? #MeToo",
+      "presenter": "Alyson M. Laderman",
+      "grade": [11,12],
+      "time": "10:15 to 10:55",
+      "room": "130"
+    }
   ]
+

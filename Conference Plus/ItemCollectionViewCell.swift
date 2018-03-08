@@ -25,12 +25,12 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.layer.masksToBounds = true
         self.clipsToBounds = true
         self.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        self.backgroundColor = UIColor().maroonColor()
+        self.backgroundColor = UIColor.white
         
         // Setup Label.
         self.translatesAutoresizingMaskIntoConstraints = false
         titleLabel = UILabel()
-        titleLabel.textColor = UIColor.white
+        titleLabel.textColor = UIColor.black
         titleLabel.textAlignment = .natural
         titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         self.addSubview(titleLabel)

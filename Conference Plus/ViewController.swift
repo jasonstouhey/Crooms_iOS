@@ -11,13 +11,46 @@ import SafariServices
 
 let userDefaults = UserDefaults.standard
 
-class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+
+class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, UIViewControllerPreviewingDelegate{
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        let indexPath = collectionView.indexPathForItem(at: location)
+        guard let cell = collectionView?.cellForItem(at: indexPath!) else { return nil }
+        previewingContext.sourceRect = self.view.convert(cell.frame, from: collectionView)
+        
+        
+        
+        switch indexPath?.row {
+        case 0?:
+            return storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController
+        case 1?:
+            return storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController
+        case 2?:
+            return storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController
+        case 3?:
+            return storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController
+        case 4?:
+            let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
+            return svc
+        default:
+            return storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsViewController
+        }
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        
+        self.show(viewControllerToCommit, sender: nil)
+    }
+    
     
     // MARK: - Class Variables
     
     var fileParser:JKJSONFile!
     var collectionView:UICollectionView!
     var collectionViewLayout:UICollectionViewFlowLayout!
+    var transitionController:Transitioner! = Transitioner()
 
     var items:[String] = ["Sponsors","Workshops","Maps","About","Terms/Privacy Policy"]
     var images:[UIImage] = [#imageLiteral(resourceName: "Sponsors View"), #imageLiteral(resourceName: "Workshops View"), #imageLiteral(resourceName: "Map View"), #imageLiteral(resourceName: "About View"), #imageLiteral(resourceName: "Tech Image")]
@@ -45,11 +78,15 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         userDefaults.set(true, forKey: "gradeLevelSet")
         userDefaults.synchronize()
         
+        
+        
+        
         DispatchQueue.main.async {
             UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 self.gradeSelectView.alpha = 0.0
             }, completion: {Void in self.gradeSelectView.removeFromSuperview()})
         }
+        
         
     }
 
@@ -65,6 +102,27 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        
+        
+        userDefaults.set(9, forKey: "gradeLevel")
+        
+        
+        
+        if( traitCollection.forceTouchCapability == .available){
+            
+            registerForPreviewing(with: self, sourceView: view)
+            
+        }
+        
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionFade
+        self.navigationController?.view.layer.add(transition, forKey: nil)
+        _ = self.navigationController?.popToRootViewController(animated: false)
+        
         let data = DataManager()
         print(data.workshops)
         
@@ -76,7 +134,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
         self.title = "TechFest"
         collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.9, height: 150)
+        collectionViewLayout.itemSize = CGSize(width: self.view.frame.width * 0.95, height: 150)
         collectionViewLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
         
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: collectionViewLayout)
@@ -101,19 +159,22 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         collectionView.layer.shadowRadius = 10
         collectionView.layer.shadowOpacity = 0.5
 
-        self.gradeSelectView.alpha = 0.0
+        //self.gradeSelectView.alpha = 0.0
 
         userDefaults.synchronize()
-
+/*
         if (userDefaults.bool(forKey: "gradeLevelSet") == false) {
             self.gradeSelectView.updateFocusIfNeeded()
-            self.navigationController?.view.addSubview(gradeSelectView)
+            self.view.addSubview(gradeSelectView)
             UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 self.gradeSelectView.alpha = 1.0
             })
         } else if (userDefaults.bool(forKey: "gradeLevelSet") == true) {
-            self.gradeSelectView.isHidden = true
+            
         }
+ */
+        
+        navigationController?.delegate = self
 
     }
 
@@ -145,24 +206,45 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // MARK: - Collection View Delegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-
-        switch indexPath.row {
-        case 0:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsTableViewController, sender: nil)
-        case 1:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
-        case 2:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
-        case 3:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController, sender: nil)
-        case 4:
-            let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
-            self.present(svc, animated: true, completion: nil)
-        default:
-            self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+        
+        if self.navigationController == nil{
+            
+        }else{
+            switch indexPath.row {
+            case 0:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SponsorsViewController, sender: nil)
+            case 1:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Workshops") as! WorkshopsViewController, sender: nil)
+                
+            case 2:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Maps") as! MapViewController, sender: nil)
+            case 3:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "about") as! AboutViewController, sender: nil)
+            case 4:
+                let svc = SFSafariViewController.init(url: URL(string: "http://techfest.croomsweb.org/app_privacy_policy/")!)
+                self.present(svc, animated: true, completion: nil)
+            default:
+                self.show(storyboard?.instantiateViewController(withIdentifier: "Sponsors") as! SessionsViewController, sender: nil)
+            }
         }
         
         
+        
+    }
+    
+    
+   
+
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?{
+       
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        self.navigationController?.navigationBar.barTintColor = UIColor().maroonColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.isTranslucent = true
+        
+        transitionController.reverse = operation == .pop
+        return transitionController
     }
     
 }
