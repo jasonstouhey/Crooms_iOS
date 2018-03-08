@@ -103,24 +103,6 @@ class WorkshopCollectionViewCell: UICollectionViewCell {
         
         
         // Setup Label.
-        gradeLabel = UILabel()
-        self.addSubview(gradeLabel)
-        gradeLabel.translatesAutoresizingMaskIntoConstraints = false
-        gradeLabel.text = "Grade 24"
-        gradeLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.thin)
-        gradeLabel.adjustsFontSizeToFitWidth = true
-        gradeLabel.textAlignment = .center
-        gradeLabel.numberOfLines = 3
-        gradeLabel.textColor = UIColor.black
-        gradeLabel.textAlignment = .natural
-        gradeLabel.alpha = 0.5
-        
-        
-        gradeLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.3).isActive = true
-        gradeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
-        gradeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
-        gradeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: self.frame.height * 0.75).isActive = true
-        
         
         
         

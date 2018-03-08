@@ -78,6 +78,9 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         userDefaults.set(true, forKey: "gradeLevelSet")
         userDefaults.synchronize()
         
+        
+        
+        
         DispatchQueue.main.async {
             UIView.animate(withDuration: 0.5, delay: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: {
                 self.gradeSelectView.alpha = 0.0
@@ -98,6 +101,14 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        
+        userDefaults.set(9, forKey: "gradeLevel")
+        
+        
         
         if( traitCollection.forceTouchCapability == .available){
             

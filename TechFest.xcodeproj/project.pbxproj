@@ -33,9 +33,7 @@
 		D08235811E526FE80043FF04 /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = D08235801E526FE80043FF04 /* info.json */; };
 		D089A88C1E6D8DB200BCA0E1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */; };
 		D089A88E1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */; };
-		D09CF3DE1E6DB70200A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
-		D09CF3DF1E6DB70300A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
-		D09CF3E01E6DB70300A72D94 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0597E251E69A69A003B175E /* workshops.json */; };
+		D0A3FBE02051A0B700225F41 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = D0A3FBDF2051A0B600225F41 /* workshops.json */; };
 		D0A8285E1E6DE84800707ED3 /* Crooms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A8285D1E6DE84800707ED3 /* Crooms.jpg */; };
 		D0A828601E6DF67200707ED3 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */; };
 		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
@@ -88,7 +86,6 @@
 		D04788B51E5535A200158D49 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
 		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		D0597E251E69A69A003B175E /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
 		D0771A621F9012C60089A822 /* WorkshopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopDetailViewController.swift; sourceTree = "<group>"; };
 		D0771A641F90146A0089A822 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
 		D082354B1E526D8A0043FF04 /* TechFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +105,7 @@
 		D08235801E526FE80043FF04 /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
 		D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D089A88D1E6D8DEF00BCA0E1 /* ScrollableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableHeaderView.swift; sourceTree = "<group>"; };
+		D0A3FBDF2051A0B600225F41 /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
 		D0A8285D1E6DE84800707ED3 /* Crooms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Crooms.jpg; sourceTree = "<group>"; };
 		D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -200,7 +198,7 @@
 				D03A368E1E57E7BB00B4F275 /* View Controllers */,
 				D03A368D1E57E7AD00B4F275 /* Cells */,
 				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
-				D0597E251E69A69A003B175E /* workshops.json */,
+				D0A3FBDF2051A0B600225F41 /* workshops.json */,
 				D0B477E51E63733F00FE9D01 /* DataModel.swift */,
 				D08235801E526FE80043FF04 /* info.json */,
 				DBBDB9541E69A720004BB1C2 /* sponsors.json */,
@@ -354,12 +352,12 @@
 				D08235811E526FE80043FF04 /* info.json in Resources */,
 				D0A828601E6DF67200707ED3 /* AppIcon.appiconset in Resources */,
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
-				D09CF3DE1E6DB70200A72D94 /* workshops.json in Resources */,
 				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
 				D0A8285E1E6DE84800707ED3 /* Crooms.jpg in Resources */,
 				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
 				DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */,
+				D0A3FBE02051A0B700225F41 /* workshops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09CF3DF1E6DB70300A72D94 /* workshops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +372,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09CF3E01E6DB70300A72D94 /* workshops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

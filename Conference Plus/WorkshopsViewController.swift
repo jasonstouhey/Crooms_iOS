@@ -17,6 +17,10 @@ class WorkshopsViewController: STStrechViewController, UICollectionViewDataSourc
     
     var workshopCollectionView:UICollectionView!
     var collectionViewFlowLayout:UICollectionViewFlowLayout!
+    var workshops = DataManager().workshops
+    var ninthWorkshops:[DataManager.workshopData]!
+    var tenthWorkshops:[DataManager.workshopData]!
+    var upperclassWorkshops:[DataManager.workshopData]!
 
     
     // MARK: - Lifecycle
@@ -24,19 +28,20 @@ class WorkshopsViewController: STStrechViewController, UICollectionViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        workshops = DataManager().workshops
+        
+        ninthWorkshops = workshops!.filter{$0.grade[0] == 9}
+        tenthWorkshops = workshops!.filter{$0.grade[0] == 10}
+        upperclassWorkshops = workshops!.filter{$0.grade[0] == 11}
+        
+        
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         
-        // Setup grade selector
         
-        //
-        
-        
-        //
-        
-            
         
         // Setup the collection view.
         collectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -94,15 +99,19 @@ class WorkshopsViewController: STStrechViewController, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
-        var totalWorkshops = Int()
-        
-        for i in 0...data.workshops.count - 1{
-            totalWorkshops += data.workshops[i].presentations[0].workshops.count
+        switch userDefaults.integer(forKey: "gradeLevel") {
+        case 9:
+            return ninthWorkshops.count
+        case 10:
+            return tenthWorkshops.count
+        case 11:
+            return upperclassWorkshops.count
+        case 12:
+            return upperclassWorkshops.count
+        default:
+            return workshops!.count
         }
         
-        print(totalWorkshops)
-        
-        return totalWorkshops
     }
     
     
@@ -113,73 +122,26 @@ class WorkshopsViewController: STStrechViewController, UICollectionViewDataSourc
         cell.delegate = self
         cell.indexPath = indexPath
         
+        var currentWorkshop:DataManager.workshopData!
         
-        var ninth = [DataManager.presentationData]()
-        var tenth = [DataManager.presentationData]()
-        var eleventh = [DataManager.presentationData]()
-        var twelfth = [DataManager.presentationData]()
-        
-        
-        
-        
-        var allWorkshops:[DataManager.workshopData]! = []
-        for i in 0...data.workshops.count - 1{
-            for y in 0...data.workshops[i].presentations[0].workshops.count - 1{
-                allWorkshops.append(data.workshops[i].presentations[0].workshops[y])
-                ninth += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(9)}
-                tenth += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(10)}
-                eleventh += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(11)}
-                twelfth += data.workshops[i].presentations.filter{ $0.gradeLevels.contains(12)}
-                
-            }
-            
-            
-            
-        }
-        
-        var presenters = allWorkshops[indexPath.row].presenter
-        cell.presenterLabel.text = "By "
-        for person in presenters{
-            if presenters.index(of: person) == 0{
-                cell.presenterLabel.text = "By \(person)"
-            }else{
-                cell.presenterLabel.text?.append(" and \(person)")
-            }
-            
+        switch userDefaults.integer(forKey: "gradeLevel") {
+        case 9:
+            currentWorkshop = ninthWorkshops[indexPath.row]
+        case 10:
+            currentWorkshop = tenthWorkshops[indexPath.row]
+        case 11:
+            currentWorkshop = upperclassWorkshops[indexPath.row]
+        case 12:
+            currentWorkshop = upperclassWorkshops[indexPath.row]
+        default:
+            currentWorkshop = workshops![indexPath.row]
         }
         
         
+        cell.titleLabel.text = currentWorkshop.name
+        cell.timeLabel.text = currentWorkshop.time
+        cell.presenterLabel.text = currentWorkshop.presenter
         
-        print(allWorkshops)
-        
-        cell.titleLabel.text = allWorkshops[indexPath.row].title
-        /*
-        let title = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["title"]!
-        let presenter:[String] = (appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["presenter"] as! [String]
-        _ = "By "
-        _ = String()
-        
-        let room = ((appDelegate.dataModel.workshops[indexPath.row]["Set \(indexPath.row + 1)"] as! Dictionary<String,Any>)["room"] as! String)
-        let grade = (appDelegate.dataModel.workshops[indexPath.row]["grade"] as! [Int])
-        let grades = grade.map{
-            String($0)
-        }
-        print(grade)
-        
-        cell.durationLabel.text = appDelegate.dataModel.workshops[indexPath.row]["time"] as? String
-        displayMultiplesOnCell(array: presenter, label: cell.presenterLabel, prefix: "By ")
-        displayMultiplesOnCell(array: grades, label: cell.gradeLabel, prefix: "Grades: ")
-        
-        
-        print(title)
-        print(presenter)
-        print(room)
-        
-        
-        
-        cell.titleLabel.text = title as? String
-        cell.timeLabel.text = "Room - \(room)"
-        */
         
         return cell
     }
