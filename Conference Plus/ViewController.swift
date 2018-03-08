@@ -104,12 +104,6 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         
         
         
-        
-        
-        userDefaults.set(9, forKey: "gradeLevel")
-        
-        
-        
         if( traitCollection.forceTouchCapability == .available){
             
             registerForPreviewing(with: self, sourceView: view)
