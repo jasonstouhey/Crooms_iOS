@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import STKit
+
 
 var data = DataManager()
 

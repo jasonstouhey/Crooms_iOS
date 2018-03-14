@@ -13,18 +13,20 @@
 		13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */; };
 		13D693301E73A413004393B9 /* SponsorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D6932F1E73A413004393B9 /* SponsorsTableViewController.swift */; };
 		D0038E731F79DE8D00B8F29E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0038E721F79DE8D00B8F29E /* DataManager.swift */; };
-		D0057AC81FBA4CA9009D0C0E /* STKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0057AC71FBA4CA9009D0C0E /* STKit.framework */; };
 		D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */; };
 		D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */; };
 		D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */; };
 		D04788B61E5535A200158D49 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04788B51E5535A200158D49 /* SessionsViewController.swift */; };
 		D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */; };
 		D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */; };
+		D075BBEB2059D1E6002AA3CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D075BBEA2059D1E6002AA3CF /* Main.storyboard */; };
+		D075BBED2059D944002AA3CF /* StrechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075BBEC2059D944002AA3CF /* StrechViewController.swift */; };
+		D075BBEF2059D9B3002AA3CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D075BBEE2059D9B3002AA3CF /* Extensions.swift */; };
+		D075BBF12059DDFE002AA3CF /* Sponsors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D075BBF02059DDFE002AA3CF /* Sponsors.xcassets */; };
 		D0771A631F9012C60089A822 /* WorkshopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0771A621F9012C60089A822 /* WorkshopDetailViewController.swift */; };
 		D0771A651F90146A0089A822 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0771A641F90146A0089A822 /* Transitioner.swift */; };
 		D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082354E1E526D8A0043FF04 /* AppDelegate.swift */; };
 		D08235511E526D8A0043FF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235501E526D8A0043FF04 /* ViewController.swift */; };
-		D08235541E526D8A0043FF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235521E526D8A0043FF04 /* Main.storyboard */; };
 		D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08235551E526D8A0043FF04 /* Assets.xcassets */; };
 		D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08235571E526D8A0043FF04 /* LaunchScreen.storyboard */; };
 		D08235641E526D8A0043FF04 /* Conference_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08235631E526D8A0043FF04 /* Conference_PlusTests.swift */; };
@@ -38,7 +40,6 @@
 		D0A828601E6DF67200707ED3 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */; };
 		D0B477E61E63734000FE9D01 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B477E51E63733F00FE9D01 /* DataModel.swift */; };
 		D0B53AF21E5CCE3500020B77 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */; };
-		DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */; };
 		DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */ = {isa = PBXBuildFile; fileRef = DBBDB9541E69A720004BB1C2 /* sponsors.json */; };
 /* End PBXBuildFile section */
 
@@ -79,19 +80,21 @@
 		13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = "Conference Plus/PeopleViewController.swift"; sourceTree = SOURCE_ROOT; };
 		13D6932F1E73A413004393B9 /* SponsorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsTableViewController.swift; sourceTree = "<group>"; };
 		D0038E721F79DE8D00B8F29E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		D0057AC71FBA4CA9009D0C0E /* STKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STKit.framework; sourceTree = "<group>"; };
 		D03A36891E57C53000B4F275 /* WorkshopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopsViewController.swift; sourceTree = "<group>"; };
 		D03A368B1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkshopCollectionViewCell.swift; sourceTree = "<group>"; };
 		D04788B31E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-02-15 at 6.29.27 PM.png"; sourceTree = "<group>"; };
 		D04788B51E5535A200158D49 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "project-newton-oakhill-interior.jpg"; sourceTree = "<group>"; };
 		D05405AC1E54C3F700339F74 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		D075BBEA2059D1E6002AA3CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D075BBEC2059D944002AA3CF /* StrechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrechViewController.swift; sourceTree = "<group>"; };
+		D075BBEE2059D9B3002AA3CF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D075BBF02059DDFE002AA3CF /* Sponsors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Sponsors.xcassets; path = "../../../../Downloads/Crooms_iOS-2/Conference Plus/Sponsors.xcassets"; sourceTree = "<group>"; };
 		D0771A621F9012C60089A822 /* WorkshopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopDetailViewController.swift; sourceTree = "<group>"; };
 		D0771A641F90146A0089A822 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
 		D082354B1E526D8A0043FF04 /* TechFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082354E1E526D8A0043FF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08235501E526D8A0043FF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D08235531E526D8A0043FF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D08235551E526D8A0043FF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08235581E526D8A0043FF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D082355A1E526D8A0043FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +113,6 @@
 		D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		D0B477E51E63733F00FE9D01 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D0B53AF11E5CCE3500020B77 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
-		DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sponsors.xcassets; sourceTree = "<group>"; };
 		DBBDB9541E69A720004BB1C2 /* sponsors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sponsors.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0057AC81FBA4CA9009D0C0E /* STKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +154,7 @@
 		D03A368E1E57E7BB00B4F275 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D075BBEC2059D944002AA3CF /* StrechViewController.swift */,
 				13A126761E58908400096B77 /* MapViewController.swift */,
 				13AD34D41E5F1AD400DFF4DD /* PeopleViewController.swift */,
 				D089A88B1E6D8DB200BCA0E1 /* AboutViewController.swift */,
@@ -173,7 +175,6 @@
 		D08235421E526D8A0043FF04 = {
 			isa = PBXGroup;
 			children = (
-				D0057AC71FBA4CA9009D0C0E /* STKit.framework */,
 				D082354D1E526D8A0043FF04 /* Conference Plus */,
 				D08235621E526D8A0043FF04 /* Conference PlusTests */,
 				D082356D1E526D8A0043FF04 /* Conference PlusUITests */,
@@ -195,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				D082354E1E526D8A0043FF04 /* AppDelegate.swift */,
+				D075BBEE2059D9B3002AA3CF /* Extensions.swift */,
 				D03A368E1E57E7BB00B4F275 /* View Controllers */,
 				D03A368D1E57E7AD00B4F275 /* Cells */,
 				D082357E1E526E150043FF04 /* JKJSONFile.swift */,
@@ -202,8 +204,8 @@
 				D0B477E51E63733F00FE9D01 /* DataModel.swift */,
 				D08235801E526FE80043FF04 /* info.json */,
 				DBBDB9541E69A720004BB1C2 /* sponsors.json */,
-				D08235521E526D8A0043FF04 /* Main.storyboard */,
-				DBBDB9521E69A70B004BB1C2 /* Sponsors.xcassets */,
+				D075BBEA2059D1E6002AA3CF /* Main.storyboard */,
+				D075BBF02059DDFE002AA3CF /* Sponsors.xcassets */,
 				D0A8285F1E6DF67200707ED3 /* AppIcon.appiconset */,
 				D08235551E526D8A0043FF04 /* Assets.xcassets */,
 				D04788B71E55398C00158D49 /* project-newton-oakhill-interior.jpg */,
@@ -347,16 +349,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBDB9531E69A70B004BB1C2 /* Sponsors.xcassets in Resources */,
 				D08235591E526D8A0043FF04 /* LaunchScreen.storyboard in Resources */,
 				D08235811E526FE80043FF04 /* info.json in Resources */,
 				D0A828601E6DF67200707ED3 /* AppIcon.appiconset in Resources */,
 				D08235561E526D8A0043FF04 /* Assets.xcassets in Resources */,
-				D08235541E526D8A0043FF04 /* Main.storyboard in Resources */,
+				D075BBEB2059D1E6002AA3CF /* Main.storyboard in Resources */,
 				D04788B41E551BF300158D49 /* Screen Shot 2017-02-15 at 6.29.27 PM.png in Resources */,
 				D0A8285E1E6DE84800707ED3 /* Crooms.jpg in Resources */,
 				D04788B81E55398C00158D49 /* project-newton-oakhill-interior.jpg in Resources */,
 				DBBDB9551E69A720004BB1C2 /* sponsors.json in Resources */,
+				D075BBF12059DDFE002AA3CF /* Sponsors.xcassets in Resources */,
 				D0A3FBE02051A0B700225F41 /* workshops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +397,8 @@
 				D05405AD1E54C3F700339F74 /* ItemCollectionViewCell.swift in Sources */,
 				13AD34D51E5F1AD400DFF4DD /* PeopleViewController.swift in Sources */,
 				D03A368A1E57C53000B4F275 /* WorkshopsViewController.swift in Sources */,
+				D075BBEF2059D9B3002AA3CF /* Extensions.swift in Sources */,
+				D075BBED2059D944002AA3CF /* StrechViewController.swift in Sources */,
 				D03A368C1E57E7A500B4F275 /* WorkshopCollectionViewCell.swift in Sources */,
 				D08235511E526D8A0043FF04 /* ViewController.swift in Sources */,
 				D082354F1E526D8A0043FF04 /* AppDelegate.swift in Sources */,
@@ -436,14 +440,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D08235521E526D8A0043FF04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D08235531E526D8A0043FF04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D08235571E526D8A0043FF04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
